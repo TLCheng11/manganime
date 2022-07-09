@@ -1,5 +1,5 @@
 # Manganime
 
-- an amazing manga and anime website full of surprise
+- an amazing manga and anime website full of surprises
 
-# created by Tony Cheng & Alan Xu
+# Created by Tony Cheng & Alan Xu
