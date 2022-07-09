@@ -17,7 +17,7 @@ function MenuBar() {
           <li>favored</li>
         </ul>
       </div>
-      <div id="rightArrowDiv" onClick={onRightArrowClick}>
+      <div id="arrowDiv" onClick={onRightArrowClick}>
         {style.left === "-150px" ?
           <img 
             id="rightArrow" src="http://www.clker.com/cliparts/1/f/a/2/1349807104707654381Next%20Button.svg.med.png" 

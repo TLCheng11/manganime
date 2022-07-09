@@ -20,7 +20,7 @@
     transition: left 1s;
 }
 
-#rightArrowDiv {
+#arrowDiv {
     /* positioning */
     position: relative;
     left: 56px;
