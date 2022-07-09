@@ -62,11 +62,21 @@ div.cover * {
 .book__page--1 {
     /* cursor: pointer; */
     overflow: hidden;
+    /* content display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     z-index: -100;
 }
 
 .book__page--last {
     /* cursor: pointer; */
+    /* content display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 0 calc(var(--baseline) * 3);
 }
 
@@ -84,6 +94,11 @@ div.cover * {
     position: absolute;
     width: 100%;
     height: 100%;
+    /* content display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     cursor: pointer;
     transform: rotateY(0deg) translateZ(1px);
 }
@@ -92,6 +107,11 @@ div.cover * {
     position: absolute;
     width: 100%;
     height: 100%;
+    /* content display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 0 calc(var(--baseline) * 1.8);
     cursor: pointer;
     transform: rotateY(180deg) translateZ(1px);
