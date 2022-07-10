@@ -8,6 +8,7 @@ import Details from './Details';
 
 function App() {
   const [manganime, setManganime] = useState([])
+  const [searchType, setSearchType] = useState("manga")
   const [selectedItem, setSelectedItem] = useState({
     attributes: {
       conoicalTitle: "",
@@ -27,7 +28,7 @@ function App() {
   function searchManganime(search) {
     const modifiedQuery = search.toLowerCase().split(" ").join("%20")
     console.log(modifiedQuery)
-    fetch(`https://kitsu.io/api/edge/anime?filter[text]=${modifiedQuery}&page[limit]=20&page[offset]=0`, {
+    fetch(`https://kitsu.io/api/edge/${searchType}?filter[text]=${modifiedQuery}&page[limit]=20&page[offset]=0`, {
       method: "GET",
       headers: {
         "Accept": "application/vnd.api+json",
@@ -39,11 +40,12 @@ function App() {
   }
 
   console.log(manganime)
+  console.log(searchType)
 
   return (
     <div className="App">
       <Header />
-      <SearchBar searchManganime={searchManganime} />
+      <SearchBar searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />
       <MenuBar />
       <Container manganime={manganime} setSelectedItem={setSelectedItem} />
       <Details selectedItem={selectedItem} />
