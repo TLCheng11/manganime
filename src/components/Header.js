@@ -2,7 +2,7 @@ import '../stylesheets/Header.css'
 
 function Header() {
   return (
-    <div>
+    <div id="header">
       <h1 id="title">MANGANIME</h1>
     </div>
   );

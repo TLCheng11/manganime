@@ -1,6 +1,6 @@
-#menuBar {
+#menu-bar {
     /* positioning */
-    position: absolute;
+    position: fixed;
     top: 10%;
     left: -150px;
     z-index: 10;
@@ -21,7 +21,7 @@
     transition: left 1s;
 }
 
-#arrowDiv {
+#arrow-div {
     /* positioning */
     position: relative;
     left: 56px;
@@ -40,7 +40,7 @@
     border-bottom-right-radius: 20px;
 }
 
-#rightArrow, #leftArrow {
+#right-arrow, #left-arrow {
     width: 50px;
     height: 50px;
 }

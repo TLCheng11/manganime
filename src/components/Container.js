@@ -2,7 +2,7 @@ import '../stylesheets/Container.css'
 import Pages from './Pages'
 import Thumbnail from './Thumbnail'
 
-function Container({manganime}) {
+function Container({manganime, setSelectedItem}) {
   // const manganime = Array.from(Array(50).keys())
   // console.log(manganime)
   
@@ -13,22 +13,22 @@ function Container({manganime}) {
   for (let i = 0; i < pages.length; i += 8) {
     if (i + 8 >= pages.length && Math.ceil(manganime.length / 4) % 2 !== 0) {
       const cur_pages = manganime.slice(i + 4)
-      pageTags.push(<Pages key={i} items={cur_pages} zIndex={manganime.length - i} page={(i + 4) / 4 + 2} />)
+      pageTags.push(<Pages key={i} items={cur_pages} zIndex={manganime.length - i} page={(i + 4) / 4 + 2} setSelectedItem={setSelectedItem} />)
     } else {
       const cur_pages = pages.slice(i, i + 8)
-      pageTags.push(<Pages key={i} items={cur_pages} zIndex={manganime.length - i} page={(i + 4) / 4 + 2} />)
+      pageTags.push(<Pages key={i} items={cur_pages} zIndex={manganime.length - i} page={(i + 4) / 4 + 2} setSelectedItem={setSelectedItem} />)
     }
   }
 
   // console.log(pageTags)
 
   return (
-    <div id='container'>
+    <div className='container'>
       <div className="cover">
         <div className="book">
           <div className="book__page book__page--1" >
             <div className="itemsContainer">
-              {manganime.slice(0, 4).map(item => <Thumbnail key={item.id} item={item} />)}
+              {manganime.slice(0, 4).map(item => <Thumbnail key={item.id} item={item} setSelectedItem={setSelectedItem} />)}
             </div>
             <div className="page__number">1</div>
           </div>
@@ -38,7 +38,7 @@ function Container({manganime}) {
               {
                 Math.ceil(manganime.length / 4) % 2 !== 0 ?
                 <p>Last Page</p> : 
-                manganime.slice(-(manganime.length % 4)).map(item => <Thumbnail key={item.id} item={item} />)
+                manganime.slice(-(manganime.length % 4)).map(item => <Thumbnail key={item.id} item={item} setSelectedItem={setSelectedItem} />)
               }
             </div>
             <div className="page__number">

@@ -4,10 +4,18 @@ import Header from './Header';
 import SearchBar from './SearchBar';
 import MenuBar from './MenuBar';
 import Container from './Container';
+import Details from './Details';
 
 function App() {
   const [manganime, setManganime] = useState([])
-  const [searchQuery, setSearchQuery] = useState("")
+  const [selectedItem, setSelectedItem] = useState({
+    attributes: {
+      conoicalTitle: "",
+      posterImage: {
+        large: ""
+      }
+    }
+  })
 
   // useEffect(() => {
   //   const modifiedQuery = searchQuery.toLowerCase().split(" ").join("%20")
@@ -37,7 +45,8 @@ function App() {
       <Header />
       <SearchBar searchManganime={searchManganime} />
       <MenuBar />
-      <Container manganime={manganime} />
+      <Container manganime={manganime} setSelectedItem={setSelectedItem} />
+      <Details selectedItem={selectedItem} />
     </div>
   );
 }

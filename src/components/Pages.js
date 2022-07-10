@@ -1,6 +1,6 @@
 import Thumbnail from "./Thumbnail"
 
-function Pages({items, zIndex, page}) {
+function Pages({items, zIndex, page, setSelectedItem}) {
   
   function pageFlip(e) {
       if (e.target.classList.contains("book__page-front")) {
@@ -20,13 +20,13 @@ function Pages({items, zIndex, page}) {
     <div className="book__page book__page--innerpages" style={{zIndex: `${zIndex}`}}>
       <div className="book__page-front" onClick={pageFlip}>
         <div className="itemsContainer">
-          {items.slice(0, 4).map(item => <Thumbnail key={item.id} item={item} />)}
+          {items.slice(0, 4).map(item => <Thumbnail key={item.id} item={item} setSelectedItem={setSelectedItem} />)}
         </div>
         <div className="page__number">{page - 1}</div>
       </div>
       <div className="book__page-back" onClick={pageFlip}>
         <div className="itemsContainer">
-          {items.slice(4).map(item => <Thumbnail key={item.id} item={item} />)}
+          {items.slice(4).map(item => <Thumbnail key={item.id} item={item} setSelectedItem={setSelectedItem} />)}
         </div>
         <div className="page__number">{page}</div>
       </div>

@@ -9,7 +9,7 @@ function MenuBar() {
   }
 
   return (
-    <div id="menuBar" style={style}>
+    <div id="menu-bar" style={style}>
       <div>
         <ul>
           <li>Top 50 Manga</li>
@@ -17,14 +17,14 @@ function MenuBar() {
           <li>favored</li>
         </ul>
       </div>
-      <div id="arrowDiv" onClick={onRightArrowClick}>
+      <div id="arrow-div" onClick={onRightArrowClick}>
         {style.left === "-150px" ?
           <img 
-            id="rightArrow" src="http://www.clker.com/cliparts/1/f/a/2/1349807104707654381Next%20Button.svg.med.png" 
+            id="right-arrow" src="http://www.clker.com/cliparts/1/f/a/2/1349807104707654381Next%20Button.svg.med.png" 
             alt="Next Button clip art" 
           /> :
           <img 
-            id="leftArrow" src="http://www.clker.com/cliparts/a/2/b/4/11949856162121572095pulsante_04_architetto_f_01.svg.thumb.png" 
+            id="left-arrow" src="http://www.clker.com/cliparts/a/2/b/4/11949856162121572095pulsante_04_architetto_f_01.svg.thumb.png" 
             alt="Left Blue Arrow clip art" 
           />
         }

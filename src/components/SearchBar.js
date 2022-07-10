@@ -13,7 +13,7 @@ function SearchBar({searchManganime}) {
     <div>
       <form onSubmit={handleFormSubmit}>
         <input 
-          id="searchBar" 
+          id="search-bar" 
           type="text" 
           placeholder="Which manga/anime you looking for?..." 
           required

@@ -1,0 +1,21 @@
+#detail-outer {
+  display: flex;
+  justify-content: center;
+}
+
+#details-container {
+  display: flex;
+  width: 80%;
+  height: 80vh;
+  position: absolute;
+}
+
+#poster {
+  width: 50%;
+  height: 100%;
+}
+
+#details {
+  width: 50%;
+  height: 100%;
+}
