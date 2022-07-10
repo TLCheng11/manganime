@@ -20,12 +20,12 @@ function Pages({items, zIndex, page}) {
     <div className="book__page book__page--innerpages" style={{zIndex: `${zIndex}`}}>
       <div className="book__page-front" onClick={pageFlip}>
         <h1>THIS HAS ITEM:</h1>
-        <p>{a}, {b}, {c}, {d}</p>
-        <div className="page__number">{page}</div>
+        <p>{items.slice(0, 4).join(", ")}</p>
+        <div className="page__number">{page - 1}</div>
       </div>
       <div className="book__page-back" onClick={pageFlip}>
         <h1>THIS HAS ITEM:</h1>
-        <p>{e}, {f}, {g}, {h}</p>
+        <p>{items.slice(4).join(", ")}</p>
         <div className="page__number">{page}</div>
       </div>
     </div>
