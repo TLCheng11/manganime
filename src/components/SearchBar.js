@@ -24,13 +24,12 @@ function SearchBar({searchManganime, searchType, setSearchType}) {
           <input type="submit"/>
         </form>
       </div>
-      <div>
-        <form className="tabber">
-          <label htmlFor="t1">Manga</label>
-          <input id="t1" name="type" type="radio" value="manga" onChange={(e) => setSearchType(e.target.value)} checked={searchType === "manga"}></input>
-          <label htmlFor="t2">Anime</label>
-          <input id="t2" name="type" type="radio" value="anime" onChange={(e) => setSearchType(e.target.value)} checked={searchType === "anime"}></input>
-          <div className="blob"></div>
+      <div className="toggle-cointainer">
+        <form className="toggle">
+          <input id="choice1" name="type" type="radio" value="manga" onChange={(e) => setSearchType(e.target.value)} checked={searchType === "manga"}></input>
+          <label htmlFor="choice1">Manga</label>
+          <input id="choice2" name="type" type="radio" value="anime" onChange={(e) => setSearchType(e.target.value)} checked={searchType === "anime"}></input>
+          <label htmlFor="choice2">Anime</label>
         </form>
       </div>
     </div>

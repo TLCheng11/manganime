@@ -23,8 +23,8 @@
 
 #arrow-div {
     /* positioning */
-    position: relative;
-    left: 56px;
+    position: absolute;
+    left: 150px;
     /* size */
     width: 50px;
     height: 150px;

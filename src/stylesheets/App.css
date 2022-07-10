@@ -1,13 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+
+/* html, body {
+	 width: 100%;
+	 height: 100%;
+	 margin: 0;
+} */
+ /* html {
+	 font-size: 62.5%;
+} */
+body {
+	 /* display: flex;
+	 align-items: center;
+	 justify-content: center; */
+	 /* font-size: 2.2rem; */
+	 /* min-height: 100vh; */
+	 font-family: 'Concert One', cursive;
+	 -webkit-font-smoothing: antialiased;
+	 text-rendering: optimizeLegibility;
+}
+
 .App {
   text-align: center;
 }
 
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
