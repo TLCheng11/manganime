@@ -2,7 +2,7 @@ import '../stylesheets/Container.css'
 import Pages from './Pages'
 import Thumbnail from './Thumbnail'
 
-function Container({manganime, setSelectedItem}) {
+function Container({manganime, setSelectedItem, reset, setReset}) {
   // const manganime = Array.from(Array(50).keys())
   // console.log(manganime)
   
@@ -13,10 +13,10 @@ function Container({manganime, setSelectedItem}) {
   for (let i = 0; i < pages.length; i += 8) {
     if (i + 8 >= pages.length && Math.ceil(manganime.length / 4) % 2 !== 0) {
       const cur_pages = manganime.slice(i + 4)
-      pageTags.push(<Pages key={i} items={cur_pages} zIndex={manganime.length - i} page={(i + 4) / 4 + 2} setSelectedItem={setSelectedItem} />)
+      pageTags.push(<Pages key={i} items={cur_pages} zIndex={manganime.length - i} page={(i + 4) / 4 + 2} setSelectedItem={setSelectedItem} reset={reset} setReset={setReset} />)
     } else {
       const cur_pages = pages.slice(i, i + 8)
-      pageTags.push(<Pages key={i} items={cur_pages} zIndex={manganime.length - i} page={(i + 4) / 4 + 2} setSelectedItem={setSelectedItem} />)
+      pageTags.push(<Pages key={i} items={cur_pages} zIndex={manganime.length - i} page={(i + 4) / 4 + 2} setSelectedItem={setSelectedItem} reset={reset} setReset={setReset} />)
     }
   }
 

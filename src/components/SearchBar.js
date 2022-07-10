@@ -1,10 +1,11 @@
 import { useState } from 'react';
 
-function SearchBar({searchManganime, searchType, setSearchType}) {
+function SearchBar({searchManganime, searchType, setSearchType, setReset}) {
   const [search, setSearch] = useState("")
 
   function handleFormSubmit(e) {
     e.preventDefault()
+    // setReset(true)
     searchManganime(search)
   }
 

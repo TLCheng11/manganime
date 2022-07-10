@@ -1,6 +1,20 @@
+import { useEffect, useRef } from "react"
 import Thumbnail from "./Thumbnail"
 
-function Pages({items, zIndex, page, setSelectedItem}) {
+function Pages({items, zIndex, page, setSelectedItem, reset, setReset}) {
+  // const elementRef = useRef()
+
+  // const div = elementRef.current
+  // console.log("inner", elementRef, "div", div)
+  // console.log(reset)
+
+  // useEffect(() => {
+  //   if (reset) {
+  //       div.style.transition = "z-index 0.5s, transform 1.5s"
+  //       div.style.transform = ""
+  //       setReset(false)
+  //   }
+  // }, [items])
   
   function pageFlip(e) {
       if (e.target.classList.contains("book__page-front")) {
