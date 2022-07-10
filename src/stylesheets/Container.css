@@ -47,7 +47,6 @@ div.cover * {
     position: relative;
     width: 50%;
     height: 100%;
-    display: grid;
     transform: rotateY(0deg);
     transition: transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
     transform-origin: 0% 0%;
@@ -62,22 +61,14 @@ div.cover * {
 .book__page--1 {
     /* cursor: pointer; */
     overflow: hidden;
-    /* content display */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     z-index: -100;
+    justify-content: space-evenly;
 }
 
 .book__page--last {
     /* cursor: pointer; */
-    /* content display */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     padding: 0 calc(var(--baseline) * 3);
+    justify-content: space-evenly;
 }
 
 .book__page--innerpages {
@@ -94,11 +85,6 @@ div.cover * {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* content display */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     cursor: pointer;
     transform: rotateY(0deg) translateZ(1px);
 }
@@ -107,12 +93,26 @@ div.cover * {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* content display */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     padding: 0 calc(var(--baseline) * 1.8);
     cursor: pointer;
     transform: rotateY(180deg) translateZ(1px);
+}
+
+.book__page--1, .book__page--last, .book__page-front, .book__page-back {
+  /* content display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.itemsContainer {
+  width: 95%;
+  height: 90%;
+  pointer-events: none;
+  /* content display */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }

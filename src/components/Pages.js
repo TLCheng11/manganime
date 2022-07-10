@@ -10,7 +10,6 @@ function Pages({items, zIndex, page}) {
         e.target.parentNode.style.zIndex = `${index}`
       } else {
         e.target.parentNode.style.transition = "z-index 0.5s, transform 1.5s"
-        // e.target.parentNode.parentNode.style.transition = "z-index 1s, transform 1.5s"
         e.target.parentNode.style.transform = ""
         const index = parseInt(e.target.parentNode.style.zIndex) * -1
         e.target.parentNode.style.zIndex = `${index}`
@@ -20,15 +19,15 @@ function Pages({items, zIndex, page}) {
   return (
     <div className="book__page book__page--innerpages" style={{zIndex: `${zIndex}`}}>
       <div className="book__page-front" onClick={pageFlip}>
-        {/* <h1>THIS HAS ITEM:</h1> */}
-        {items.slice(0, 4).map(item => <Thumbnail key={item.id} item={item} />)}
-        {/* <p>{items.slice(0, 4).join(", ")}</p> */}
+        <div className="itemsContainer">
+          {items.slice(0, 4).map(item => <Thumbnail key={item.id} item={item} />)}
+        </div>
         <div className="page__number">{page - 1}</div>
       </div>
       <div className="book__page-back" onClick={pageFlip}>
-        {/* <h1>THIS HAS ITEM:</h1> */}
-        {items.slice(4).map(item => <Thumbnail key={item.id} item={item} />)}
-        {/* <p>{items.slice(4).join(", ")}</p> */}
+        <div className="itemsContainer">
+          {items.slice(4).map(item => <Thumbnail key={item.id} item={item} />)}
+        </div>
         <div className="page__number">{page}</div>
       </div>
     </div>

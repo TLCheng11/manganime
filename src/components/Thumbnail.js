@@ -3,9 +3,11 @@ import '../stylesheets/Thumbnail.css'
 function Thumbnail({item}) {
   const {id, attributes} = item
 
+  const itemTitle = attributes.titles.en_us ? attributes.titles.en_us : (attributes.titles.en ? attributes.titles.en : attributes.titles.en_jp)
+
   return (
-    <div>
-      <h5 id="title">{attributes.titles.en_us ? attributes.titles.en_us : attributes.titles.en}</h5>
+    <div className="item">
+      <h5 className="itemTitle">{itemTitle}</h5>
       <img src={attributes.posterImage.tiny} alt={attributes.posterImage.tiny} />
     </div>
   );

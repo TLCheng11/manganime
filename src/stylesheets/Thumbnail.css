@@ -1,0 +1,21 @@
+.item {
+  width: 45%;
+  height: 45%;
+}
+
+.itemTitle {
+  width: 95%;
+  height: 15%;
+  margin: 3px;
+  padding: 2px;
+}
+
+.item img {
+  cursor: zoom-in;
+  pointer-events: auto;
+  transition: transform 1s;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+}

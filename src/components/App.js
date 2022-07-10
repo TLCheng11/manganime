@@ -19,7 +19,13 @@ function App() {
   function searchManganime(search) {
     const modifiedQuery = search.toLowerCase().split(" ").join("%20")
     console.log(modifiedQuery)
-    fetch(`https://kitsu.io/api/edge/anime?filter[text]=${modifiedQuery}`)
+    fetch(`https://kitsu.io/api/edge/anime?filter[text]=${modifiedQuery}&page[limit]=20&page[offset]=0`, {
+      method: "GET",
+      headers: {
+        "Accept": "application/vnd.api+json",
+        "Content-Type": "application/vnd.api+json"
+      }
+    })
     .then(res => res.json())
     .then(data => setManganime(data.data))
   }
