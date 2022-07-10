@@ -21,7 +21,7 @@ function App() {
     console.log(modifiedQuery)
     fetch(`https://kitsu.io/api/edge/anime?filter[text]=${modifiedQuery}`)
     .then(res => res.json())
-    .then(setManganime)
+    .then(data => setManganime(data.data))
   }
 
   console.log(manganime)
@@ -29,9 +29,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <SearchBar searchManganime={searchManganime}/>
+      <SearchBar searchManganime={searchManganime} />
       <MenuBar />
-      <Container />
+      <Container manganime={manganime} />
     </div>
   );
 }
