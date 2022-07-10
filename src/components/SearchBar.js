@@ -1,10 +1,27 @@
+import { useState } from 'react';
 import '../stylesheets/SearchBar.css'
 
-function SearchBar() {
+function SearchBar({searchManganime}) {
+  const [search, setSearch] = useState("")
+
+  function handleFormSubmit(e) {
+    e.preventDefault()
+    searchManganime(search)
+  }
+
   return (
     <div>
-      <input id="searchBar" type="text" placeholder="Which manga/anime you looking for?..." />
-      <input type="submit" />
+      <form onSubmit={handleFormSubmit}>
+        <input 
+          id="searchBar" 
+          type="text" 
+          placeholder="Which manga/anime you looking for?..." 
+          required
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <input type="submit"/>
+      </form>
     </div>
   );
 }
