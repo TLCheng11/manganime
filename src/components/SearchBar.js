@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import '../stylesheets/SearchBar.css'
 
 function SearchBar({searchManganime, searchType, setSearchType}) {
   const [search, setSearch] = useState("")

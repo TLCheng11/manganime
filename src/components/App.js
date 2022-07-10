@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../stylesheets/App.css';
 import Header from './Header';
-import SearchBar from './SearchBar';
+import SearchPage from './SearchPage';
 import MenuBar from './MenuBar';
 import Container from './Container';
 import Details from './Details';
@@ -45,9 +45,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <SearchBar searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />
+      <SearchPage manganime={manganime} setSelectedItem={setSelectedItem} searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />
       <MenuBar />
-      <Container manganime={manganime} setSelectedItem={setSelectedItem} />
       <Details selectedItem={selectedItem} />
     </div>
   );
