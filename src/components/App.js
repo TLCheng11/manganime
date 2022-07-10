@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import '../stylesheets/App.css';
 import Header from './Header';
+import HomePage from './HomePage';
 import SearchPage from './SearchPage';
 import MenuBar from './MenuBar';
-import Container from './Container';
 import Details from './Details';
 
 function App() {
@@ -45,6 +45,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <HomePage />
       <SearchPage manganime={manganime} setSelectedItem={setSelectedItem} searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />
       <MenuBar />
       <Details selectedItem={selectedItem} />
