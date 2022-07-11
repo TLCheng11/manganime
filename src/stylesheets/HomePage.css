@@ -1,5 +1,5 @@
 :root {
-  --columns: 3;
+  --columns: 17;
   --yellow: rgba(238, 188, 31, 1);
   --pink: rgba(255, 82, 145, 1);
   --blue: rgba(64, 98, 187, 1);
@@ -8,8 +8,9 @@
 }
 
 body{
-  background-color: #182028;
+  background-color: #7a93ac;
 }
+
 
 #homepage ul{
   display:grid;
@@ -87,20 +88,57 @@ body{
   background-image: linear-gradient(45deg,var(--white) 40%,var(--green) 40%), linear-gradient(-45deg,var(--white) 40%,var(--green) 40%);
 }
 
-#homepage ul li img{
+#homepage ul li div {
   position: absolute;
-  width: 43%;
+  width: 65%;
   left: 50%;
   top: 50%;
+  cursor: pointer;
   transform: translateX(-50%) translateY(-60%);
   box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.3);
   transition-property: transform;
-  transition-duration: .3s;
+  transition-duration: .6s;
 }
 
-#homepage ul li img:hover{
-  transform: translateX(-40%) translateY(-70%) rotatez(25deg);
+#homepage ul li div:hover {
+  /* transform: translateX(-40%) translateY(-70%) rotatez(25deg); */
+  transform: rotateY(-180deg) translateX(50%) translateY(-60%) scale(1.5);
+  z-index: 100;
 }
+
+/* .li-front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+} */
+
+.li-back{
+  /* position: absolute; */
+  /* width: 100%; */
+  /* height: 100%; */
+  transform: translateY(-50%);
+  color: rgb(62, 217, 228);
+  opacity: 0;
+  z-index: 10;
+}
+
+.li-back:hover{
+  opacity: 1;
+}
+
+#homepage ul li div img{
+  position: absolute;
+  /* width: 43%; */
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  cursor: pointer;
+  transform: translateX(-50%) translateY(-60%);
+  box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.3);
+  transition-property: transform;
+  transition-duration: .6s;
+}
+
 @media (min-width:450px){
   #homepage ul{
     margin: 190px 40px;
@@ -169,6 +207,17 @@ body{
     grid-column-start:auto;
   }
   #homepage ul li:nth-child(14n-6){
+    grid-column-start:2;
+  }
+}
+@media (min-width:2400px){
+  :root {
+    --columns: 14;
+  }
+  #homepage ul li:nth-child(14n-5){
+    grid-column-start:auto;
+  }
+  #homepage ul li:nth-child(16n-6){
     grid-column-start:2;
   }
 }
