@@ -26,6 +26,9 @@ function MenuBar() {
           <div>
             <NavLink to="/topanime" onClick={resetMenu} >Top 50 anime</NavLink>
           </div>
+          <div>
+            <NavLink to="/favorited" onClick={resetMenu} >Favorited</NavLink>
+          </div>
         </nav>
       </div>
       <div id="arrow-div" onClick={onRightArrowClick}>
