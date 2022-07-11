@@ -17,13 +17,13 @@ function App() {
       }
     }
   })
+  const [manga, setManga] = useState([])
 
-  // useEffect(() => {
-  //   const modifiedQuery = searchQuery.toLowerCase().split(" ").join("%20")
-  //   fetch(`https://kitsu.io/api/edge/anime?filter[text]=${searchQuery}`)
-  //   .then(res => res.json())
-  //   .then(setManganime)
-  // }, [])
+  useEffect(() => {
+    fetch(`http://localhost:3000/manga`)
+    .then(res => res.json())
+    .then(setManga)
+  }, [])
 
   function searchManganime(search) {
     const modifiedQuery = search.toLowerCase().split(" ").join("%20")
@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <HomePage />
+      <HomePage manga={manga} />
       <SearchPage manganime={manganime} setSelectedItem={setSelectedItem} searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />
       <MenuBar />
       <Details selectedItem={selectedItem} />
