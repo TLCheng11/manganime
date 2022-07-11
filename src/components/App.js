@@ -22,6 +22,7 @@ function App() {
   })
   const [manga, setManga] = useState([])
   const [anime, setAnime] = useState([])
+  const [firstStart, setfirstStart] = useState("")
 
   // console.log("mange", manga)
   // console.log("anime", anime)
@@ -32,7 +33,8 @@ function App() {
     .then(setManga)
     fetch(`http://localhost:3000/anime`)
     .then(res => res.json())
-    .then(setAnime)   
+    .then(setAnime)
+    setfirstStart(true)
   }, [])
 
   function searchManganime(search) {
@@ -49,13 +51,13 @@ function App() {
     .then(data => setManganime(data.data))
   }
 
-  if (manga === [] || anime === []) {
+  if (manga.length === 0 || anime.length === 0) {
     return (<p>Loading</p>)
   }
 
   return (
     <div className="App">
-        {/* <Intro manga={manga} anime={anime} /> */}
+        {firstStart ? <Intro manga={manga} anime={anime} firstStart={firstStart} setfirstStart={setfirstStart} /> : null}
         <Header />
         <MenuBar />
         <Routes>

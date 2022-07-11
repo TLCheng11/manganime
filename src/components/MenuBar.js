@@ -21,10 +21,10 @@ function MenuBar() {
             <NavLink to="/" onClick={resetMenu} >HomePage</NavLink>
           </div>
           <div>
-            <NavLink to="/search" onClick={resetMenu} >Search</NavLink>
+            <NavLink to="/topanime" onClick={resetMenu} >Top 50 anime</NavLink>
           </div>
           <div>
-            <NavLink to="/topanime" onClick={resetMenu} >Top 50 anime</NavLink>
+            <NavLink to="/search" onClick={resetMenu} >Search</NavLink>
           </div>
         </nav>
       </div>

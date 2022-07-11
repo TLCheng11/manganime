@@ -1,15 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 import '../stylesheets/Intro.css'
 
-function Intro({manga, anime}) {
+function Intro({manga, anime, firstStart, setfirstStart}) {
   const [image, setImage] = useState({backgroundImage : `url(${manga[Math.floor(Math.random() * 50)].attributes.coverImage.original})`})
   let intervalId = 0
 
-  console.log(manga)
-  console.log(anime)
+  console.log("manga", manga)
+  console.log("anime", anime)
 
   const body = document.body
-  body.style.overflow = "hidden"
+  body.style.overflow = firstStart ? "hidden" : "auto"
 
   const elementRef = useRef()
   const intro = elementRef.current
@@ -40,6 +40,7 @@ function Intro({manga, anime}) {
     setTimeout(() => {
       intro.style.pointerEvents = "none"
       clearInterval(intervalId)
+      setfirstStart(false)
     }, 2000)
   }
 
