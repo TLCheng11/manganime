@@ -19,11 +19,21 @@ function App() {
     }
   })
   const [manga, setManga] = useState([])
+  const [anime, setAnime] = useState([])
+
+  console.log("mange", manga)
+  console.log("anime", anime)
 
   useEffect(() => {
     fetch(`http://localhost:3000/manga`)
     .then(res => res.json())
     .then(setManga)
+  }, [])
+
+  useEffect(() => {
+    fetch(`http://localhost:3000/anime`)
+    .then(res => res.json())
+    .then(setAnime)   
   }, [])
 
   function searchManganime(search) {
@@ -39,9 +49,6 @@ function App() {
     .then(res => res.json())
     .then(data => setManganime(data.data))
   }
-
-  console.log(manganime)
-  console.log(searchType)
 
   return (
     <div className="App">

@@ -5,6 +5,10 @@ import '../stylesheets/MenuBar.css'
 function MenuBar() {
   const [style, setStyle] = useState({left: "-150px"})
 
+  function resetMenu() {
+    setStyle({left: "-150px"})
+  }
+
   function onRightArrowClick() {
     style.left === "-150px" ? setStyle({left: "0"}) : setStyle({left: "-150px"})
   }
@@ -14,10 +18,10 @@ function MenuBar() {
       <div>
         <nav id="nav-bar">
           <div>
-            <NavLink to="/">HomePage</NavLink>
+            <NavLink to="/" onClick={resetMenu} >HomePage</NavLink>
           </div>
           <div>
-            <NavLink to="/search">Search</NavLink>
+            <NavLink to="/search" onClick={resetMenu} >Search</NavLink>
           </div>
         </nav>
       </div>
