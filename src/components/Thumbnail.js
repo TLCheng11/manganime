@@ -1,4 +1,5 @@
 import '../stylesheets/Thumbnail.css'
+import { NavLink } from 'react-router-dom';
 
 function Thumbnail({item, setSelectedItem}) {
   const {id, attributes} = item
@@ -8,7 +9,9 @@ function Thumbnail({item, setSelectedItem}) {
   return (
     <div className="item">
       <h5 className="item-title">{itemTitle}</h5>
-      <img src={attributes.posterImage.tiny} alt={attributes.posterImage.tiny} onClick={() => setSelectedItem(item)} />
+      <NavLink to="/details">
+        <img src={attributes.posterImage.tiny} alt={attributes.posterImage.tiny} onClick={() => setSelectedItem(item)} />
+      </NavLink>
     </div>
   );
 }

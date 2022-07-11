@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import '../stylesheets/App.css';
 import Header from './Header';
 import HomePage from './HomePage';
@@ -44,11 +45,13 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <HomePage manga={manga} />
-      <SearchPage manganime={manganime} setSelectedItem={setSelectedItem} searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />
-      <MenuBar />
-      <Details selectedItem={selectedItem} />
+        <Header />
+        <MenuBar />
+        <Routes>
+          <Route index element={<HomePage manga={manga} />} />
+          <Route path="/search" element={<SearchPage manganime={manganime} setSelectedItem={setSelectedItem} searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />} />
+          <Route path="/details" element={<Details selectedItem={selectedItem} />} />
+        </Routes>
     </div>
   );
 }

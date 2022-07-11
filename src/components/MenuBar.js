@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import '../stylesheets/MenuBar.css'
 
 function MenuBar() {
@@ -11,11 +12,10 @@ function MenuBar() {
   return (
     <div id="menu-bar" style={style}>
       <div>
-        <ul>
-          <li>Top 50 Manga</li>
-          <li>Top 50 Anime</li>
-          <li>favored</li>
-        </ul>
+        <nav>
+          <NavLink to="/">HomePage</NavLink>
+          <NavLink to="/search">Search</NavLink>
+        </nav>
       </div>
       <div id="arrow-div" onClick={onRightArrowClick}>
         {style.left === "-150px" ?
