@@ -28,12 +28,16 @@ function Container({manganime, setSelectedItem, reset, setReset}) {
         <div className="book">
           <div className="book__page book__page--1" >
             <div className="itemsContainer">
-              {manganime.slice(0, 4).map(item => <Thumbnail key={item.id} item={item} setSelectedItem={setSelectedItem} />)}
+              {
+                manganime.length === 0 ? 
+                <h1>No Search Results</h1> : 
+                manganime.slice(0, 4).map(item => <Thumbnail key={item.id} item={item} setSelectedItem={setSelectedItem} />)
+              }
             </div>
             <div className="page__number">1</div>
           </div>
 
-          <div className="book__page book__page--last">
+          <div className="book__page book__page--last" onClick={() => setReset(true)}>
             <div className="itemsContainer">
               {
                 Math.ceil(manganime.length / 4) % 2 !== 0 ?

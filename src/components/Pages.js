@@ -5,8 +5,8 @@ function Pages({items, zIndex, page, setSelectedItem, reset, setReset}) {
   const elementRef = useRef()
 
   const div = elementRef.current
-  console.log("inner", elementRef, "div", div)
-  console.log(reset)
+  // console.log("inner", elementRef, "div", div)
+  // console.log(reset)
 
   useEffect(() => {
     if (reset && div) {
