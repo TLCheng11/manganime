@@ -1,0 +1,24 @@
+body{
+    background-color: #f8a5c3;
+}
+
+.anime-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anime-title{
+    width: 284px;
+}
+
+#top-anime ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    list-style-type: none;
+    gap: 20px 20px;
+}
+
+#top-anime li img{
+    border-radius: 10px;
+}
