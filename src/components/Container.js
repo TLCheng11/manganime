@@ -42,7 +42,8 @@ function Container({manganime, setSelectedItem, reset, setReset}) {
               }
             </div>
             <div className="page__number">
-              {Math.ceil(manganime.length / 4) % 2 !== 0 ? Math.ceil(manganime.length / 4) + 1 : Math.ceil(manganime.length / 4)}
+              Last Page
+              {/* {Math.ceil(manganime.length / 4) % 2 !== 0 ? Math.ceil(manganime.length / 4) + 1 : Math.ceil(manganime.length / 4)} */}
             </div>
           </div>
 

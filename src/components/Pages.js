@@ -2,19 +2,20 @@ import { useEffect, useRef } from "react"
 import Thumbnail from "./Thumbnail"
 
 function Pages({items, zIndex, page, setSelectedItem, reset, setReset}) {
-  // const elementRef = useRef()
+  const elementRef = useRef()
 
-  // const div = elementRef.current
-  // console.log("inner", elementRef, "div", div)
-  // console.log(reset)
+  const div = elementRef.current
+  console.log("inner", elementRef, "div", div)
+  console.log(reset)
 
-  // useEffect(() => {
-  //   if (reset) {
-  //       div.style.transition = "z-index 0.5s, transform 1.5s"
-  //       div.style.transform = ""
-  //       setReset(false)
-  //   }
-  // }, [items])
+  useEffect(() => {
+    if (reset && div) {
+        div.style.transition = "z-index 0.5s, transform 1.5s"
+        div.style.zIndex = `${zIndex}`
+        div.style.transform = ""
+        setReset(false)
+    }
+  }, [items])
   
   function pageFlip(e) {
       if (e.target.classList.contains("book__page-front")) {
@@ -31,7 +32,7 @@ function Pages({items, zIndex, page, setSelectedItem, reset, setReset}) {
     }  
 
   return (
-    <div className="book__page book__page--innerpages" style={{zIndex: `${zIndex}`}}>
+    <div className="book__page book__page--innerpages" style={{zIndex: `${zIndex}`}} ref={elementRef}>
       <div className="book__page-front" onClick={pageFlip}>
         <div className="itemsContainer">
           {items.slice(0, 4).map(item => <Thumbnail key={item.id} item={item} setSelectedItem={setSelectedItem} />)}

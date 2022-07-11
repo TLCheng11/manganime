@@ -48,7 +48,7 @@ function App() {
         <Header />
         <MenuBar />
         <Routes>
-          <Route index element={<HomePage manga={manga} />} />
+          <Route index element={<HomePage manga={manga} setSelectedItem={setSelectedItem} />} />
           <Route path="/search" element={<SearchPage manganime={manganime} setSelectedItem={setSelectedItem} searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />} />
           <Route path="/details" element={<Details selectedItem={selectedItem} />} />
         </Routes>

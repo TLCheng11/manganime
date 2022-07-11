@@ -5,7 +5,7 @@ function SearchBar({searchManganime, searchType, setSearchType, setReset}) {
 
   function handleFormSubmit(e) {
     e.preventDefault()
-    // setReset(true)
+    setReset(true)
     searchManganime(search)
   }
 

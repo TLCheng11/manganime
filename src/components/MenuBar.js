@@ -12,9 +12,13 @@ function MenuBar() {
   return (
     <div id="menu-bar" style={style}>
       <div>
-        <nav>
-          <NavLink to="/">HomePage</NavLink>
-          <NavLink to="/search">Search</NavLink>
+        <nav id="nav-bar">
+          <div>
+            <NavLink to="/">HomePage</NavLink>
+          </div>
+          <div>
+            <NavLink to="/search">Search</NavLink>
+          </div>
         </nav>
       </div>
       <div id="arrow-div" onClick={onRightArrowClick}>
