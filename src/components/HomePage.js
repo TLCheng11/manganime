@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../stylesheets/HomePage.css'
 
 function HomePage({manga, setSelectedItem}) {
-  console.log(manga)
+  // console.log(manga)
 
   const imageTags = manga.map(item => (
     <li key={item.id}>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import '../stylesheets/App.css';
+import Intro from './Intro';
 import Header from './Header';
 import HomePage from './HomePage';
 import SearchPage from './SearchPage';
@@ -22,16 +23,13 @@ function App() {
   const [manga, setManga] = useState([])
   const [anime, setAnime] = useState([])
 
-  console.log("mange", manga)
-  console.log("anime", anime)
+  // console.log("mange", manga)
+  // console.log("anime", anime)
 
   useEffect(() => {
     fetch(`http://localhost:3000/manga`)
     .then(res => res.json())
     .then(setManga)
-  }, [])
-
-  useEffect(() => {
     fetch(`http://localhost:3000/anime`)
     .then(res => res.json())
     .then(setAnime)   
@@ -51,8 +49,13 @@ function App() {
     .then(data => setManganime(data.data))
   }
 
+  if (manga === [] || anime === []) {
+    return (<p>Loading</p>)
+  }
+
   return (
     <div className="App">
+        {/* <Intro manga={manga} anime={anime} /> */}
         <Header />
         <MenuBar />
         <Routes>
