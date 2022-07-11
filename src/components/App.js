@@ -8,6 +8,7 @@ import SearchPage from './SearchPage';
 import MenuBar from './MenuBar';
 import Details from './Details';
 import TopAnime from './TopAnime';
+import FavoritedPage from './FavoritedPage';
 
 function App() {
   const [manganime, setManganime] = useState([])
@@ -65,6 +66,7 @@ function App() {
           <Route path="/search" element={<SearchPage manganime={manganime} setSelectedItem={setSelectedItem} searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />} />
           <Route path="/details" element={<Details selectedItem={selectedItem} />} />
           <Route path="/topanime" element={<TopAnime anime={anime}/>} />
+          <Route path="/favorited" element ={<FavoritedPage/>}/>
         </Routes>
     </div>
   );
