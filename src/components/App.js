@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import '../stylesheets/App.css';
 import Intro from './Intro';
 import Header from './Header';
@@ -26,6 +26,7 @@ function App() {
   const [users, setUsers] = useState([])
   const [currentUser, setCurrentUser] = useState({})
   const [firstStart, setfirstStart] = useState("")
+  const navigate = useNavigate()
 
   const usersList = {}
   if (users.length > 0) {
@@ -41,7 +42,7 @@ function App() {
 
   // console.log("mange", manga)
   // console.log("anime", anime)
-  console.log(usersList)
+  // console.log(usersList)
 
   useEffect(() => {
     fetch(`http://localhost:3000/manga`)
@@ -52,10 +53,9 @@ function App() {
     .then(res => res.json())
     .then(setAnime)
 
-    
+    navigate("/")
     setfirstStart(true)
   }, [])
-  
   
   useEffect(() => {
     fetch(`http://localhost:3000/users`)
@@ -87,7 +87,7 @@ function App() {
         <Header users={users} usersList={usersList} currentUser={currentUser} setCurrentUser={setCurrentUser} />
         <MenuBar />
         <Routes>
-          <Route index element={<HomePage manga={manga} setSelectedItem={setSelectedItem} />} />
+          <Route path="/" element={<HomePage manga={manga} setSelectedItem={setSelectedItem} />} />
           <Route path="/search" element={<SearchPage manganime={manganime} setSelectedItem={setSelectedItem} searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />} />
           <Route path="/details" element={<Details selectedItem={selectedItem} currentUser={currentUser} setCurrentUser={setCurrentUser} favoritedList={favoritedList} />} />
           <Route path="/topanime" element={<TopAnime anime={anime} setSelectedItem={setSelectedItem}/>} />
