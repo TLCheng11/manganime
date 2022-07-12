@@ -22,11 +22,11 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
   // console.log("anime", anime)
   // console.log(imageBackGround)
 
-  let body = document.body
-  // body.style.overflow = firstStart ? "hidden" : "auto"
 
-  const elementRef = useRef()
-  const intro = elementRef.current
+  const introRef = useRef()
+  const intro = introRef.current
+  const introTitleRef = useRef()
+  const introTitle = introTitleRef.current
 
   useEffect(() => {
     intervalId = setInterval(() => {
@@ -48,14 +48,17 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
     intro.style.opacity = "0"
     setTimeout(() => {
       intro.style.pointerEvents = "none"
+      introTitle.style.display = "none"
+      intro.style.zIndex = "-200"
+      intro.style.opacity = "0.5"
       // clearInterval(intervalId)
       setfirstStart(false)
     }, 2000)
   }
 
   return (
-    <div id="intro" style={image} ref={elementRef}>
-      <div id="intro-title" onClick={enterWebpage} >
+    <div id="intro" style={image} ref={introRef}>
+      <div id="intro-title" onClick={enterWebpage} ref={introTitleRef} >
         MANGANIME
       </div>
     </div>

@@ -83,7 +83,8 @@ function App() {
 
   return (
     <div className="App">
-        {firstStart ? <Intro manga={manga} anime={anime} firstStart={firstStart} setfirstStart={setfirstStart} /> : null}
+        {/* {firstStart ? <Intro manga={manga} anime={anime} firstStart={firstStart} setfirstStart={setfirstStart} /> : null} */}
+        <Intro manga={manga} anime={anime} firstStart={firstStart} setfirstStart={setfirstStart} />
         <Header users={users} usersList={usersList} currentUser={currentUser} setCurrentUser={setCurrentUser} />
         <MenuBar />
         <Routes>
