@@ -40,8 +40,8 @@ function App() {
     currentUser.favorited.forEach(item => favoritedList.add(item.id))
   }
 
-  // console.log("mange", manga)
-  // console.log("anime", anime)
+  console.log("mange", manga)
+  console.log("anime", anime)
   // console.log(usersList)
 
   useEffect(() => {
