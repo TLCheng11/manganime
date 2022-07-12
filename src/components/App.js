@@ -81,7 +81,7 @@ function App() {
           <Route index element={<HomePage manga={manga} setSelectedItem={setSelectedItem} />} />
           <Route path="/search" element={<SearchPage manganime={manganime} setSelectedItem={setSelectedItem} searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />} />
           <Route path="/details" element={<Details selectedItem={selectedItem} />} />
-          <Route path="/topanime" element={<TopAnime anime={anime}/>} />
+          <Route path="/topanime" element={<TopAnime anime={anime} setSelectedItem={setSelectedItem}/>} />
           <Route path="/favorited" element ={<FavoritedPage/>}/>
         </Routes>
     </div>

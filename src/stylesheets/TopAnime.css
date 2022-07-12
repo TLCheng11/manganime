@@ -2,14 +2,39 @@ body{
     background-color: #f8a5c3;
 }
 
+/* split screen container */
+
+/* .left-panel {
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-color: #282828;
+    z-index: 1010101010
+}
+  
+.right-panel {
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-color: #0080ff;
+    z-index: 1010101010
+} */
+
 .anime-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.anime-container a{
+    text-decoration: none;
+    color: black;
+}
+
 .anime-title{
     width: 284px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 #top-anime ul{
@@ -22,3 +47,4 @@ body{
 #top-anime li img{
     border-radius: 10px;
 }
+
