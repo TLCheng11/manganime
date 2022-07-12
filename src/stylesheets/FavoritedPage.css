@@ -1,0 +1,41 @@
+#favorite-page ul{
+    list-style-type: none;
+    display: flex;
+    overflow: auto;
+}
+
+.favorited-manga {
+    height: auto;
+    width: auto;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.favorited-anime{
+    height: auto;
+    width: auto;
+    background-color: white;
+}
+
+.favorite-manga-container{
+    margin: 20px;
+}
+
+.favorite-anime-container{
+    margin: 20px;
+}
+
+.prompt-login {
+    background-image: url('https://c.tenor.com/hbGUzkHNBXgAAAAC/anime-girl.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 700px;
+    border-style: solid;
+    display: inline-block;
+}
+
+.prompt-login p {
+    font-size: 50px;
+    font-weight: bold;
+}
