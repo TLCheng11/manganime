@@ -1,10 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
 
 #header {
-    height: 15%;
+    height: 10%;
+    display: flex;
 }
 
+/* --------------------------------CSS for Title---------------------------------- */
+
 #header-title {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    margin: 0;
     font-size: 3.5em;
     font: bold 7.5vw/1.6 'Signika', sans-serif;
     user-select: none;
@@ -49,3 +56,67 @@
 #header-title span:nth-child(12){ animation-delay:.55s; }
 #header-title span:nth-child(13){ animation-delay:.6s; }
 #header-title span:nth-child(14){ animation-delay:.65s; }
+
+/* ------------------------------------------------------------------------------- */
+
+/* --------------------------------CSS for Login Buttons---------------------------------- */
+
+#login-status {
+    position: absolute;
+    right: 2%;
+    height: 20%;
+    min-height: 150px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#logout {
+    display: flex;
+    align-items: center;
+}
+
+#logout button {
+    background-color: red;
+    color: white;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: rgb(174, 175, 224);
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    top: 35%;
+    margin: 5px;
+}
+  
+.btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(146, 148, 248, 0.4),
+        transparent
+    );
+    transition: all 650ms;
+}
+
+.btn:hover:before {
+    left: 100%;
+}

@@ -23,18 +23,34 @@ function App() {
   })
   const [manga, setManga] = useState([])
   const [anime, setAnime] = useState([])
+  const [users, setUsers] = useState([])
+  const [currentUser, setCurrentUser] = useState({})
   const [firstStart, setfirstStart] = useState("")
+
+  const usersList = {}
+  if (users.length > 0) {
+    users.forEach(user => {
+      usersList[user.username] = user.password
+    })
+  }
 
   // console.log("mange", manga)
   // console.log("anime", anime)
+  console.log(usersList)
 
   useEffect(() => {
     fetch(`http://localhost:3000/manga`)
     .then(res => res.json())
     .then(setManga)
+
     fetch(`http://localhost:3000/anime`)
     .then(res => res.json())
     .then(setAnime)
+
+    fetch(`http://localhost:3000/users`)
+    .then(res => res.json())
+    .then(setUsers)
+
     setfirstStart(true)
   }, [])
 
@@ -59,7 +75,7 @@ function App() {
   return (
     <div className="App">
         {firstStart ? <Intro manga={manga} anime={anime} firstStart={firstStart} setfirstStart={setfirstStart} /> : null}
-        <Header />
+        <Header users={users} usersList={usersList} currentUser={currentUser} setCurrentUser={setCurrentUser} />
         <MenuBar />
         <Routes>
           <Route index element={<HomePage manga={manga} setSelectedItem={setSelectedItem} />} />

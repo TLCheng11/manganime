@@ -5,8 +5,8 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
   const [image, setImage] = useState({backgroundImage : `url(${manga[Math.floor(Math.random() * 50)].attributes.coverImage.original})`})
   let intervalId = 0
 
-  console.log("manga", manga)
-  console.log("anime", anime)
+  // console.log("manga", manga)
+  // console.log("anime", anime)
 
   const body = document.body
   body.style.overflow = firstStart ? "hidden" : "auto"

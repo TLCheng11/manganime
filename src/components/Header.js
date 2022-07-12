@@ -1,6 +1,51 @@
+import { useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 import '../stylesheets/Header.css'
 
-function Header() {
+function Header({users, usersList, currentUser, setCurrentUser}) {
+  const [formInput, setFormInput] = useState({
+    username: "",
+    password: ""
+  })
+
+  let navigate = useNavigate()
+
+  // console.log(formInput)
+
+  function controlFormInput(e) {
+    const {name, value} = e.target
+    setFormInput({
+      ...formInput,
+      [name]: value
+    })
+  }
+
+  function onLogin(e) {
+    e.preventDefault()
+    if (usersList[formInput.username.toLowerCase()]) {
+      if (usersList[formInput.username.toLowerCase()] === formInput.password) {
+        console.log("user logged in")
+        const id = users.find(user => user.username === formInput.username.toLowerCase()).id
+        fetch(`http://localhost:3000/users/${id}`)
+        .then(res => res.json())
+        .then(data => {
+          setCurrentUser(data)
+          setFormInput({username: "", password: ""})
+          navigate("/favorited")
+        })
+      } else {
+        alert("Wrong username or password")
+      }
+    } else {
+      alert("Wrong username or password")
+    }
+  }
+
+  function onLogout() {
+    setCurrentUser({})
+    navigate("/")
+  }
+
   return (
     <div id="header">
       <h1 id="header-title">
@@ -14,6 +59,31 @@ function Header() {
         <span>M</span>
         <span>E</span>
       </h1>
+      <div id="login-status">
+        {currentUser.username ?
+          (
+            <div id="logout">
+              <h3>Hi {currentUser.username.slice(0, 1).toUpperCase()}{currentUser.username.slice(1)}</h3>
+              <button className="btn" onClick={onLogout} >Logout</button>
+            </div>
+          ) : (
+            <form id="login-form" onSubmit={onLogin} >
+              <div>
+                <label htmlFor="username">Username:</label>
+                <input type="text" id="username" name="username" value={formInput.username} onChange={controlFormInput} required />
+              </div>
+              <div>
+                <label htmlFor="password">Password:</label>
+                <input type="password" id="password" name="password" value={formInput.password} onChange={controlFormInput} required />
+              </div>
+              <div>
+                <input className="btn" type="submit" value="Login" />
+                <input className="btn" type="button" value="Sign up" />
+              </div>
+            </form>
+          ) 
+        }
+      </div>
     </div>
   );
 }
