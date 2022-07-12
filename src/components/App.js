@@ -34,6 +34,11 @@ function App() {
     })
   }
 
+  const favoritedList = new Set()
+  if (currentUser.favorited) {
+    currentUser.favorited.forEach(item => favoritedList.add(item.id))
+  }
+
   // console.log("mange", manga)
   // console.log("anime", anime)
   console.log(usersList)
@@ -84,7 +89,7 @@ function App() {
         <Routes>
           <Route index element={<HomePage manga={manga} setSelectedItem={setSelectedItem} />} />
           <Route path="/search" element={<SearchPage manganime={manganime} setSelectedItem={setSelectedItem} searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />} />
-          <Route path="/details" element={<Details selectedItem={selectedItem} />} />
+          <Route path="/details" element={<Details selectedItem={selectedItem} currentUser={currentUser} setCurrentUser={setCurrentUser} favoritedList={favoritedList} />} />
           <Route path="/topanime" element={<TopAnime anime={anime}/>} />
           <Route path="/favorited" element ={<FavoritedPage/>}/>
         </Routes>

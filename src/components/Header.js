@@ -73,6 +73,10 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
               .then(data => {
                 setCurrentUser(data)
                 navigate("/favorited")
+                setFormInput({
+                  username: "",
+                  password: ""
+                })
                 console.log(data)
               })
             } else {
