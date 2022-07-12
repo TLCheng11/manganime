@@ -22,8 +22,7 @@ div.cover * {
 }
 
 .container {
-  background-color: var(--body-bg);
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,11 +53,14 @@ div.cover * {
     background-image: linear-gradient(90deg, rgba(227, 227, 227, 1) 0%, rgba(247, 247, 247, 0) 18%);
 }
 
-.book__page:nth-of-type(1) {
+/* .book__page:nth-of-type(1) {
     background-image: linear-gradient(-90deg, rgba(227, 227, 227, 1) 0%, rgba(247, 247, 247, 0) 18%);
-}
+} */
 
 .book__page--1 {
+    background-image: url("https://media.istockphoto.com/vectors/manga-style-page-layout-storyboard-layout-template-vector-id1161185167?k=20&m=1161185167&s=170667a&w=0&h=zQdj9pUY1BfFyDI48gn6n7mqFkmi2FNdMdnG83tna-A=");
+    background-size: contain;
+    background-repeat: no-repeat;
     /* cursor: pointer; */
     overflow: hidden;
     z-index: -100;
@@ -66,7 +68,10 @@ div.cover * {
 }
 
 .book__page--last {
-    /* cursor: pointer; */
+    background-image: url("https://media.istockphoto.com/vectors/manga-style-page-layout-storyboard-layout-template-vector-id1161185167?k=20&m=1161185167&s=170667a&w=0&h=zQdj9pUY1BfFyDI48gn6n7mqFkmi2FNdMdnG83tna-A=");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
     padding: 0 calc(var(--baseline) * 3);
     justify-content: space-evenly;
 }
@@ -82,6 +87,9 @@ div.cover * {
 }
 
 .book__page-front {
+    background-image: url("https://media.istockphoto.com/vectors/manga-style-page-layout-storyboard-layout-template-vector-id1161185167?k=20&m=1161185167&s=170667a&w=0&h=zQdj9pUY1BfFyDI48gn6n7mqFkmi2FNdMdnG83tna-A=");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -90,6 +98,9 @@ div.cover * {
 }
 
 .book__page-back {
+    background-image: url("https://media.istockphoto.com/vectors/manga-style-page-layout-storyboard-layout-template-vector-id1161185167?k=20&m=1161185167&s=170667a&w=0&h=zQdj9pUY1BfFyDI48gn6n7mqFkmi2FNdMdnG83tna-A=");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     width: 100%;
     height: 100%;

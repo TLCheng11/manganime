@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import '../stylesheets/Container.css'
 import Pages from './Pages'
 import Thumbnail from './Thumbnail'
@@ -19,8 +20,6 @@ function Container({manganime, setSelectedItem, reset, setReset}) {
       pageTags.push(<Pages key={i} items={cur_pages} zIndex={manganime.length - i} page={(i + 4) / 4 + 2} setSelectedItem={setSelectedItem} reset={reset} setReset={setReset} />)
     }
   }
-
-  // console.log(pageTags)
 
   return (
     <div className='container'>
