@@ -2,45 +2,63 @@ import "../stylesheets/FavoritedPage.css"
 import { NavLink } from 'react-router-dom';
 
 
-function FavoritedPage({ anime, manga, setSelectedItem, currentUser }) {
+function FavoritedPage({ setSelectedItem, currentUser }) {
 
-  console.log(manga);
+  let manga = []
+  let anime = []
+  let mappedManga = []
+  let mappedAnime = []
 
-  const haveimg = false
+  if (currentUser.username) {
+    if (currentUser.favorited.length > 0) {
+      manga = currentUser.favorited.filter(item => item.type === "manga")
+      anime = currentUser.favorited.filter(item => item.type === "anime")
+      // console.log("manga", manga)
+      // console.log("anime", anime)
+    }
+  }
 
-  const mappedManga = manga.map(item => (
-    <li key={item.id}>
-      <div className='favorite-manga-container'>
-        <div>
-          <NavLink to="/details" onClick={() => setSelectedItem(item)}>
-            <img src={item.attributes.posterImage.tiny} alt={item.attributes.canonicalTitle}></img>
-          </NavLink>
+  if (manga.length > 0) {
+    mappedManga = manga.map(item => (
+      <li key={item.id}>
+        <div className='favorite-manga-container'>
+          <div>
+            <NavLink to="/details" onClick={() => setSelectedItem(item)}>
+              <img src={item.attributes.posterImage.tiny} alt={item.attributes.canonicalTitle}></img>
+            </NavLink>
+          </div>
+          <div className='favorite-manga-title'>
+            <NavLink to="/details" onClick={() => setSelectedItem(item)}>
+              <div>
+                {item.attributes.canonicalTitle}
+              </div>
+            </NavLink>
+          </div>
         </div>
-        <div className='favorite-manga-title'>
-          <NavLink to="/details" onClick={() => setSelectedItem(item)}>
-            {item.attributes.canonicalTitle}
-          </NavLink>
-        </div>
-      </div>
-    </li>
-  ))
+      </li>
+    ))
+  }
 
-  const mappedAnime = anime.map(item => (
-    <li key={item.id}>
-      <div className='favorite-anime-container'>
-        <div>
-          <NavLink to="/details" onClick={() => setSelectedItem(item)}>
-            <img src={item.attributes.posterImage.tiny} alt={item.attributes.canonicalTitle}></img>
-          </NavLink>
+  if (anime.length > 0) {
+    mappedAnime = anime.map(item => (
+      <li key={item.id}>
+        <div className='favorite-anime-container'>
+          <div>
+            <NavLink to="/details" onClick={() => setSelectedItem(item)}>
+              <img src={item.attributes.posterImage.tiny} alt={item.attributes.canonicalTitle}></img>
+            </NavLink>
+          </div>
+          <div className='favorite-anime-title'>
+            <NavLink to="/details" onClick={() => setSelectedItem(item)}>
+              <div>
+                {item.attributes.canonicalTitle}
+              </div>
+            </NavLink>
+          </div>
         </div>
-        <div className='favorite-anime-title'>
-          <NavLink to="/details" onClick={() => setSelectedItem(item)}>
-            {item.attributes.canonicalTitle}
-          </NavLink>
-        </div>
-      </div>
-    </li>
-  ))
+      </li>
+    ))
+  }
 
   return (
     <div id="favorite-page">
@@ -54,8 +72,10 @@ function FavoritedPage({ anime, manga, setSelectedItem, currentUser }) {
             <h1>Favorited Manga</h1>
             <div className="favorited-manga">
               {
-                !haveimg ? (
-                  <div style={{ height: "300px", backgroundColor: "white" }}></div>
+                mappedManga.length === 0 ? (
+                  <div style={{ height: "300px", backgroundColor: "white" }}>
+                    <p>List is empty</p>
+                  </div>
                 ) : (
                   <ul>
                     {mappedManga}
@@ -66,8 +86,10 @@ function FavoritedPage({ anime, manga, setSelectedItem, currentUser }) {
             <h1>Favorited Anime</h1>
             <div className="favorited-anime">
               {
-                !haveimg ? (
-                  <div style={{ height: "300px", backgroundColor: "white" }}></div>
+                mappedAnime.length === 0 ? (
+                  <div style={{ height: "300px", backgroundColor: "white" }}>
+                    <p>List is empty</p>
+                  </div>
                 ) : (
                   <ul>
                     {mappedAnime}

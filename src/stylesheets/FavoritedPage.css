@@ -11,6 +11,17 @@
     margin-bottom: 50px;
 }
 
+.favorited-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.favorited-container a div {
+    overflow-wrap: break-word;
+    inline-size: 110px;
+}
+
+
 .favorited-anime{
     height: auto;
     width: auto;
@@ -24,6 +35,8 @@
 .favorite-anime-container{
     margin: 20px;
 }
+
+
 
 .prompt-login {
     background-image: url('https://c.tenor.com/hbGUzkHNBXgAAAAC/anime-girl.gif');
