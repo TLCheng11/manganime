@@ -47,13 +47,17 @@ function App() {
     .then(res => res.json())
     .then(setAnime)
 
+    
+    setfirstStart(true)
+  }, [])
+  
+  
+  useEffect(() => {
     fetch(`http://localhost:3000/users`)
     .then(res => res.json())
     .then(setUsers)
-
-    setfirstStart(true)
-  }, [])
-
+  }, [currentUser])
+  
   function searchManganime(search) {
     const modifiedQuery = search.toLowerCase().split(" ").join("%20")
     console.log(modifiedQuery)
