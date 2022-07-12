@@ -18,10 +18,10 @@ function MenuBar() {
       <div>
         <nav id="nav-bar">
           <div>
-            <NavLink to="/" onClick={resetMenu} >HomePage</NavLink>
+            <NavLink to="/" onClick={resetMenu} >Top 50 Manga</NavLink>
           </div>
           <div>
-            <NavLink to="/topanime" onClick={resetMenu} >Top 50 anime</NavLink>
+            <NavLink to="/topanime" onClick={resetMenu} >Top 50 Anime</NavLink>
           </div>
           <div>
             <NavLink to="/search" onClick={resetMenu} >Search</NavLink>

@@ -46,6 +46,54 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
     navigate("/")
   }
 
+  function onSignUp() {
+    const name = formInput.username.toLowerCase()
+    if (usersList[name]) {
+      alert("username already taken")
+    } else {
+      if(name.match(/^[\w]*$/g)) {
+        if (name.match(/^[A-Za-z]/g)) {
+          console.log("username ok")
+          if (formInput.password.match(/^[\w\d~!@#$%^&*-=+?]+$/g)) {
+            if (formInput.password.match(/^.{6,18}$/g)) {
+              console.log("password ok")
+              fetch(`http://localhost:3000/users`, {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                  username: name,
+                  password: formInput.password,
+                  favorited: []
+                })
+              })
+              .then(res => res.json())
+              .then(data => {
+                setCurrentUser(data)
+                navigate("/favorited")
+                setFormInput({
+                  username: "",
+                  password: ""
+                })
+                console.log(data)
+              })
+            } else {
+              alert("password need to be between 6 - 18 charaters long")
+            }
+          } else {
+            alert("username can only include alphabet letters, numbers and _~!@#$%^&*-=+?, cannot have space")
+          }
+        } else {
+          alert("username must start with letter")
+        }
+      } else {
+        alert("username can only include alphabet letters, numbers and '_', cannot have space")
+      }
+    }
+  }
+
   return (
     <div id="header">
       <h1 id="header-title">
@@ -78,7 +126,7 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
               </div>
               <div>
                 <input className="btn" type="submit" value="Login" />
-                <input className="btn" type="button" value="Sign up" />
+                <input className="btn" type="button" value="Sign up" onClick={onSignUp} />
               </div>
             </form>
           ) 

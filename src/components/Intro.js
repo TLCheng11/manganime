@@ -8,7 +8,7 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
   // console.log("manga", manga)
   // console.log("anime", anime)
 
-  const body = document.body
+  let body = document.body
   body.style.overflow = firstStart ? "hidden" : "auto"
 
   const elementRef = useRef()
@@ -27,7 +27,7 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
       }
       setImage({backgroundImage : `url(${imageUrl})`})
       console.log(imageUrl)
-    }, 6000);
+    }, 4000);
 
     return () => {
       clearInterval(intervalId)
@@ -35,6 +35,7 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
   }, [])
 
   function enterWebpage() {
+    body = document.body
     body.style.overflow = "auto"
     intro.style.opacity = "0"
     setTimeout(() => {
