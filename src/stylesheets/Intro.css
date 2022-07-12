@@ -1,5 +1,5 @@
 #intro {
-    position: absolute;
+    position: fixed;
     background-color: bisque;
     width: 100%;
     height: 105%;

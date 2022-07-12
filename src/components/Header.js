@@ -31,7 +31,6 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
         .then(data => {
           setCurrentUser(data)
           setFormInput({username: "", password: ""})
-          navigate("/favorited")
         })
       } else {
         alert("Wrong username or password")
