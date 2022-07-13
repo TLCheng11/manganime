@@ -29,7 +29,7 @@ function Container({manganime, setSelectedItem, reset, setReset}) {
             <div className="itemsContainer">
               {
                 manganime.length === 0 ? 
-                <h1>No Search Results</h1> : 
+                <h1>Let us know what you</h1> : 
                 manganime.slice(0, 4).map(item => <Thumbnail key={item.id} item={item} setSelectedItem={setSelectedItem} />)
               }
             </div>
@@ -39,9 +39,12 @@ function Container({manganime, setSelectedItem, reset, setReset}) {
           <div className="book__page book__page--last" onClick={() => setReset(true)}>
             <div className="itemsContainer">
               {
-                Math.ceil(manganime.length / 4) % 2 !== 0 ?
-                <p>Last Page</p> : 
-                manganime.slice(-(manganime.length % 4)).map(item => <Thumbnail key={item.id} item={item} setSelectedItem={setSelectedItem} />)
+                manganime.length === 0 ? 
+                <h1>are searching for...</h1> : (
+                  Math.ceil(manganime.length / 4) % 2 !== 0 ?
+                  <p>Last Page</p> : 
+                  manganime.slice(-(manganime.length % 4)).map(item => <Thumbnail key={item.id} item={item} setSelectedItem={setSelectedItem} />)
+                )
               }
             </div>
             <div className="page__number">
