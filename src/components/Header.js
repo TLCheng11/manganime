@@ -145,11 +145,12 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
             <form id="login-form" onSubmit={onLogin} >
               <div>
                 <label htmlFor="username">Username:</label>
-                <input type="text" id="username" name="username" value={formInput.username} onChange={controlFormInput} required />
+                <input type="text" id="username" name="username" placeholder="Username" value={formInput.username} onChange={controlFormInput} required />
               </div>
               <div>
                 <label htmlFor="password">Password:</label>
-                <input type="password" id="password" name="password" value={formInput.password} onChange={controlFormInput} required />
+                <input type="password" id="password" name="password"
+                placeholder='Password' value={formInput.password} onChange={controlFormInput} required />
               </div>
               <div>
                 <input className="btn" type="submit" value="Login" />
