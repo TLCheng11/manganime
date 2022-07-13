@@ -1,3 +1,4 @@
+/*-------------favorite manga and anime h1-------------*/
 .favorite-h1 {
     font-size: 60px;
     letter-spacing: 7px;
@@ -8,6 +9,7 @@
     color: #ed684a;
 }
 
+/*-------------list of manga and anime (img and-------------*/
 #favorite-page ul{
     list-style-type: none;
     display: flex;
