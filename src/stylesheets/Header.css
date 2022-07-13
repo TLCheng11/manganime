@@ -17,7 +17,7 @@
     user-select: none;
 }
 
-#header-tltle span { 
+#header-title span { 
     display: inline-block; 
     animation: float .2s ease-in-out infinite; 
 }
