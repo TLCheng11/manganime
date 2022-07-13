@@ -50,6 +50,7 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
     intro.style.opacity = "0"
     intro.style.pointerEvents = "none"
     introTitle.style.display = "none"
+    window.scrollTo(0, 0)
     setTimeout(() => {
       intro.style.transition = "opacity 1s"
       intro.style.zIndex = "-200"
