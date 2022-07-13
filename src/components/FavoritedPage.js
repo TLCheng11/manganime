@@ -1,8 +1,11 @@
 import "../stylesheets/FavoritedPage.css"
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 
-function FavoritedPage({ setSelectedItem, currentUser }) {
+function FavoritedPage({ setSelectedItem, currentUser, setLastUrl }) {
+  const location = useLocation()
+  setLastUrl(location.pathname)
+  console.log(location)
 
   let manga = []
   let anime = []

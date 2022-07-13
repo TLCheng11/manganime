@@ -25,6 +25,7 @@ function App() {
   const [anime, setAnime] = useState([])
   const [users, setUsers] = useState([])
   const [currentUser, setCurrentUser] = useState({})
+  const [lastUrl, setLastUrl] = useState("/")
   const [firstStart, setfirstStart] = useState("")
   const navigate = useNavigate()
 
@@ -96,11 +97,11 @@ function App() {
         <Header users={users} usersList={usersList} currentUser={currentUser} setCurrentUser={setCurrentUser} />
         <MenuBar />
         <Routes>
-          <Route path="/" element={<HomePage manga={manga} setSelectedItem={setSelectedItem} />} />
-          <Route path="/search" element={<SearchPage manganime={manganime} setSelectedItem={setSelectedItem} searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />} />
-          <Route path="/details/:id" element={<Details selectedItem={selectedItem} currentUser={currentUser} setCurrentUser={setCurrentUser} favoritedList={favoritedList} />} />
-          <Route path="/topanime" element={<TopAnime anime={anime} setSelectedItem={setSelectedItem}/>} />
-          <Route path="/favorited" element ={<FavoritedPage setSelectedItem={setSelectedItem} currentUser={currentUser}/>}/>
+          <Route path="/" element={<HomePage manga={manga} setSelectedItem={setSelectedItem} setLastUrl={setLastUrl} />} />
+          <Route path="/search" element={<SearchPage manganime={manganime} setSelectedItem={setSelectedItem} searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} setLastUrl={setLastUrl} />} />
+          <Route path="/details/:id" element={<Details selectedItem={selectedItem} currentUser={currentUser} setCurrentUser={setCurrentUser} favoritedList={favoritedList} lastUrl={lastUrl} />} />
+          <Route path="/topanime" element={<TopAnime anime={anime} setSelectedItem={setSelectedItem} setLastUrl={setLastUrl} />} />
+          <Route path="/favorited" element ={<FavoritedPage setSelectedItem={setSelectedItem} currentUser={currentUser} setLastUrl={setLastUrl} />}/>
         </Routes>
     </div>
   );

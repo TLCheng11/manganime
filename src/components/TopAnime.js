@@ -1,11 +1,11 @@
-// import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import '../stylesheets/TopAnime.css'
 
-function TopAnime({ anime, setSelectedItem }) {
-  console.log(anime);
-
+function TopAnime({ anime, setSelectedItem, setLastUrl }) {
   // const [active, setActive] = useState('')
+  const location = useLocation()
+  setLastUrl(location.pathname)
 
   const animeImages = anime.map((item) => (
     <li key={item.id}>

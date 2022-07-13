@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../stylesheets/Details.css'
 
-function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
+function Details({ selectedItem, currentUser, setCurrentUser, favoritedList, lastUrl }) {
   const { id, attributes, links } = selectedItem
   const [favorited, setFavorited] = useState(favoritedList.has(id))
 
@@ -68,13 +68,13 @@ function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
     <div id="detail-outer">
       {
         !currentUser.username ? (
-          <NavLink to="/topanime">
-            <button className='back-button'>Back to anime collection</button>
+          <NavLink to={lastUrl}>
+            <button className='back-button'>Back</button>
           </NavLink>
         ) : (
           <div>
-          <NavLink to="/topanime">
-            <button className='back-button'>Back to anime collection</button>
+          <NavLink to={lastUrl}>
+            <button className='back-button'>Back</button>
           </NavLink>
             {
               !favorited ? (

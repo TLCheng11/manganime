@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import '../stylesheets/HomePage.css'
 
-function HomePage({manga, setSelectedItem}) {
-  // console.log(manga)
+function HomePage({manga, setSelectedItem, setLastUrl}) {
+  const location = useLocation()
+  setLastUrl(location.pathname)
 
   const imageTags = manga.map(item => (
     <li key={item.id}>

@@ -2,9 +2,12 @@ import '../stylesheets/SearchPage.css'
 import SearchBar from './SearchBar';
 import Container from './Container';
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
-function SearchPage({manganime, setSelectedItem, searchManganime, searchType, setSearchType}) {
+function SearchPage({manganime, setSelectedItem, searchManganime, searchType, setSearchType, setLastUrl}) {
   const [reset, setReset] = useState(false)
+  const location = useLocation()
+  setLastUrl(location.pathname)
 
   return (
     <div>
