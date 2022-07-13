@@ -75,6 +75,10 @@ function App() {
     })
     .then(res => res.json())
     .then(data => setManganime(data.data))
+    .catch(error => {
+      console.error(error)
+      alert("cannot find item")
+    })
   }
 
   if (manga.length === 0 || anime.length === 0) {
