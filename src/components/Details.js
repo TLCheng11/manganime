@@ -72,9 +72,9 @@ function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
           <div>
             {
               !favorited ? (
-                <button onClick={addCollection}>Add to my collection</button>
+                <button className='add-button' onClick={addCollection}>Add to my collection</button>
               ) : (
-                <button onClick={removeCollection}>Delete from my collection</button>
+                <button className='remove-button' onClick={removeCollection}>Delete from my collection</button>
               )
             }
           </div>
