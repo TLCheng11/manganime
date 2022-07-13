@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../stylesheets/Details.css'
 
 function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
-  const { id, attributes, type } = selectedItem
+  const { id, attributes, links } = selectedItem
   const [favorited, setFavorited] = useState(favoritedList.has(id))
 
   function addCollection() {
@@ -63,7 +63,6 @@ function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
   //   })
   // }
 
-
   return (
     <div id="detail-outer">
       {
@@ -88,7 +87,6 @@ function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
         <div id="details">
           <h1>{attributes.canonicalTitle}</h1>
           {/* if youtubeVideoId is available then show it, if not return null */}
-          {/* if ageRating is available then show it, if not return null  */}
           {
             attributes.youtubeVideoId ? (
               <iframe src={`//youtube.com/embed/${attributes.youtubeVideoId}`} allowFullScreen></iframe>
@@ -96,6 +94,7 @@ function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
               null
             )
           }
+          {/* if ageRating is available then show it, if not return null  */}
           {
             attributes.ageRating ? (
               <p><span>Rated: </span>{attributes.ageRating}</p>
@@ -132,6 +131,14 @@ function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
           {
             attributes.description ? (
               <p className='description-info'><span>Description:</span> {attributes.description}</p>
+            ) : (
+              null
+            )
+          }
+          {/* if links is available then show it, if not return null */}
+          {
+            links.self ? (
+              <a href={links.self.replace("/api/edge", "")} target="_blank">Read more!</a> 
             ) : (
               null
             )
