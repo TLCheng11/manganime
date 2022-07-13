@@ -23,7 +23,7 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
   function onLogin(e) {
     e.preventDefault()
     if (usersList[formInput.username.toLowerCase()]) {
-      if (usersList[formInput.username.toLowerCase()] === formInput.password) {
+      if (usersList[formInput.username.toLowerCase()] === stringToHashConversion(formInput.password).toString()) {
         console.log("user logged in")
         const id = users.find(user => user.username === formInput.username.toLowerCase()).id
         fetch(`http://localhost:3000/users/${id}`)
@@ -61,6 +61,8 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
             if (formInput.password.match(/^[\w\d~!@#$%^&*-=+?]+$/g)) {
               if (formInput.password.match(/^.{6,18}$/g)) {
                 console.log("password ok")
+                const password = stringToHashConversion(formInput.password).toString()
+                // console.log(password)
                 fetch(`http://localhost:3000/users`, {
                   method: "POST",
                   headers: {
@@ -69,7 +71,7 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
                   },
                   body: JSON.stringify({
                     username: name,
-                    password: formInput.password,
+                    password: password,
                     favorited: []
                   })
                 })
@@ -101,6 +103,21 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
       }
     }
   }
+
+  // conversts to 32bit integer
+  function stringToHashConversion(string) {
+    var hashVal = 0;
+    if (string.length == 0) return hashVal;
+    for (let i = 0; i < string.length; i++) {
+    let char = string.charCodeAt(i);
+    hashVal = ((hashVal << 5) - hashVal) + char;
+    hashVal = hashVal & hashVal;
+      }
+    return hashVal;
+    }
+  // var input_str = "test text";
+  // console.log("Input String: "+input_str);
+  // console.log("Hash Value: " + stringToHashConversion(input_str));
 
   return (
     <div id="header">
