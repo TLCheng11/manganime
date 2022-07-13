@@ -1,3 +1,4 @@
+/*-------------favorite manga and anime h1-------------*/
 .favorite-h1 {
     font-size: 60px;
     letter-spacing: 7px;
@@ -8,6 +9,7 @@
     color: #ed684a;
 }
 
+/*-------------list of manga and anime (img and-------------*/
 #favorite-page ul{
     list-style-type: none;
     display: flex;
@@ -23,8 +25,13 @@
 .favorited-manga {
     height: auto;
     width: auto;
-    background-color: #F3CFC6;
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
     margin-bottom: 0px;
+}
+
+.favorited-manga:first-child{
+    height: 300px;
 }
 
 .favorited-container a {
@@ -38,11 +45,22 @@
     inline-size: 110px;
 }
 
+.favorited-container p{
+    font-size: 40px;
+    line-height: 300px;
+    text-align: center;
+}
+
 
 .favorited-anime{
     height: auto;
     width: auto;
-    background-color: #F3CFC6;
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+.favorited-anime:first-child{
+    height: 300px;
 }
 
 .favorite-manga-container{

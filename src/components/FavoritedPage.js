@@ -73,8 +73,10 @@ function FavoritedPage({ setSelectedItem, currentUser }) {
             <div className="favorited-manga">
               {
                 mappedManga.length === 0 ? (
-                  <div style={{ height: "300px", backgroundColor: "white" }}>
-                    <p>List is empty</p>
+                  <div >
+                  <NavLink to="/">
+                    <p>List is empty, click here to add more</p>
+                  </NavLink>
                   </div>
                 ) : (
                   <ul>
@@ -87,8 +89,10 @@ function FavoritedPage({ setSelectedItem, currentUser }) {
             <div className="favorited-anime">
               {
                 mappedAnime.length === 0 ? (
-                  <div style={{ height: "300px", backgroundColor: "white" }}>
-                    <p>List is empty</p>
+                  <div>
+                  <NavLink to="/topanime">
+                    <p>List is empty, click here to add more</p>
+                  </NavLink>
                   </div>
                 ) : (
                   <ul>
