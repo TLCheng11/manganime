@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../stylesheets/MenuBar.css'
-import searchImg from '../icons/icons8-search.gif'
-import favorImg from '../icons/Button-Favorite-icon.png'
+
 
 function MenuBar() {
   const [style, setStyle] = useState({left: "-120px"})
