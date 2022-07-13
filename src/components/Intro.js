@@ -14,7 +14,8 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
     }
   })
 
-  const [image, setImage] = useState({backgroundImage : `url(${imageBackGround[Math.floor(Math.random() * imageBackGround.length)]})`})
+  // const [image, setImage] = useState({backgroundImage : `url(${imageBackGround[Math.floor(Math.random() * imageBackGround.length)]})`})
+  const [image, setImage] = useState(imageBackGround[Math.floor(Math.random() * imageBackGround.length)])
   let intervalId = 0
   
   
@@ -32,8 +33,9 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
     intervalId = setInterval(() => {
       const randomNum = Math.floor(Math.random() * imageBackGround.length)
       // console.log(randomNum)
-      let imageUrl = imageBackGround[randomNum]
-      setImage({backgroundImage : `url(${imageUrl})`})
+      // let imageUrl = imageBackGround[randomNum]
+      // setImage({backgroundImage : `url(${imageUrl})`})
+      setImage(imageBackGround[randomNum])
       // console.log(imageUrl)
     }, 4000);
 
@@ -58,7 +60,8 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
   }
 
   return (
-    <div id="intro" style={image} ref={introRef}>
+    <div id="intro" ref={introRef}>
+      <img src={image} />
       <div id="intro-title" onClick={enterWebpage} ref={introTitleRef} >
         MANGANIME
       </div>
