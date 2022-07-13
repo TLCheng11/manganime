@@ -75,7 +75,7 @@ function FavoritedPage({ setSelectedItem, currentUser }) {
                 mappedManga.length === 0 ? (
                   <div >
                   <NavLink to="/">
-                    <p>List is empty, add more</p>
+                    <p>List is empty, click here to add more</p>
                   </NavLink>
                   </div>
                 ) : (
@@ -91,7 +91,7 @@ function FavoritedPage({ setSelectedItem, currentUser }) {
                 mappedAnime.length === 0 ? (
                   <div>
                   <NavLink to="/topanime">
-                    <p>List is empty, add more</p>
+                    <p>List is empty, click here to add more</p>
                   </NavLink>
                   </div>
                 ) : (

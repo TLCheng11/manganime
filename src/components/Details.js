@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import '../stylesheets/Details.css'
 
 function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
@@ -67,14 +68,19 @@ function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
     <div id="detail-outer">
       {
         !currentUser.username ? (
-          null
+          <NavLink to="/topanime">
+            <button className='back-button'>Back to anime collection</button>
+          </NavLink>
         ) : (
           <div>
+          <NavLink to="/topanime">
+            <button className='back-button'>Back to anime collection</button>
+          </NavLink>
             {
               !favorited ? (
                 <button className='add-button' onClick={addCollection}>Add to my collection</button>
               ) : (
-                <button className='remove-button' onClick={removeCollection}>Delete from my collection</button>
+                <button className='delete-button' onClick={removeCollection}>Delete from my collection</button>
               )
             }
           </div>
@@ -138,7 +144,9 @@ function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
           {/* if links is available then show it, if not return null */}
           {
             links.self ? (
-              <a href={links.self.replace("/api/edge", "")} target="_blank">Read more!</a> 
+              <p>
+                <a href={links.self.replace("/api/edge", "")} target="_blank">Read more!</a>
+              </p>
             ) : (
               null
             )
