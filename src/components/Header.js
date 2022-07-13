@@ -47,6 +47,8 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
 
   function onSignUp() {
     const name = formInput.username.toLowerCase()
+
+    //check if username meet all requirement
     if (usersList[name]) {
       alert("username already taken")
     } else {
@@ -54,6 +56,8 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
         if (name.match(/^[A-Za-z]/g)) {
           if (name.match(/^.{3,18}$/g)) {
             console.log("username ok")
+
+            //check if password meet all requirement
             if (formInput.password.match(/^[\w\d~!@#$%^&*-=+?]+$/g)) {
               if (formInput.password.match(/^.{6,18}$/g)) {
                 console.log("password ok")
@@ -79,6 +83,7 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
                   })
                   console.log(data)
                 })
+                .catch(console.error)
               } else {
                 alert("password need to be between 6 - 18 charaters")
               }

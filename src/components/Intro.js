@@ -29,6 +29,7 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
   const introTitleRef = useRef()
   const introTitle = introTitleRef.current
 
+  //loop random image
   useEffect(() => {
     intervalId = setInterval(() => {
       const randomNum = Math.floor(Math.random() * imageBackGround.length)

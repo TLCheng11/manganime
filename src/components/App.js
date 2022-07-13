@@ -28,6 +28,7 @@ function App() {
   const [firstStart, setfirstStart] = useState("")
   const navigate = useNavigate()
 
+  //create an object to holde username and password for conditional checking
   const usersList = {}
   if (users.length > 0) {
     users.forEach(user => {
@@ -35,6 +36,7 @@ function App() {
     })
   }
 
+  //create a set for the favored item for conditional checking
   const favoritedList = new Set()
   if (currentUser.favorited) {
     currentUser.favorited.forEach(item => favoritedList.add(item.id))
@@ -44,6 +46,7 @@ function App() {
   console.log("anime", anime)
   // console.log(usersList)
 
+  //to fetch all data once
   useEffect(() => {
     fetch(`http://localhost:3000/manga`)
     .then(res => res.json())
@@ -81,8 +84,9 @@ function App() {
     })
   }
 
+  //if data not return yet, show loading...
   if (manga.length === 0 || anime.length === 0) {
-    return (<p>Loading</p>)
+    return (<p>Loading...</p>)
   }
 
   return (
@@ -94,7 +98,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage manga={manga} setSelectedItem={setSelectedItem} />} />
           <Route path="/search" element={<SearchPage manganime={manganime} setSelectedItem={setSelectedItem} searchManganime={searchManganime} searchType={searchType} setSearchType={setSearchType} />} />
-          <Route path="/details" element={<Details selectedItem={selectedItem} currentUser={currentUser} setCurrentUser={setCurrentUser} favoritedList={favoritedList} />} />
+          <Route path="/details/:id" element={<Details selectedItem={selectedItem} currentUser={currentUser} setCurrentUser={setCurrentUser} favoritedList={favoritedList} />} />
           <Route path="/topanime" element={<TopAnime anime={anime} setSelectedItem={setSelectedItem}/>} />
           <Route path="/favorited" element ={<FavoritedPage setSelectedItem={setSelectedItem} currentUser={currentUser}/>}/>
         </Routes>

@@ -7,6 +7,7 @@ function Container({manganime, setSelectedItem, reset, setReset}) {
   // const manganime = Array.from(Array(50).keys())
   // console.log(manganime)
   
+  //check the number of items can split them into pages
   const pages = manganime.length % 4 !== 0 ? manganime.slice(4, -(manganime.length % 4)) : manganime.slice(4)
 
   const pageTags = []
@@ -25,6 +26,7 @@ function Container({manganime, setSelectedItem, reset, setReset}) {
     <div className='container'>
       <div className="cover">
         <div className="book">
+          {/* put first 4 item on page 1 */}
           <div className="book__page book__page--1" >
             <div className="itemsContainer">
               {
@@ -35,7 +37,7 @@ function Container({manganime, setSelectedItem, reset, setReset}) {
             </div>
             <div className="page__number">1</div>
           </div>
-
+          {/* put last items in last page, if total item / 4 remainer is 0, show Last Page text */}
           <div className="book__page book__page--last" onClick={() => setReset(true)}>
             <div className="itemsContainer">
               {

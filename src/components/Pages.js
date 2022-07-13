@@ -8,6 +8,7 @@ function Pages({items, zIndex, page, setSelectedItem, reset, setReset}) {
   // console.log("inner", elementRef, "div", div)
   // console.log(reset)
 
+  // reset pages order when there is a new item
   useEffect(() => {
     if (reset && div) {
         div.style.transition = "z-index 0.5s, transform 1.5s"
