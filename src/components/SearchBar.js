@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import searchImg from '../icons/icons8-search.gif'
 
 function SearchBar({searchManganime, searchType, setSearchType, setReset}) {
   const [search, setSearch] = useState("")
