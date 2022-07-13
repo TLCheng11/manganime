@@ -46,9 +46,10 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
     // body = document.body
     // body.style.overflow = "auto"
     intro.style.opacity = "0"
+    intro.style.pointerEvents = "none"
+    introTitle.style.display = "none"
     setTimeout(() => {
-      intro.style.pointerEvents = "none"
-      introTitle.style.display = "none"
+      intro.style.transition = "opacity 1s"
       intro.style.zIndex = "-200"
       intro.style.opacity = "0.5"
       // clearInterval(intervalId)
