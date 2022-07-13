@@ -87,7 +87,15 @@ function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
         </div>
         <div id="details">
           <h1>{attributes.canonicalTitle}</h1>
+          {/* if youtubeVideoId is available then show it, if not return null */}
           {/* if ageRating is available then show it, if not return null  */}
+          {
+            attributes.youtubeVideoId ? (
+              <iframe src={`//youtube.com/embed/${attributes.youtubeVideoId}`} allowFullScreen></iframe>
+            ) : (
+              null
+            )
+          }
           {
             attributes.ageRating ? (
               <p><span>Rated: </span>{attributes.ageRating}</p>
@@ -107,7 +115,7 @@ function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
           {/* if startDate is available then show it, if not return null */}
           {
             attributes.startDate ? (
-              <p><span>Start date: </span>{attributes.startDate}</p> 
+              <p><span>Start date: </span>{attributes.startDate}</p>
             ) : (
               null
             )
