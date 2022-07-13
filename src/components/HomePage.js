@@ -9,12 +9,12 @@ function HomePage({manga, setSelectedItem}) {
     <li key={item.id}>
         <div className='li-container'>
           <div className="li-front">
-            <NavLink to="/details" onClick={() => setSelectedItem(item)}>
+            <NavLink to={`/details/${item.id}`} onClick={() => setSelectedItem(item)}>
               <img src={item.attributes.posterImage.small} />
             </NavLink>
           </div>
           <div className="li-back">
-            <NavLink to="/details" onClick={() => setSelectedItem(item)}>
+            <NavLink to={`/details/${item.id}`} onClick={() => setSelectedItem(item)}>
               <h3>{item.attributes.canonicalTitle}</h3>
             </NavLink>
           </div>

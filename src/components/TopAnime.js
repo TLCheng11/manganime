@@ -11,12 +11,12 @@ function TopAnime({ anime, setSelectedItem }) {
     <li key={item.id}>
       <div className='anime-container'>
         <div>
-          <NavLink to="/details" onClick={() => setSelectedItem(item)}>
+          <NavLink to={`/details/${item.id}`} onClick={() => setSelectedItem(item)}>
             <img src={item.attributes.posterImage.small} alt={item.attributes.canonicalTitle}></img>
           </NavLink>
         </div>
         <div className='anime-title'>
-          <NavLink to="/details" onClick={() => setSelectedItem(item)}>
+          <NavLink to={`/details/${item.id}`} onClick={() => setSelectedItem(item)}>
             {item.attributes.canonicalTitle}
           </NavLink>
         </div>

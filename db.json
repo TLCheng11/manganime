@@ -20792,6 +20792,201 @@
             }
           },
           "rank": "2"
+        },
+        {
+          "id": "16084",
+          "type": "manga",
+          "links": {
+            "self": "https://kitsu.io/api/edge/manga/16084"
+          },
+          "attributes": {
+            "createdAt": "2013-12-18T14:00:47.386Z",
+            "updatedAt": "2022-07-10T22:39:17.008Z",
+            "slug": "bungou-stray-dogs",
+            "synopsis": "Having been kicked out of the orphanage, a despairing young man by the name of Atsushi Nakajima rescues a strange man from a suicide attempt--Osamu Dazai. Turns out that Dazai is part of an armed-detective agency staffed by individuals whose supernatural powers take on a literary bent!\n\n(Source: Yen Press)",
+            "description": "Having been kicked out of the orphanage, a despairing young man by the name of Atsushi Nakajima rescues a strange man from a suicide attempt--Osamu Dazai. Turns out that Dazai is part of an armed-detective agency staffed by individuals whose supernatural powers take on a literary bent!\n\n(Source: Yen Press)",
+            "coverImageTopOffset": 520,
+            "titles": {
+              "en_jp": "Bungou Stray Dogs",
+              "ja_jp": "文豪ストレイドッグス"
+            },
+            "canonicalTitle": "Bungou Stray Dogs",
+            "abbreviatedTitles": [],
+            "averageRating": "82.61",
+            "ratingFrequencies": {
+              "2": "131",
+              "3": "0",
+              "4": "7",
+              "5": "5",
+              "6": "10",
+              "7": "1",
+              "8": "103",
+              "9": "2",
+              "10": "22",
+              "11": "5",
+              "12": "60",
+              "13": "8",
+              "14": "375",
+              "15": "26",
+              "16": "259",
+              "17": "44",
+              "18": "224",
+              "19": "30",
+              "20": "1252"
+            },
+            "userCount": 5059,
+            "favoritesCount": 163,
+            "startDate": "2012-12-04",
+            "endDate": null,
+            "nextRelease": null,
+            "popularityRank": 150,
+            "ratingRank": 82,
+            "ageRating": "PG",
+            "ageRatingGuide": "Teens 13 or older",
+            "subtype": "manga",
+            "status": "current",
+            "tba": null,
+            "posterImage": {
+              "tiny": "https://media.kitsu.io/manga/poster_images/16084/tiny.jpg",
+              "large": "https://media.kitsu.io/manga/poster_images/16084/large.jpg",
+              "small": "https://media.kitsu.io/manga/poster_images/16084/small.jpg",
+              "medium": "https://media.kitsu.io/manga/poster_images/16084/medium.jpg",
+              "original": "https://media.kitsu.io/manga/poster_images/16084/original.jpg",
+              "meta": {
+                "dimensions": {
+                  "tiny": {
+                    "width": null,
+                    "height": null
+                  },
+                  "large": {
+                    "width": null,
+                    "height": null
+                  },
+                  "small": {
+                    "width": null,
+                    "height": null
+                  },
+                  "medium": {
+                    "width": null,
+                    "height": null
+                  }
+                }
+              }
+            },
+            "coverImage": {
+              "tiny": "https://media.kitsu.io/manga/cover_images/16084/tiny.jpg",
+              "large": "https://media.kitsu.io/manga/cover_images/16084/large.jpg",
+              "small": "https://media.kitsu.io/manga/cover_images/16084/small.jpg",
+              "original": "https://media.kitsu.io/manga/cover_images/16084/original.png",
+              "meta": {
+                "dimensions": {
+                  "tiny": {
+                    "width": null,
+                    "height": null
+                  },
+                  "large": {
+                    "width": null,
+                    "height": null
+                  },
+                  "small": {
+                    "width": null,
+                    "height": null
+                  }
+                }
+              }
+            },
+            "chapterCount": null,
+            "volumeCount": 0,
+            "serialization": "Young Ace",
+            "mangaType": "manga"
+          },
+          "relationships": {
+            "genres": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/genres",
+                "related": "https://kitsu.io/api/edge/manga/16084/genres"
+              }
+            },
+            "categories": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/categories",
+                "related": "https://kitsu.io/api/edge/manga/16084/categories"
+              }
+            },
+            "castings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/castings",
+                "related": "https://kitsu.io/api/edge/manga/16084/castings"
+              }
+            },
+            "installments": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/installments",
+                "related": "https://kitsu.io/api/edge/manga/16084/installments"
+              }
+            },
+            "mappings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/mappings",
+                "related": "https://kitsu.io/api/edge/manga/16084/mappings"
+              }
+            },
+            "reviews": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/reviews",
+                "related": "https://kitsu.io/api/edge/manga/16084/reviews"
+              }
+            },
+            "mediaRelationships": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/media-relationships",
+                "related": "https://kitsu.io/api/edge/manga/16084/media-relationships"
+              }
+            },
+            "characters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/characters",
+                "related": "https://kitsu.io/api/edge/manga/16084/characters"
+              }
+            },
+            "staff": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/staff",
+                "related": "https://kitsu.io/api/edge/manga/16084/staff"
+              }
+            },
+            "productions": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/productions",
+                "related": "https://kitsu.io/api/edge/manga/16084/productions"
+              }
+            },
+            "quotes": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/quotes",
+                "related": "https://kitsu.io/api/edge/manga/16084/quotes"
+              }
+            },
+            "chapters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/chapters",
+                "related": "https://kitsu.io/api/edge/manga/16084/chapters"
+              }
+            },
+            "mangaCharacters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/manga-characters",
+                "related": "https://kitsu.io/api/edge/manga/16084/manga-characters"
+              }
+            },
+            "mangaStaff": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/16084/relationships/manga-staff",
+                "related": "https://kitsu.io/api/edge/manga/16084/manga-staff"
+              }
+            }
+          },
+          "rank": "50"
         }
       ]
     },

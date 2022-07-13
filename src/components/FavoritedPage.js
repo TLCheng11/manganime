@@ -23,12 +23,12 @@ function FavoritedPage({ setSelectedItem, currentUser }) {
       <li key={item.id}>
         <div className='favorite-manga-container'>
           <div>
-            <NavLink to="/details" onClick={() => setSelectedItem(item)}>
+            <NavLink to={`/details/${item.id}`} onClick={() => setSelectedItem(item)}>
               <img src={item.attributes.posterImage.tiny} alt={item.attributes.canonicalTitle}></img>
             </NavLink>
           </div>
           <div className='favorite-manga-title'>
-            <NavLink to="/details" onClick={() => setSelectedItem(item)}>
+            <NavLink to={`/details/${item.id}`} onClick={() => setSelectedItem(item)}>
               <div>
                 {item.attributes.canonicalTitle}
               </div>
@@ -44,12 +44,12 @@ function FavoritedPage({ setSelectedItem, currentUser }) {
       <li key={item.id}>
         <div className='favorite-anime-container'>
           <div>
-            <NavLink to="/details" onClick={() => setSelectedItem(item)}>
+            <NavLink to={`/details/${item.id}`} onClick={() => setSelectedItem(item)}>
               <img src={item.attributes.posterImage.tiny} alt={item.attributes.canonicalTitle}></img>
             </NavLink>
           </div>
           <div className='favorite-anime-title'>
-            <NavLink to="/details" onClick={() => setSelectedItem(item)}>
+            <NavLink to={`/details/${item.id}`} onClick={() => setSelectedItem(item)}>
               <div>
                 {item.attributes.canonicalTitle}
               </div>

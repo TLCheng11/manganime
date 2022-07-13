@@ -11,7 +11,7 @@ function Thumbnail({item, setSelectedItem}) {
   return (
     <div className="item">
       <h5 className="item-title">{itemTitle}</h5>
-      <NavLink to="/details">
+      <NavLink to={`/details/${item.id}`}>
         <img src={attributes.posterImage.tiny} alt={attributes.posterImage.tiny} onClick={() => setSelectedItem(item)} />
       </NavLink>
     </div>
