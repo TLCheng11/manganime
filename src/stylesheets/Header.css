@@ -63,6 +63,7 @@
 
 #login-status {
     position: absolute;
+    top: 20px;
     right: 2%;
     height: 20%;
     min-height: 150px;
@@ -75,6 +76,13 @@
 #login-form {
     display: flex;
     flex-direction: column;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+#login-form input{
+    margin-bottom: 7px;
+    margin-left: 10px;
 }
 
 #logout {
@@ -89,17 +97,33 @@
 
 .btn {
     text-decoration: none;
-    background-color: rgb(174, 175, 224);
-    border: 1px solid rgb(146, 148, 248);
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+    border-radius: 8px;
     position: relative;
     overflow: hidden;
     height: 100%;
     top: 35%;
     margin: 5px;
+    text-align: center;  
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    padding: 5px;
 }
   
 .btn:hover {
-    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .btn:before {

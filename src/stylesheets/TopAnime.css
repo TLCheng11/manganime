@@ -1,25 +1,20 @@
-/* body{
-    background-color: #f8a5c3;
-} */
-
-/* split screen container */
-
-/* .left-panel {
-    width: 50%;
-    float: left;
-    height: 100%;
-    background-color: #282828;
-    z-index: 1010101010
+/*-------------top 50 anime title -------------*/
+#top-anime h1{
+    font-size: 60px;
+    letter-spacing: 7px;
 }
-  
-.right-panel {
-    width: 50%;
-    float: left;
-    height: 100%;
-    background-color: #0080ff;
-    z-index: 1010101010
-} */
 
+/*-------------containers for all 50 anime/hover effect-------------*/
+#top-anime ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    list-style-type: none;
+    gap: 20px 20px;
+}
+
+#top-anime li img{
+    border-radius: 10px;
+}
 .anime-container {
     display: flex;
     flex-direction: column;
@@ -48,18 +43,4 @@
     font-weight: bold;
 }
 
-#top-anime ul{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    list-style-type: none;
-    gap: 20px 20px;
-}
 
-#top-anime li img{
-    border-radius: 10px;
-}
-
-#top-anime h1{
-    font-size: 60px;
-    letter-spacing: 7px;
-}
