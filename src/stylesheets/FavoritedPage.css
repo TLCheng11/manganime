@@ -1,19 +1,36 @@
+.favorite-h1 {
+    font-size: 60px;
+    letter-spacing: 7px;
+    transition: color 350ms;
+}
+
+.favorite-h1:hover{
+    color: #ed684a;
+}
+
 #favorite-page ul{
     list-style-type: none;
     display: flex;
     overflow: auto;
 }
 
+#favorite-page img{
+    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+    margin-bottom: 5px;
+}
+
+
 .favorited-manga {
     height: auto;
     width: auto;
-    background-color: white;
-    margin-bottom: 50px;
+    background-color: #F3CFC6;
+    margin-bottom: 0px;
 }
 
 .favorited-container a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 .favorited-container a div {
@@ -25,17 +42,28 @@
 .favorited-anime{
     height: auto;
     width: auto;
-    background-color: white;
+    background-color: #F3CFC6;
 }
 
 .favorite-manga-container{
+    padding: 30px 0;
     margin: 20px;
+    transition: transform 250ms;       
+}
+
+.favorite-manga-container:hover{
+    transform: scale(1.2);
 }
 
 .favorite-anime-container{
+    padding: 30px 0;
     margin: 20px;
+    transition: transform 250ms;
 }
 
+.favorite-anime-container:hover{
+    transform: scale(1.2);
+}
 
 
 .prompt-login {

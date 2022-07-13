@@ -8,7 +8,7 @@
 #details-container {
   display: flex;
   width: 80%;
-  height: 80vh;
+  height: 70vh;
   position: relative;
 }
 
@@ -26,4 +26,21 @@
 #details {
   width: 50%;
   height: 100%;
+  background-color: #F3CFC6;
+  overflow: auto;
+  border-style: solid
 }
+
+#details{
+  font-size: 20px;
+}
+
+#details span{
+  font-weight: bold;
+  color: #F88379;
+}
+
+.description-word {
+  font-weight: bold;
+}
+

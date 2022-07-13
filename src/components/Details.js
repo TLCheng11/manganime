@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import '../stylesheets/Details.css'
 
-function Details({selectedItem, currentUser, setCurrentUser, favoritedList}) {
-  const {id, attributes, type} = selectedItem
+function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
+  const { id, attributes, type } = selectedItem
   const [favorited, setFavorited] = useState(favoritedList.has(id))
 
   function addCollection() {
@@ -20,12 +20,12 @@ function Details({selectedItem, currentUser, setCurrentUser, favoritedList}) {
       },
       body: JSON.stringify(updatedFavorite)
     })
-    .then(res => res.json())
-    .then(data => {
-      setCurrentUser(data)
-      setFavorited(true)
-    })
-    .catch(console.error)
+      .then(res => res.json())
+      .then(data => {
+        setCurrentUser(data)
+        setFavorited(true)
+      })
+      .catch(console.error)
   }
 
   function removeCollection() {
@@ -40,12 +40,12 @@ function Details({selectedItem, currentUser, setCurrentUser, favoritedList}) {
       },
       body: JSON.stringify(updatedFavorite)
     })
-    .then(res => res.json())
-    .then(data => {
-      setCurrentUser(data)
-      setFavorited(false)
-    })
-    .catch(console.error)
+      .then(res => res.json())
+      .then(data => {
+        setCurrentUser(data)
+        setFavorited(false)
+      })
+      .catch(console.error)
   }
 
   //temporay function to edit our own json
@@ -87,6 +87,48 @@ function Details({selectedItem, currentUser, setCurrentUser, favoritedList}) {
         </div>
         <div id="details">
           <h1>{attributes.canonicalTitle}</h1>
+          {/* if ageRating is available then show it, if not return null  */}
+          {
+            attributes.ageRating ? (
+              <p><span>Rated: </span>{attributes.ageRating}</p>
+            ) : (
+              null
+            )
+          }
+          {/* if averageRating is available then show it, if not return null*/}
+          {
+            attributes.averageRating ? (
+              <p><span>Rating: </span> {attributes.averageRating}</p>
+            ) : (
+              null
+            )
+          }
+
+          {/* if startDate is available then show it, if not return null */}
+          {
+            attributes.startDate ? (
+              <p><span>Start date: </span>{attributes.startDate}</p> 
+            ) : (
+              null
+            )
+          }
+          {/* if endDate is available then show it, if not return "on-going" */}
+          {
+            attributes.endDate ? (
+              <p><span>End date: </span>{attributes.endDate}</p>
+            ) : (
+              <p><span>End date: On-going </span></p>
+            )
+          }
+          {/* if description is available then show it, if not return null */}
+          {
+            attributes.description ? (
+              <p className='description-info'><span>Description:</span> {attributes.description}</p>
+            ) : (
+              null
+            )
+          }
+          {/* if serialization */}
           {/* temporay form for adding data base */}
           {/* <form onSubmit={addDataToJson}>
             <label htmlFor="rank">Rank:</label>

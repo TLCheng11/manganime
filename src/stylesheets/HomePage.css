@@ -11,6 +11,10 @@ body{
   background-color: #7a93ac;
 }
 
+#homepage h1{
+  font-size: 60px;
+  letter-spacing: 7px;
+}
 
 #homepage ul{
   display:grid;

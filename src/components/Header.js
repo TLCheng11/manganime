@@ -96,6 +96,7 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
   return (
     <div id="header">
       <h1 id="header-title">
+      <NavLink to="/">
         <span>M</span>
         <span>A</span>
         <span>N</span>
@@ -105,6 +106,7 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
         <span>I</span>
         <span>M</span>
         <span>E</span>
+      </NavLink>
       </h1>
       <div id="login-status">
         {currentUser.username ?
