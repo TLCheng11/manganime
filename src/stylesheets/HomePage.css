@@ -1,3 +1,8 @@
+/* @font-face {
+  font-family: 'Cute-Dinosaur';
+  src: url(https://dl.dropboxusercontent.com/s/eym6v4qa7c3hi64/Cute%20Dinosaur.ttf?dl=0);
+} */
+
 :root {
   --columns: 17;
   --yellow: rgba(238, 188, 31, 1);
@@ -13,7 +18,13 @@ body{
 
 #homepage h1{
   font-size: 60px;
-  letter-spacing: 7px;
+}
+
+#kawaii-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #homepage ul{

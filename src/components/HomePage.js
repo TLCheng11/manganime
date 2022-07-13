@@ -24,7 +24,7 @@ function HomePage({manga, setSelectedItem}) {
 
   return (
     <div id="homepage">
-      <h1>50 Most Popular Manga</h1>
+        <h1>50 Most Popular Manga</h1>
       <ul>
         {imageTags}
       </ul>
