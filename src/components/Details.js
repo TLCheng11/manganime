@@ -1,10 +1,20 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import '../stylesheets/Details.css'
 
-function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
+function Details({ selectedItem, setSelectedItem, currentUser, setCurrentUser, favoritedList, lastUrl }) {
+  const param = useParams()
   const { id, attributes, links } = selectedItem
   const [favorited, setFavorited] = useState(favoritedList.has(id))
+
+
+  if (selectedItem.id !== param.id) {
+    fetch(`http://localhost:3000/anime?id=${param.id}`)
+    .then(res => res.json())
+    .then(data => setSelectedItem(data[0]))
+    return <p>Loading....</p>
+  }
+
 
   function addCollection() {
     const updatedFavorite = {
@@ -68,13 +78,13 @@ function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
     <div id="detail-outer">
       {
         !currentUser.username ? (
-          <NavLink to="/topanime">
-            <button className='back-button'>Back to anime collection</button>
+          <NavLink to={lastUrl}>
+            <button className='back-button'>Back</button>
           </NavLink>
         ) : (
           <div>
-          <NavLink to="/topanime">
-            <button className='back-button'>Back to anime collection</button>
+          <NavLink to={lastUrl}>
+            <button className='back-button'>Back</button>
           </NavLink>
             {
               !favorited ? (
@@ -95,7 +105,7 @@ function Details({ selectedItem, currentUser, setCurrentUser, favoritedList }) {
           {/* if youtubeVideoId is available then show it, if not return null */}
           {
             attributes.youtubeVideoId ? (
-              <iframe src={`//youtube.com/embed/${attributes.youtubeVideoId}`} allowFullScreen></iframe>
+              <iframe src={`//youtube.com/embed/${attributes.youtubeVideoId}`} width="65%" height="45%" allowFullScreen></iframe>
             ) : (
               null
             )
