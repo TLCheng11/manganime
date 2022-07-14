@@ -72,7 +72,7 @@ function FavoritedPage({ setSelectedItem, currentUser, setLastUrl }) {
           </div>
         ) : (
           <div className="favorited-container">
-            <h1 className="favorite-h1">🌸 Favorited Manga 🌸</h1>
+            <h1 className="favorite-h1">Favorited Manga</h1>
             <div className="favorited-manga">
               {
                 mappedManga.length === 0 ? (
@@ -88,7 +88,7 @@ function FavoritedPage({ setSelectedItem, currentUser, setLastUrl }) {
                 )
               }
             </div>
-            <h1 className="favorite-h1">🌸 Favorited Anime 🌸</h1>
+            <h1 className="favorite-h1">Favorited Anime</h1>
             <div className="favorited-anime">
               {
                 mappedAnime.length === 0 ? (
