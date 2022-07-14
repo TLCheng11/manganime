@@ -27,13 +27,14 @@ function TopAnime({ anime, setSelectedItem, setLastUrl }) {
   return (
     <div id="top-anime">
       <h1>50 Most Popular Anime</h1>
-      
         <div className='split-container'>
           <div className='left-panel'>
             <div className='left-wrapper'>
               <div className='left-content'>
                 <h3>Demon Slayer</h3>
+                <NavLink to="/details/44081">
                 <button className='check-button'>Check out</button>
+                </NavLink>
               </div>
             </div>
           </div>
@@ -41,7 +42,9 @@ function TopAnime({ anime, setSelectedItem, setLastUrl }) {
             <div className='right-wrapper'>
               <div className='right-content'>
                 <h3>Attack on Titan</h3>
+              <NavLink to="/details/7442">
                 <button className='check-button'>Check out</button>
+              </NavLink>  
               </div>
             </div>
           </div>
