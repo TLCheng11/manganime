@@ -2,8 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 import '../stylesheets/Intro.css'
 import musicLink from '../audio/Rhythm-Emotion-128-kbps-s.shabakngy.com.mp3'
 import gif1 from '../gif/attack-on-titan.gif'
-import gif2 from '../gif/sakura.gif'
-import gif3 from '../gif/evangelion-logo.gif'
+import gif2 from '../gif/golbin-slayer.gif'
+import gif3 from '../gif/eva-1.gif'
+import gif3a from '../gif/eva-2.gif'
+import gif3b from '../gif/naruto.gif'
+import gif3c from '../gif/anime-demon-slayer.gif'
+import gif3d from '../gif/one-punch-man.gif'
 import gif4 from '../gif/code-geass-fight.gif'
 import gif5 from '../gif/code-geass-zero.gif'
 import gif6 from '../gif/gundam-wing-start.gif'
@@ -38,6 +42,10 @@ function Intro({manga, anime}) {
   const gif1Ref = useRef()
   const gif2Ref = useRef()
   const gif3Ref = useRef()
+  const gif3aRef = useRef()
+  const gif3bRef = useRef()
+  const gif3cRef = useRef()
+  const gif3dRef = useRef()
   const gif4Ref = useRef()
   const gif5Ref = useRef()
   const gif6Ref = useRef()
@@ -106,18 +114,42 @@ function Intro({manga, anime}) {
     timerIds.current.push(setTimeout(() => {
       gif1Ref.current.style.opacity = "0"
       // console.log("3.5s")
-    }, 3000))
+    }, 2500))
     timerIds.current.push(setTimeout(() => {
       gif2Ref.current.style.opacity = "1"
-    }, 3500))
+    }, 3000))
     timerIds.current.push(setTimeout(() => {
       gif2Ref.current.style.opacity = "0"
-    }, 10500))
+    }, 5500))
     timerIds.current.push(setTimeout(() => {
       gif3Ref.current.style.opacity = "1"
-    }, 10000))
+    }, 5000))
     timerIds.current.push(setTimeout(() => {
       gif3Ref.current.style.opacity = "0"
+    }, 9000))
+    timerIds.current.push(setTimeout(() => {
+      gif3aRef.current.style.opacity = "1"
+    }, 8500))
+    timerIds.current.push(setTimeout(() => {
+      gif3aRef.current.style.opacity = "0"
+    }, 10500))
+    timerIds.current.push(setTimeout(() => {
+      gif3bRef.current.style.opacity = "1"
+    }, 10000))
+    timerIds.current.push(setTimeout(() => {
+      gif3bRef.current.style.opacity = "0"
+    }, 12500))
+    timerIds.current.push(setTimeout(() => {
+      gif3cRef.current.style.opacity = "1"
+    }, 12000))
+    timerIds.current.push(setTimeout(() => {
+      gif3cRef.current.style.opacity = "0"
+    }, 15500))
+    timerIds.current.push(setTimeout(() => {
+      gif3dRef.current.style.opacity = "1"
+    }, 15000))
+    timerIds.current.push(setTimeout(() => {
+      gif3dRef.current.style.opacity = "0"
     }, 17500))
     timerIds.current.push(setTimeout(() => {
       gif4Ref.current.style.opacity = "1"
@@ -159,6 +191,10 @@ function Intro({manga, anime}) {
           <img id="gif-1" src={gif1} ref={gif1Ref} />
           <img id="gif-2" src={gif2} ref={gif2Ref} />
           <img id="gif-3" src={gif3} ref={gif3Ref} />
+          <img id="gif-3a" src={gif3a} ref={gif3aRef} />
+          <img id="gif-3b" src={gif3b} ref={gif3bRef} />
+          <img id="gif-3c" src={gif3c} ref={gif3cRef} />
+          <img id="gif-3d" src={gif3d} ref={gif3dRef} />
           <img id="gif-4" src={gif4} ref={gif4Ref} />
           <img id="gif-5" src={gif5} ref={gif5Ref} />
           <img id="gif-6" src={gif6} ref={gif6Ref} />
