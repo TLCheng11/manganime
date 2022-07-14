@@ -87,6 +87,7 @@ function Intro({manga, anime}) {
 
   function skipIntro() {
     console.log(timerIds)
+    videobgRef.current.style.pointerEvents = "none"
     timerIds.current.forEach(id => {
       clearInterval(id)
     })
@@ -177,10 +178,10 @@ function Intro({manga, anime}) {
     }, 26000))
     timerIds.current.push(setTimeout(() => {
       videobgRef.current.style.opacity = "0"
-    }, 28400))
+    }, 28000))
     timerIds.current.push(setTimeout(() => {
       videobgRef.current.style.zIndex = "-500"
-    }, 32000))
+    }, 30000))
   }
 
   return (
