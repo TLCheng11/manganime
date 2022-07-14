@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import '../stylesheets/App.css';
 import Intro from './Intro';
@@ -9,6 +9,7 @@ import MenuBar from './MenuBar';
 import Details from './Details';
 import TopAnime from './TopAnime';
 import FavoritedPage from './FavoritedPage';
+
 
 function App() {
   const [manganime, setManganime] = useState([])
@@ -28,7 +29,8 @@ function App() {
   const [lastUrl, setLastUrl] = useState("/")
   const [firstStart, setfirstStart] = useState("")
   const navigate = useNavigate()
-
+  
+  
   //create an object to holde username and password for conditional checking
   const usersList = {}
   if (users.length > 0) {
@@ -36,30 +38,32 @@ function App() {
       usersList[user.username] = user.password
     })
   }
-
+  
   //create a set for the favored item for conditional checking
   const favoritedList = new Set()
   if (currentUser.favorited) {
     currentUser.favorited.forEach(item => favoritedList.add(item.id))
   }
 
+  
   console.log("mange", manga)
   console.log("anime", anime)
   // console.log(usersList)
-
+  
   //to fetch all data once
   useEffect(() => {
     fetch(`http://localhost:3000/manga`)
     .then(res => res.json())
     .then(setManga)
-
+    
     fetch(`http://localhost:3000/anime`)
     .then(res => res.json())
     .then(setAnime)
-
+    
     navigate("/")
     setfirstStart(true)
   }, [])
+  
   
   useEffect(() => {
     fetch(`http://localhost:3000/users`)
