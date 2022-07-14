@@ -27,7 +27,6 @@ function App() {
   const [users, setUsers] = useState([])
   const [currentUser, setCurrentUser] = useState({})
   const [lastUrl, setLastUrl] = useState("/")
-  const [firstStart, setfirstStart] = useState("")
   const navigate = useNavigate()
   
   
@@ -61,7 +60,6 @@ function App() {
     .then(setAnime)
     
     navigate("/")
-    setfirstStart(true)
   }, [])
   
   
@@ -97,7 +95,7 @@ function App() {
   return (
     <div className="App">
         {/* {firstStart ? <Intro manga={manga} anime={anime} firstStart={firstStart} setfirstStart={setfirstStart} /> : null} */}
-        <Intro manga={manga} anime={anime} firstStart={firstStart} setfirstStart={setfirstStart} />
+        <Intro manga={manga} anime={anime} />
         <Header users={users} usersList={usersList} currentUser={currentUser} setCurrentUser={setCurrentUser} />
         <MenuBar />
         <Routes>

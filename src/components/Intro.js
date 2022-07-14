@@ -9,7 +9,9 @@ import gif5 from '../gif/code-geass-zero.gif'
 import gif6 from '../gif/gundam-wing-start.gif'
 import gif7 from '../gif/slam-dunk.gif'
 
-function Intro({manga, anime, firstStart, setfirstStart}) {
+function Intro({manga, anime}) {
+  const [firstStart, setfirstStart] = useState(true)
+
   const imageBackGround = []
   manga.forEach(item => {
     if (item.attributes.coverImage) {
@@ -65,22 +67,14 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
   }, [])
 
   function enterWebpage() {
-    musicElementRef.current.play()
-    startIntroVideo()
-    window.scrollTo(0, 0)
-    introTitle.style.display = "none"
-    timerIds.current.push(setTimeout(() => {
-      window.scrollTo(0, 0)
-      intro.style.opacity = "0"
-      intro.style.zIndex = "-200"
-    }, 28000))
-    timerIds.current.push(setTimeout(() => {
-      intro.style.pointerEvents = "none"
-      intro.style.transition = "opacity 1s"
-      // clearInterval(intervalId)
-      intro.style.opacity = "0.5"
-      setfirstStart(false)
-    }, 29500))
+    if (introTitle) {
+      musicElementRef.current.play()
+      startIntroVideo()
+      introTitle.style.display = "none"
+      timerIds.current.push(setTimeout(() => {
+        skipIntro()
+      }, 27600))
+    }
   }
 
   function skipIntro() {
@@ -88,7 +82,6 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
     timerIds.current.forEach(id => {
       clearInterval(id)
     })
-    introTitle.style.display = "none"
     window.scrollTo(0, 0)
     setTimeout(() => {
       intro.style.opacity = "0"
@@ -113,10 +106,10 @@ function Intro({manga, anime, firstStart, setfirstStart}) {
     timerIds.current.push(setTimeout(() => {
       gif1Ref.current.style.opacity = "0"
       // console.log("3.5s")
-    }, 5500))
+    }, 3000))
     timerIds.current.push(setTimeout(() => {
       gif2Ref.current.style.opacity = "1"
-    }, 5000))
+    }, 3500))
     timerIds.current.push(setTimeout(() => {
       gif2Ref.current.style.opacity = "0"
     }, 10500))
