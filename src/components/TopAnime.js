@@ -27,14 +27,26 @@ function TopAnime({ anime, setSelectedItem, setLastUrl }) {
   return (
     <div id="top-anime">
       <h1>50 Most Popular Anime</h1>
-      {/* <div className='split-container'>
-        <div className='left-panel'>
-          <h1>First anime</h1>
+      
+        <div className='split-container'>
+          <div className='left-panel'>
+            <div className='left-wrapper'>
+              <div className='left-content'>
+                <h3>Demon Slayer</h3>
+                <button className='check-button'>Check out</button>
+              </div>
+            </div>
+          </div>
+          <div className='right-panel'>
+            <div className='right-wrapper'>
+              <div className='right-content'>
+                <h3>Attack on Titan</h3>
+                <button className='check-button'>Check out</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className='right-panel'>
-          <h1>Second anime</h1>
-        </div>
-      </div> */}
+
       <ul>
         {animeImages}
       </ul>

@@ -4,12 +4,90 @@
     letter-spacing: 7px;
 }
 
+/*-------------split screen---------------*/
+.split-container{
+    display: flex;
+    overflow-x: hidden;
+}
+
+.split-container h3{
+    color: white;
+    font-size: 4rem;
+    text-shadow: 0 0 5px black;
+    letter-spacing: 8px;
+}
+
+.check-button {
+    background: transparent;
+    background-color: #000;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+}
+
+.left-panel{
+    background-color: white;
+    width: 50%;
+    height: 50vh;
+}
+
+.left-wrapper{
+    background-image: url(https://c.tenor.com/4fQvKUNaJJoAAAAC/tengen-uzui-gyutaro.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%
+}
+
+.left-content,.right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.right-panel{
+    background-color: white;
+    width: 50%;
+    height: 50vh;
+}
+
+.right-wrapper{
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/865109381804523912/6BD383ED7F144DA949461E14771947F64A96BD3A/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%
+}
+
+.left-panel, .left-content, .right-panel, .right-content{
+    transition: all 0.6s ease-in-out;
+}
+
+.left-panel:hover{
+    width: 90%;
+}
+
+.left-panel:hover .left-content{
+    transform: scale(1.2,1.2);
+}
+
+.right-panel:hover{
+    width: 90%;
+}
+
+.right-panel:hover .right-content{
+    transform: scale(1.2,1.2);
+}
 /*-------------containers for all 50 anime/hover effect-------------*/
 #top-anime ul{
     display: grid;
     grid-template-columns: auto auto auto auto;
     list-style-type: none;
-    gap: 20px 20px;
+    gap: 30px 15px;
 }
 
 #top-anime li img{

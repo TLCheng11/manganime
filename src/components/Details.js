@@ -95,7 +95,7 @@ function Details({ selectedItem, currentUser, setCurrentUser, favoritedList, las
           {/* if youtubeVideoId is available then show it, if not return null */}
           {
             attributes.youtubeVideoId ? (
-              <iframe src={`//youtube.com/embed/${attributes.youtubeVideoId}`} allowFullScreen></iframe>
+              <iframe src={`//youtube.com/embed/${attributes.youtubeVideoId}`} width="65%" height="45%" allowFullScreen></iframe>
             ) : (
               null
             )

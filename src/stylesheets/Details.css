@@ -25,7 +25,7 @@
 }
 
 .add-button {
-  width: 200px;
+  width: 250px;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
@@ -51,9 +51,7 @@
 }
 
 .delete-button {
-  position: relative;
-  top: -10px;
-  width: 200px;
+  width: 250px;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
@@ -71,7 +69,7 @@
   box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 }
 
-.remove-button:hover {
+.delete-button:hover {
   background-position: 100% 0;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
