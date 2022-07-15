@@ -140,7 +140,7 @@ function Details({ selectedItem, setSelectedItem, currentUser, setCurrentUser, f
             attributes.endDate ? (
               <p><span>End date: </span>{attributes.endDate}</p>
             ) : (
-              <p><span>End date: On-going </span></p>
+              <p><span>End date: </span> On-going</p>
             )
           }
           {/* if description is available then show it, if not return null */}
