@@ -15,7 +15,7 @@ top 50 mangas. The same applies to our extensive animes to choose from!
 
 - Before utilizing the features of our website, users must create an account in order to add or delete manga/anime from their
 favorites list. The username must be 3-18 characters and start with a letter. The password requires users to enter 6-18
-characters.
+characters. When the user is not logged in, there will be a fantastic gif prompting them to make an account.
 
 - To make the process easier for users, we have displayed the top 50 manga and anime on separate pages in a creative fashion.
 When you select the manga/anime card you will be led to a page that displays details such as the title, rating, description,
