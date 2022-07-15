@@ -14,6 +14,7 @@ body{
 #homepage h1{
   font-size: 60px;
   letter-spacing: 7px;
+  transition: color 350ms;
 }
 
 #homepage h1:hover{
