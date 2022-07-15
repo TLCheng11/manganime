@@ -4,7 +4,7 @@
 
 ``` Run "json-server --watch db.json" ```
 
-``` Run "npm install" followed by "npm run server" and "npm start". ```
+``` Run "npm install" followed by "npm start". ```
 
 # Introduction 
 
