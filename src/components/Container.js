@@ -13,12 +13,16 @@ function Container({manganime, setSelectedItem, reset, setReset}) {
   const pageTags = []
 
   for (let i = 0; i < pages.length; i += 8) {
-    if (i + 8 >= pages.length && Math.ceil(manganime.length / 4) % 2 !== 0) {
-      const cur_pages = manganime.slice(i + 4)
-      pageTags.push(<Pages key={i} items={cur_pages} zIndex={manganime.length - i} page={(i + 4) / 4 + 2} setSelectedItem={setSelectedItem} reset={reset} setReset={setReset} />)
+    if (i + 4 >= pages.length && Math.ceil(manganime.length / 4) % 2 !== 0) {
+      const cur_pages = pages.slice(i)
+      if (cur_pages.length > 0){
+        pageTags.push(<Pages key={i} items={cur_pages} zIndex={manganime.length - i} page={(i + 4) / 4 + 2} setSelectedItem={setSelectedItem} reset={reset} setReset={setReset} />)
+      }
     } else {
       const cur_pages = pages.slice(i, i + 8)
-      pageTags.push(<Pages key={i} items={cur_pages} zIndex={manganime.length - i} page={(i + 4) / 4 + 2} setSelectedItem={setSelectedItem} reset={reset} setReset={setReset} />)
+      if (cur_pages.length > 4) {
+        pageTags.push(<Pages key={i} items={cur_pages} zIndex={manganime.length - i} page={(i + 4) / 4 + 2} setSelectedItem={setSelectedItem} reset={reset} setReset={setReset} />)
+      }
     }
   }
 
@@ -45,7 +49,7 @@ function Container({manganime, setSelectedItem, reset, setReset}) {
                 <h1>are searching for...</h1> : (
                   Math.ceil(manganime.length / 4) % 2 !== 0 ?
                   <p>Last Page</p> : 
-                  manganime.slice(-(manganime.length % 4)).map(item => <Thumbnail key={item.id} item={item} setSelectedItem={setSelectedItem} />)
+                  manganime.slice(manganime.length - (manganime.length % 4 === 0 ? 4 : manganime.length % 4)).map(item => <Thumbnail key={item.id} item={item} setSelectedItem={setSelectedItem} />)
                 )
               }
             </div>
