@@ -16,6 +16,10 @@ body{
   letter-spacing: 7px;
 }
 
+#homepage h1:hover{
+  color: #ed684a;
+}
+
 #homepage ul{
   display:grid;
   grid-template-columns: repeat(var(--columns),1fr);

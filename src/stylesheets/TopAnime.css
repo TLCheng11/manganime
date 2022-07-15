@@ -4,6 +4,10 @@
     letter-spacing: 7px;
 }
 
+#top-anime h1:hover {
+    color: #ed684a;
+}
+
 /*-------------split screen---------------*/
 .split-container {
     display: flex;

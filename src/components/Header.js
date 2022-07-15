@@ -1,14 +1,28 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import '../stylesheets/Header.css'
 
-function Header({users, usersList, currentUser, setCurrentUser}) {
+function Header({users, usersList, currentUser, setCurrentUser, music}) {
   const [formInput, setFormInput] = useState({
     username: "",
     password: ""
   })
 
+  const playBtnRef = useRef() 
   let navigate = useNavigate()
+
+  if (playBtnRef.current) {
+    playBtnRef.current.classList.toggle("paused")
+  }
+
+  function playMusic(e) {
+    e.target.classList.toggle("paused")
+    if (!music.paused) {
+      music.pause()
+    } else {
+      music.play()
+    }
+  }
 
   // console.log(formInput)
 
@@ -121,6 +135,7 @@ function Header({users, usersList, currentUser, setCurrentUser}) {
 
   return (
     <div id="header">
+      <button className="play-btn" ref={playBtnRef} onClick={playMusic} ></button>
       <h1 id="header-title">
       <NavLink to="/">
         <span>M</span>

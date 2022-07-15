@@ -26,6 +26,7 @@ function App() {
   const [anime, setAnime] = useState([])
   const [users, setUsers] = useState([])
   const [currentUser, setCurrentUser] = useState({})
+  const [music, setMusic] = useState("")
   const [lastUrl, setLastUrl] = useState("/")
   const navigate = useNavigate()
   
@@ -48,6 +49,7 @@ function App() {
   console.log("mange", manga)
   console.log("anime", anime)
   // console.log(usersList)
+  // console.log(music)
   
   //to fetch all data once
   useEffect(() => {
@@ -95,8 +97,8 @@ function App() {
   return (
     <div className="App">
         {/* {firstStart ? <Intro manga={manga} anime={anime} firstStart={firstStart} setfirstStart={setfirstStart} /> : null} */}
-        <Intro manga={manga} anime={anime} />
-        <Header users={users} usersList={usersList} currentUser={currentUser} setCurrentUser={setCurrentUser} />
+        <Intro manga={manga} anime={anime} setMusic={setMusic} />
+        <Header users={users} usersList={usersList} currentUser={currentUser} setCurrentUser={setCurrentUser} music={music} />
         <MenuBar />
         <Routes>
           <Route path="/" element={<HomePage manga={manga} setSelectedItem={setSelectedItem} setLastUrl={setLastUrl} />} />

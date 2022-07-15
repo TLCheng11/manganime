@@ -13,7 +13,7 @@ import gif5 from '../gif/code-geass-zero.gif'
 import gif6 from '../gif/gundam-wing-start.gif'
 import gif7 from '../gif/slam-dunk.gif'
 
-function Intro({manga, anime}) {
+function Intro({manga, anime, setMusic}) {
   const [firstStart, setfirstStart] = useState(true)
 
   const imageBackGround = []
@@ -77,6 +77,7 @@ function Intro({manga, anime}) {
   function enterWebpage() {
     if (introTitle) {
       musicElementRef.current.play()
+      setMusic(musicElementRef.current)
       startIntroVideo()
       introTitle.style.display = "none"
       timerIds.current.push(setTimeout(() => {
