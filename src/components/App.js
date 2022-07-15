@@ -82,10 +82,17 @@ function App() {
       }
     })
     .then(res => res.json())
-    .then(data => setManganime(data.data))
+    .then(data => {
+      if (data.data.length > 0) {
+        setManganime(data.data)
+      } else {
+        setManganime(data.data)
+        alert("no search result")
+      }
+    })
     .catch(error => {
       console.error(error)
-      alert("cannot find item")
+      alert("no search result")
     })
   }
 
