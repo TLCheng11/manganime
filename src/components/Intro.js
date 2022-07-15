@@ -16,6 +16,7 @@ import gif7 from '../gif/slam-dunk.gif'
 function Intro({manga, anime, setMusic}) {
   const [firstStart, setfirstStart] = useState(true)
 
+  //to find all available image and put into and array
   const imageBackGround = []
   manga.forEach(item => {
     if (item.attributes.coverImage) {
@@ -30,7 +31,6 @@ function Intro({manga, anime, setMusic}) {
 
   // const [image, setImage] = useState({backgroundImage : `url(${imageBackGround[Math.floor(Math.random() * imageBackGround.length)]})`})
   const [image, setImage] = useState(imageBackGround[Math.floor(Math.random() * imageBackGround.length)])
-  let intervalId = 0
   
   
   // console.log("manga", manga)
@@ -60,7 +60,7 @@ function Intro({manga, anime, setMusic}) {
 
   //loop random image
   useEffect(() => {
-    intervalId = setInterval(() => {
+    const intervalId = setInterval(() => {
       const randomNum = Math.floor(Math.random() * imageBackGround.length)
       // console.log(randomNum)
       // let imageUrl = imageBackGround[randomNum]
@@ -100,7 +100,6 @@ function Intro({manga, anime, setMusic}) {
     setTimeout(() => {
       intro.style.pointerEvents = "none"
       intro.style.transition = "opacity 1s"
-      // clearInterval(intervalId)
       intro.style.opacity = "0.5"
       setfirstStart(false)
     }, 1500)
@@ -109,13 +108,12 @@ function Intro({manga, anime, setMusic}) {
   //function to start intro video
   function startIntroVideo() {
     videobgRef.current.style.zIndex = "500"
+    videobgRef.current.style.opacity = "1"
     timerIds.current.push(setTimeout(() => {
       gif1Ref.current.style.opacity = "1"
-      // console.log("1s")
     }, 1000))
     timerIds.current.push(setTimeout(() => {
       gif1Ref.current.style.opacity = "0"
-      // console.log("3.5s")
     }, 2500))
     timerIds.current.push(setTimeout(() => {
       gif2Ref.current.style.opacity = "1"
@@ -190,17 +188,17 @@ function Intro({manga, anime, setMusic}) {
       {
         firstStart ? (
         <div id="video-background" ref={videobgRef} onClick={skipIntro} >
-          <img id="gif-1" src={gif1} ref={gif1Ref} />
-          <img id="gif-2" src={gif2} ref={gif2Ref} />
-          <img id="gif-3" src={gif3} ref={gif3Ref} />
-          <img id="gif-3a" src={gif3a} ref={gif3aRef} />
-          <img id="gif-3b" src={gif3b} ref={gif3bRef} />
-          <img id="gif-3c" src={gif3c} ref={gif3cRef} />
-          <img id="gif-3d" src={gif3d} ref={gif3dRef} />
-          <img id="gif-4" src={gif4} ref={gif4Ref} />
-          <img id="gif-5" src={gif5} ref={gif5Ref} />
-          <img id="gif-6" src={gif6} ref={gif6Ref} />
-          <img id="gif-7" src={gif7} ref={gif7Ref} />
+          <img id="gif-1" src={gif1} ref={gif1Ref} alt={gif1} />
+          <img id="gif-2" src={gif2} ref={gif2Ref} alt={gif2} />
+          <img id="gif-3" src={gif3} ref={gif3Ref} alt={gif3}/>
+          <img id="gif-3a" src={gif3a} ref={gif3aRef} alt={gif3a} />
+          <img id="gif-3b" src={gif3b} ref={gif3bRef} alt={gif3b} />
+          <img id="gif-3c" src={gif3c} ref={gif3cRef} alt={gif3c} />
+          <img id="gif-3d" src={gif3d} ref={gif3dRef} alt={gif3d} />
+          <img id="gif-4" src={gif4} ref={gif4Ref} alt={gif4} />
+          <img id="gif-5" src={gif5} ref={gif5Ref} alt={gif5} />
+          <img id="gif-6" src={gif6} ref={gif6Ref} alt={gif6} />
+          <img id="gif-7" src={gif7} ref={gif7Ref} alt={gif7} />
         </div>
         ) : (
           null

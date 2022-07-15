@@ -54,6 +54,7 @@
     background-color: black;
     z-index: 0;
     transition: opacity 2s;
+    opacity: 0;
   }
 
   #video-background img {
