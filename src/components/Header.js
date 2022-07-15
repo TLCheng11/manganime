@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import '../stylesheets/Header.css'
 
@@ -11,9 +11,11 @@ function Header({users, usersList, currentUser, setCurrentUser, music}) {
   const playBtnRef = useRef() 
   let navigate = useNavigate()
 
-  if (playBtnRef.current) {
-    playBtnRef.current.classList.toggle("paused")
-  }
+  useEffect(() => {
+    if (playBtnRef.current) {
+      playBtnRef.current.classList.toggle("paused")
+    }
+  }, [])
 
   function playMusic(e) {
     e.target.classList.toggle("paused")
