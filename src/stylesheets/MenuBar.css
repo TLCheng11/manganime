@@ -59,7 +59,11 @@
     height: 80%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+}
+
+#nav-bar div {
+    height: 25%;
+    min-height: 120px;
 }
 
 #arrow-div {
