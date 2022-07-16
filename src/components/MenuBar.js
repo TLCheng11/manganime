@@ -16,34 +16,34 @@ function MenuBar() {
 
   return (
     <div id="menu-bar" style={style}>
-      <div>
-        <nav id="nav-bar">
-          <div>
-            <NavLink to="/" onClick={resetMenu} >
-            <h3>Top 50 Manga</h3>
-              <img src="https://img.icons8.com/plasticine/100/000000/comics-magazine.png" alt="book-icon" />
-            </NavLink>
-          </div>
-          <div>
-            <NavLink to="/topanime" onClick={resetMenu} >
-              <h3>Top 50 Anime</h3>
-              <img src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-tv-ads-icongeek26-linear-colour-icongeek26.png" alt="tv-icon" />
-            </NavLink>
-          </div>
-          <div>
-            <NavLink to="/search" onClick={resetMenu} >
-              <h3>Search</h3>
-              <img src="https://img.icons8.com/bubbles/100/000000/google-web-search.png" alt="search-icon" />
-            </NavLink>
-          </div>
-          <div>
-            <NavLink to="/favorited" onClick={resetMenu} >
-              <h3>Favorited</h3>
-              <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-favorite-ui-and-ux-xnimrodx-lineal-color-xnimrodx.png" alt="favor-icon" />
-            </NavLink>
-          </div>
-        </nav>
-      </div>
+        <div id="nav-warpper">
+          <nav id="nav-bar">
+            <div>
+              <NavLink to="/" onClick={resetMenu} >
+              <h3>Top 50 Manga</h3>
+                <img src="https://img.icons8.com/plasticine/100/000000/comics-magazine.png" alt="book-icon" />
+              </NavLink>
+            </div>
+            <div>
+              <NavLink to="/topanime" onClick={resetMenu} >
+                <h3>Top 50 Anime</h3>
+                <img src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-tv-ads-icongeek26-linear-colour-icongeek26.png" alt="tv-icon" />
+              </NavLink>
+            </div>
+            <div>
+              <NavLink to="/search" onClick={resetMenu} >
+                <h3>Search</h3>
+                <img src="https://img.icons8.com/bubbles/100/000000/google-web-search.png" alt="search-icon" />
+              </NavLink>
+            </div>
+            <div>
+              <NavLink to="/favorited" onClick={resetMenu} >
+                <h3>Favorited</h3>
+                <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-favorite-ui-and-ux-xnimrodx-lineal-color-xnimrodx.png" alt="favor-icon" />
+              </NavLink>
+            </div>
+          </nav>
+        </div>
       <div id="arrow-div" onClick={onRightArrowClick}>
         {style.left === "-120px" ?
           <img 
