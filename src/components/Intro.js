@@ -204,7 +204,7 @@ function Intro({manga, anime, setMusic}) {
           null
         )
       }
-      <audio autoPlay controls loop id="background-music" type="audio/mpeg" src={musicLink} ref={musicElementRef} ></audio>
+      <audio controls loop id="background-music" type="audio/mpeg" src={musicLink} ref={musicElementRef} ></audio>
       <img src={image} />
       <div id="intro-title" onClick={enterWebpage} ref={introTitleRef} >
         MANGANIME

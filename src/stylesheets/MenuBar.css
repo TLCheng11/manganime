@@ -23,11 +23,12 @@
     opacity: 0.9;
 }
 
-#nar-bar {
+#nav-bar {
     /* content display */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: auto;
 }
 
 #arrow-div {

@@ -20576,7 +20576,415 @@
       "id": 1,
       "username": "tony",
       "password": "-1013080478",
-      "favorited": []
+      "favorited": [
+        {
+          "id": "1456",
+          "type": "manga",
+          "links": {
+            "self": "https://kitsu.io/api/edge/manga/1456"
+          },
+          "attributes": {
+            "createdAt": "2013-12-18T13:49:26.209Z",
+            "updatedAt": "2022-07-10T18:00:09.787Z",
+            "slug": "vinland-saga",
+            "synopsis": "Thorfinn is the son to one of the Viking's greatest warriors, but when his father is killed in battle by the mercenary leader Askeladd, he swears his intent to have revenge. Thorfinn joins Askeladd's group in order to challenge him to a duel and ends up caught in the middle of a war for the crown of England.\n\n(Source: Anime News Network)",
+            "description": "Thorfinn is the son to one of the Viking's greatest warriors, but when his father is killed in battle by the mercenary leader Askeladd, he swears his intent to have revenge. Thorfinn joins Askeladd's group in order to challenge him to a duel and ends up caught in the middle of a war for the crown of England.\n\n(Source: Anime News Network)",
+            "coverImageTopOffset": 250,
+            "titles": {
+              "en": "Vinland Saga",
+              "en_jp": "Vinland Saga",
+              "ja_jp": "ヴィンランド・サガ"
+            },
+            "canonicalTitle": "Vinland Saga",
+            "abbreviatedTitles": [],
+            "averageRating": "82.81",
+            "ratingFrequencies": {
+              "2": "333",
+              "3": "4",
+              "4": "12",
+              "5": "1",
+              "6": "9",
+              "7": "1",
+              "8": "238",
+              "9": "7",
+              "10": "39",
+              "11": "7",
+              "12": "73",
+              "13": "8",
+              "14": "496",
+              "15": "30",
+              "16": "650",
+              "17": "148",
+              "18": "1077",
+              "19": "165",
+              "20": "2270"
+            },
+            "userCount": 9918,
+            "favoritesCount": 539,
+            "startDate": "2005-07-15",
+            "endDate": null,
+            "nextRelease": null,
+            "popularityRank": 57,
+            "ratingRank": 53,
+            "ageRating": "G",
+            "ageRatingGuide": null,
+            "subtype": "manga",
+            "status": "current",
+            "tba": null,
+            "posterImage": {
+              "tiny": "https://media.kitsu.io/manga/poster_images/1456/tiny.jpg",
+              "large": "https://media.kitsu.io/manga/poster_images/1456/large.jpg",
+              "small": "https://media.kitsu.io/manga/poster_images/1456/small.jpg",
+              "medium": "https://media.kitsu.io/manga/poster_images/1456/medium.jpg",
+              "original": "https://media.kitsu.io/manga/poster_images/1456/original.jpg",
+              "meta": {
+                "dimensions": {
+                  "tiny": {
+                    "width": 110,
+                    "height": 156
+                  },
+                  "large": {
+                    "width": 550,
+                    "height": 780
+                  },
+                  "small": {
+                    "width": 284,
+                    "height": 402
+                  },
+                  "medium": {
+                    "width": 390,
+                    "height": 554
+                  }
+                }
+              }
+            },
+            "coverImage": {
+              "tiny": "https://media.kitsu.io/manga/cover_images/1456/tiny.jpg",
+              "large": "https://media.kitsu.io/manga/cover_images/1456/large.jpg",
+              "small": "https://media.kitsu.io/manga/cover_images/1456/small.jpg",
+              "original": "https://media.kitsu.io/manga/cover_images/1456/original.jpg",
+              "meta": {
+                "dimensions": {
+                  "tiny": {
+                    "width": null,
+                    "height": null
+                  },
+                  "large": {
+                    "width": null,
+                    "height": null
+                  },
+                  "small": {
+                    "width": null,
+                    "height": null
+                  }
+                }
+              }
+            },
+            "chapterCount": null,
+            "volumeCount": 0,
+            "serialization": "Afternoon",
+            "mangaType": "manga"
+          },
+          "relationships": {
+            "genres": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/genres",
+                "related": "https://kitsu.io/api/edge/manga/1456/genres"
+              }
+            },
+            "categories": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/categories",
+                "related": "https://kitsu.io/api/edge/manga/1456/categories"
+              }
+            },
+            "castings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/castings",
+                "related": "https://kitsu.io/api/edge/manga/1456/castings"
+              }
+            },
+            "installments": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/installments",
+                "related": "https://kitsu.io/api/edge/manga/1456/installments"
+              }
+            },
+            "mappings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/mappings",
+                "related": "https://kitsu.io/api/edge/manga/1456/mappings"
+              }
+            },
+            "reviews": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/reviews",
+                "related": "https://kitsu.io/api/edge/manga/1456/reviews"
+              }
+            },
+            "mediaRelationships": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/media-relationships",
+                "related": "https://kitsu.io/api/edge/manga/1456/media-relationships"
+              }
+            },
+            "characters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/characters",
+                "related": "https://kitsu.io/api/edge/manga/1456/characters"
+              }
+            },
+            "staff": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/staff",
+                "related": "https://kitsu.io/api/edge/manga/1456/staff"
+              }
+            },
+            "productions": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/productions",
+                "related": "https://kitsu.io/api/edge/manga/1456/productions"
+              }
+            },
+            "quotes": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/quotes",
+                "related": "https://kitsu.io/api/edge/manga/1456/quotes"
+              }
+            },
+            "chapters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/chapters",
+                "related": "https://kitsu.io/api/edge/manga/1456/chapters"
+              }
+            },
+            "mangaCharacters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/manga-characters",
+                "related": "https://kitsu.io/api/edge/manga/1456/manga-characters"
+              }
+            },
+            "mangaStaff": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/1456/relationships/manga-staff",
+                "related": "https://kitsu.io/api/edge/manga/1456/manga-staff"
+              }
+            }
+          },
+          "rank": "10"
+        },
+        {
+          "id": "12",
+          "type": "anime",
+          "links": {
+            "self": "https://kitsu.io/api/edge/anime/12"
+          },
+          "attributes": {
+            "createdAt": "2013-02-20T16:00:25.722Z",
+            "updatedAt": "2022-07-15T16:45:48.101Z",
+            "slug": "one-piece",
+            "synopsis": "Gol D. Roger was known as the \"Pirate King,\" the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the existence of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece—which promises an unlimited amount of riches and fame—and quite possibly the pinnacle of glory and the title of the Pirate King.\nEnter Monkey D. Luffy, a 17-year-old boy who defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate ransacking villages for fun, Luffy’s reason for being a pirate is one of pure wonder: the thought of an exciting adventure that leads him to intriguing people and ultimately, the promised treasure. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach the most coveted of all fortunes—One Piece.\n[Written by MAL Rewrite]",
+            "description": "Gol D. Roger was known as the \"Pirate King,\" the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the existence of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece—which promises an unlimited amount of riches and fame—and quite possibly the pinnacle of glory and the title of the Pirate King.\nEnter Monkey D. Luffy, a 17-year-old boy who defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate ransacking villages for fun, Luffy’s reason for being a pirate is one of pure wonder: the thought of an exciting adventure that leads him to intriguing people and ultimately, the promised treasure. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach the most coveted of all fortunes—One Piece.\n[Written by MAL Rewrite]",
+            "coverImageTopOffset": 50,
+            "titles": {
+              "en": "One Piece",
+              "en_jp": "One Piece",
+              "ja_jp": "ONE PIECE"
+            },
+            "canonicalTitle": "One Piece",
+            "abbreviatedTitles": [
+              "ワンピース"
+            ],
+            "averageRating": "83.18",
+            "ratingFrequencies": {
+              "2": "7964",
+              "3": "175",
+              "4": "582",
+              "5": "119",
+              "6": "513",
+              "7": "113",
+              "8": "9095",
+              "9": "150",
+              "10": "1664",
+              "11": "238",
+              "12": "2793",
+              "13": "294",
+              "14": "20484",
+              "15": "664",
+              "16": "7607",
+              "17": "1152",
+              "18": "8144",
+              "19": "1114",
+              "20": "86516"
+            },
+            "userCount": 186101,
+            "favoritesCount": 6578,
+            "startDate": "1999-10-20",
+            "endDate": null,
+            "nextRelease": "2022-07-17T09:30:00.000+09:00",
+            "popularityRank": 14,
+            "ratingRank": 33,
+            "ageRating": "PG",
+            "ageRatingGuide": "Teens 13 or older",
+            "subtype": "TV",
+            "status": "current",
+            "tba": null,
+            "posterImage": {
+              "tiny": "https://media.kitsu.io/anime/poster_images/12/tiny.jpg",
+              "large": "https://media.kitsu.io/anime/poster_images/12/large.jpg",
+              "small": "https://media.kitsu.io/anime/poster_images/12/small.jpg",
+              "medium": "https://media.kitsu.io/anime/poster_images/12/medium.jpg",
+              "original": "https://media.kitsu.io/anime/poster_images/12/original.png",
+              "meta": {
+                "dimensions": {
+                  "tiny": {
+                    "width": 110,
+                    "height": 156
+                  },
+                  "large": {
+                    "width": 550,
+                    "height": 780
+                  },
+                  "small": {
+                    "width": 284,
+                    "height": 402
+                  },
+                  "medium": {
+                    "width": 390,
+                    "height": 554
+                  }
+                }
+              }
+            },
+            "coverImage": {
+              "tiny": "https://media.kitsu.io/anime/12/cover_image/tiny-cd1b0729d5c15400bfa2441ea3751e86.jpeg",
+              "large": "https://media.kitsu.io/anime/12/cover_image/large-3e72f400a87b5241780c5082f0582611.jpeg",
+              "small": "https://media.kitsu.io/anime/12/cover_image/small-8d0cbc39cac65d5d7c4db5f5b3742ae7.jpeg",
+              "original": "https://media.kitsu.io/anime/12/cover_image/21ecb556255bd46b95aea4779d19789f.jpg",
+              "meta": {
+                "dimensions": {
+                  "tiny": {
+                    "width": 840,
+                    "height": 200
+                  },
+                  "large": {
+                    "width": 3360,
+                    "height": 800
+                  },
+                  "small": {
+                    "width": 1680,
+                    "height": 400
+                  }
+                }
+              }
+            },
+            "episodeCount": null,
+            "episodeLength": 24,
+            "totalLength": 28560,
+            "youtubeVideoId": "CmTeYj2FmRc",
+            "showType": "TV",
+            "nsfw": false
+          },
+          "relationships": {
+            "genres": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/genres",
+                "related": "https://kitsu.io/api/edge/anime/12/genres"
+              }
+            },
+            "categories": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/categories",
+                "related": "https://kitsu.io/api/edge/anime/12/categories"
+              }
+            },
+            "castings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/castings",
+                "related": "https://kitsu.io/api/edge/anime/12/castings"
+              }
+            },
+            "installments": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/installments",
+                "related": "https://kitsu.io/api/edge/anime/12/installments"
+              }
+            },
+            "mappings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/mappings",
+                "related": "https://kitsu.io/api/edge/anime/12/mappings"
+              }
+            },
+            "reviews": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/reviews",
+                "related": "https://kitsu.io/api/edge/anime/12/reviews"
+              }
+            },
+            "mediaRelationships": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/media-relationships",
+                "related": "https://kitsu.io/api/edge/anime/12/media-relationships"
+              }
+            },
+            "characters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/characters",
+                "related": "https://kitsu.io/api/edge/anime/12/characters"
+              }
+            },
+            "staff": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/staff",
+                "related": "https://kitsu.io/api/edge/anime/12/staff"
+              }
+            },
+            "productions": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/productions",
+                "related": "https://kitsu.io/api/edge/anime/12/productions"
+              }
+            },
+            "quotes": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/quotes",
+                "related": "https://kitsu.io/api/edge/anime/12/quotes"
+              }
+            },
+            "episodes": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/episodes",
+                "related": "https://kitsu.io/api/edge/anime/12/episodes"
+              }
+            },
+            "streamingLinks": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/streaming-links",
+                "related": "https://kitsu.io/api/edge/anime/12/streaming-links"
+              }
+            },
+            "animeProductions": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/anime-productions",
+                "related": "https://kitsu.io/api/edge/anime/12/anime-productions"
+              }
+            },
+            "animeCharacters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/anime-characters",
+                "related": "https://kitsu.io/api/edge/anime/12/anime-characters"
+              }
+            },
+            "animeStaff": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/12/relationships/anime-staff",
+                "related": "https://kitsu.io/api/edge/anime/12/anime-staff"
+              }
+            }
+          }
+        }
+      ]
     },
     {
       "username": "alanxu123",
@@ -25014,6 +25422,639 @@
       "password": "1450573470",
       "favorited": [],
       "id": 5
+    },
+    {
+      "username": "pedroescobar",
+      "password": "41372454",
+      "favorited": [
+        {
+          "id": "44081",
+          "type": "anime",
+          "links": {
+            "self": "https://kitsu.io/api/edge/anime/44081"
+          },
+          "attributes": {
+            "createdAt": "2021-02-15T11:33:43.860Z",
+            "updatedAt": "2022-07-11T01:02:34.230Z",
+            "slug": "kimetsu-no-yaiba-yuukaku-hen",
+            "synopsis": "After visiting the Rengoku residence, Tanjirou and his comrades volunteer for a mission within the Entertainment District, a place where desires are sold and demons dwell. They journey alongside the flashy Sound Hashira, Tengen Uzui, in search of a monstrous foe terrorizing the town. Sworn to slay creatures of the night, the hunt continues.\n\n(Source: Funimation)",
+            "description": "After visiting the Rengoku residence, Tanjirou and his comrades volunteer for a mission within the Entertainment District, a place where desires are sold and demons dwell. They journey alongside the flashy Sound Hashira, Tengen Uzui, in search of a monstrous foe terrorizing the town. Sworn to slay creatures of the night, the hunt continues.\n\n(Source: Funimation)",
+            "coverImageTopOffset": 0,
+            "titles": {
+              "en": "Demon Slayer: Kimetsu no Yaiba - Entertainment District Arc",
+              "en_jp": "Kimetsu no Yaiba: Yuukaku-hen",
+              "ja_jp": "鬼滅の刃 遊郭編"
+            },
+            "canonicalTitle": "Kimetsu no Yaiba: Yuukaku-hen",
+            "abbreviatedTitles": [
+              "Kimetsu no Yaiba 2",
+              "Demon Slayer: Kimetsu no Yaiba Season 2",
+              "Demon Slayer 2",
+              "Demon Slayer: Kimetsu no Yaiba - Yuukaku-hen"
+            ],
+            "averageRating": "87.77",
+            "ratingFrequencies": {
+              "2": "1029",
+              "3": "23",
+              "4": "90",
+              "5": "24",
+              "6": "81",
+              "7": "39",
+              "8": "1482",
+              "9": "44",
+              "10": "211",
+              "11": "65",
+              "12": "289",
+              "13": "105",
+              "14": "5622",
+              "15": "234",
+              "16": "1380",
+              "17": "593",
+              "18": "1914",
+              "19": "510",
+              "20": "25623"
+            },
+            "userCount": 0,
+            "favoritesCount": 0,
+            "startDate": "2021-12-05",
+            "endDate": "2022-02-13",
+            "nextRelease": null,
+            "popularityRank": 18959,
+            "ratingRank": 1,
+            "ageRating": "R",
+            "ageRatingGuide": "17+ (violence & profanity)",
+            "subtype": "TV",
+            "status": "finished",
+            "tba": null,
+            "posterImage": {
+              "tiny": "https://media.kitsu.io/anime/44081/poster_image/tiny-c052e6ebd373b5d9975a272ac1bffba2.jpeg",
+              "large": "https://media.kitsu.io/anime/44081/poster_image/large-049ba5097e6d6dbb515a0584a7ccd3b2.jpeg",
+              "small": "https://media.kitsu.io/anime/44081/poster_image/small-bad9c70bdbe84bdc00b0704fb54c4f9f.jpeg",
+              "medium": "https://media.kitsu.io/anime/44081/poster_image/medium-41a407e1e475b4d99ba5569c6d7dd6bd.jpeg",
+              "original": "https://media.kitsu.io/anime/44081/poster_image/4b749200e30cbdb20ab4ef2c6961688b.jpg",
+              "meta": {
+                "dimensions": {
+                  "tiny": {
+                    "width": 110,
+                    "height": 156
+                  },
+                  "large": {
+                    "width": 550,
+                    "height": 780
+                  },
+                  "small": {
+                    "width": 284,
+                    "height": 402
+                  },
+                  "medium": {
+                    "width": 390,
+                    "height": 554
+                  }
+                }
+              }
+            },
+            "coverImage": {
+              "tiny": "https://media.kitsu.io/anime/44081/cover_image/tiny-f039c84e130ebb9c0453016e58cc6241.jpeg",
+              "large": "https://media.kitsu.io/anime/44081/cover_image/large-a5ef1fa23f686e8f2b11f4d33fe38b92.jpeg",
+              "small": "https://media.kitsu.io/anime/44081/cover_image/small-840ec82f0786fef4c1b53f91029c3923.jpeg",
+              "original": "https://media.kitsu.io/anime/44081/cover_image/76f0b283fe588a7b0c4782d4c2dc9b99.jpg",
+              "meta": {
+                "dimensions": {
+                  "tiny": {
+                    "width": 840,
+                    "height": 200
+                  },
+                  "large": {
+                    "width": 3360,
+                    "height": 800
+                  },
+                  "small": {
+                    "width": 1680,
+                    "height": 400
+                  }
+                }
+              }
+            },
+            "episodeCount": 11,
+            "episodeLength": null,
+            "totalLength": 0,
+            "youtubeVideoId": "XoJCOAU_72U",
+            "showType": "TV",
+            "nsfw": false
+          },
+          "relationships": {
+            "genres": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/genres",
+                "related": "https://kitsu.io/api/edge/anime/44081/genres"
+              }
+            },
+            "categories": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/categories",
+                "related": "https://kitsu.io/api/edge/anime/44081/categories"
+              }
+            },
+            "castings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/castings",
+                "related": "https://kitsu.io/api/edge/anime/44081/castings"
+              }
+            },
+            "installments": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/installments",
+                "related": "https://kitsu.io/api/edge/anime/44081/installments"
+              }
+            },
+            "mappings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/mappings",
+                "related": "https://kitsu.io/api/edge/anime/44081/mappings"
+              }
+            },
+            "reviews": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/reviews",
+                "related": "https://kitsu.io/api/edge/anime/44081/reviews"
+              }
+            },
+            "mediaRelationships": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/media-relationships",
+                "related": "https://kitsu.io/api/edge/anime/44081/media-relationships"
+              }
+            },
+            "characters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/characters",
+                "related": "https://kitsu.io/api/edge/anime/44081/characters"
+              }
+            },
+            "staff": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/staff",
+                "related": "https://kitsu.io/api/edge/anime/44081/staff"
+              }
+            },
+            "productions": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/productions",
+                "related": "https://kitsu.io/api/edge/anime/44081/productions"
+              }
+            },
+            "quotes": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/quotes",
+                "related": "https://kitsu.io/api/edge/anime/44081/quotes"
+              }
+            },
+            "episodes": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/episodes",
+                "related": "https://kitsu.io/api/edge/anime/44081/episodes"
+              }
+            },
+            "streamingLinks": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/streaming-links",
+                "related": "https://kitsu.io/api/edge/anime/44081/streaming-links"
+              }
+            },
+            "animeProductions": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/anime-productions",
+                "related": "https://kitsu.io/api/edge/anime/44081/anime-productions"
+              }
+            },
+            "animeCharacters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/anime-characters",
+                "related": "https://kitsu.io/api/edge/anime/44081/anime-characters"
+              }
+            },
+            "animeStaff": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/anime/44081/relationships/anime-staff",
+                "related": "https://kitsu.io/api/edge/anime/44081/anime-staff"
+              }
+            }
+          },
+          "rank": "11"
+        },
+        {
+          "id": "3625",
+          "type": "manga",
+          "links": {
+            "self": "https://kitsu.io/api/edge/manga/3625"
+          },
+          "attributes": {
+            "createdAt": "2013-12-18T13:50:38.677Z",
+            "updatedAt": "2022-07-10T19:42:10.179Z",
+            "slug": "jojo-s-bizarre-adventure-part-7-steel-ball-run",
+            "synopsis": "Originally presented as an unrelated story, this series was later officially declared a part of the JoJo storyline. The series stars Gyro Zeppeli, who uses a set of steel balls that spin incredibly fast, and Johnny Joestar (Jonathan Joestar), a former hot-shot jockey who was crippled by an ambusher and lost his fame and fortune. They race, along with others, in a mad-dash across America for 50 million dollars, reminiscent of The Cannonball Run.\n\n(Source: Wikipedia)",
+            "description": "Originally presented as an unrelated story, this series was later officially declared a part of the JoJo storyline. The series stars Gyro Zeppeli, who uses a set of steel balls that spin incredibly fast, and Johnny Joestar (Jonathan Joestar), a former hot-shot jockey who was crippled by an ambusher and lost his fame and fortune. They race, along with others, in a mad-dash across America for 50 million dollars, reminiscent of The Cannonball Run.\n\n(Source: Wikipedia)",
+            "coverImageTopOffset": 0,
+            "titles": {
+              "en": "JoJo's Bizarre Adventure Part 7: Steel Ball Run",
+              "en_jp": "JoJo no Kimyou na Bouken Part 7: Steel Ball Run",
+              "ja_jp": "ジョジョの奇妙な冒険 Part7 STEEL BALL RUN"
+            },
+            "canonicalTitle": "JoJo's Bizarre Adventure Part 7: Steel Ball Run",
+            "abbreviatedTitles": [
+              "JoJo's Bizarre Adventure Part 7: Steel Ball Run",
+              "SBR"
+            ],
+            "averageRating": "83.19",
+            "ratingFrequencies": {
+              "2": "610",
+              "3": "14",
+              "4": "14",
+              "5": "4",
+              "6": "10",
+              "7": "5",
+              "8": "334",
+              "9": "5",
+              "10": "33",
+              "11": "7",
+              "12": "58",
+              "13": "15",
+              "14": "444",
+              "15": "25",
+              "16": "431",
+              "17": "71",
+              "18": "995",
+              "19": "170",
+              "20": "3871"
+            },
+            "userCount": 8590,
+            "favoritesCount": 691,
+            "startDate": "2004-01-19",
+            "endDate": "2011-04-19",
+            "nextRelease": null,
+            "popularityRank": 74,
+            "ratingRank": 39,
+            "ageRating": "R",
+            "ageRatingGuide": "Horror",
+            "subtype": "manga",
+            "status": "finished",
+            "tba": null,
+            "posterImage": {
+              "tiny": "https://media.kitsu.io/manga/poster_images/3625/tiny.jpg",
+              "large": "https://media.kitsu.io/manga/poster_images/3625/large.jpg",
+              "small": "https://media.kitsu.io/manga/poster_images/3625/small.jpg",
+              "medium": "https://media.kitsu.io/manga/poster_images/3625/medium.jpg",
+              "original": "https://media.kitsu.io/manga/poster_images/3625/original.jpg",
+              "meta": {
+                "dimensions": {
+                  "tiny": {
+                    "width": 110,
+                    "height": 156
+                  },
+                  "large": {
+                    "width": 550,
+                    "height": 780
+                  },
+                  "small": {
+                    "width": 284,
+                    "height": 402
+                  },
+                  "medium": {
+                    "width": 390,
+                    "height": 554
+                  }
+                }
+              }
+            },
+            "coverImage": {
+              "tiny": "https://media.kitsu.io/manga/cover_images/3625/tiny.jpg",
+              "large": "https://media.kitsu.io/manga/cover_images/3625/large.jpg",
+              "small": "https://media.kitsu.io/manga/cover_images/3625/small.jpg",
+              "original": "https://media.kitsu.io/manga/cover_images/3625/original.jpg",
+              "meta": {
+                "dimensions": {
+                  "tiny": {
+                    "width": 840,
+                    "height": 200
+                  },
+                  "large": {
+                    "width": 3360,
+                    "height": 800
+                  },
+                  "small": {
+                    "width": 1680,
+                    "height": 400
+                  }
+                }
+              }
+            },
+            "chapterCount": 95,
+            "volumeCount": 24,
+            "serialization": "Ultra Jump",
+            "mangaType": "manga"
+          },
+          "relationships": {
+            "genres": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/genres",
+                "related": "https://kitsu.io/api/edge/manga/3625/genres"
+              }
+            },
+            "categories": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/categories",
+                "related": "https://kitsu.io/api/edge/manga/3625/categories"
+              }
+            },
+            "castings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/castings",
+                "related": "https://kitsu.io/api/edge/manga/3625/castings"
+              }
+            },
+            "installments": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/installments",
+                "related": "https://kitsu.io/api/edge/manga/3625/installments"
+              }
+            },
+            "mappings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/mappings",
+                "related": "https://kitsu.io/api/edge/manga/3625/mappings"
+              }
+            },
+            "reviews": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/reviews",
+                "related": "https://kitsu.io/api/edge/manga/3625/reviews"
+              }
+            },
+            "mediaRelationships": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/media-relationships",
+                "related": "https://kitsu.io/api/edge/manga/3625/media-relationships"
+              }
+            },
+            "characters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/characters",
+                "related": "https://kitsu.io/api/edge/manga/3625/characters"
+              }
+            },
+            "staff": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/staff",
+                "related": "https://kitsu.io/api/edge/manga/3625/staff"
+              }
+            },
+            "productions": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/productions",
+                "related": "https://kitsu.io/api/edge/manga/3625/productions"
+              }
+            },
+            "quotes": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/quotes",
+                "related": "https://kitsu.io/api/edge/manga/3625/quotes"
+              }
+            },
+            "chapters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/chapters",
+                "related": "https://kitsu.io/api/edge/manga/3625/chapters"
+              }
+            },
+            "mangaCharacters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/manga-characters",
+                "related": "https://kitsu.io/api/edge/manga/3625/manga-characters"
+              }
+            },
+            "mangaStaff": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/3625/relationships/manga-staff",
+                "related": "https://kitsu.io/api/edge/manga/3625/manga-staff"
+              }
+            }
+          },
+          "rank": "6"
+        },
+        {
+          "id": "38",
+          "type": "manga",
+          "links": {
+            "self": "https://kitsu.io/api/edge/manga/38"
+          },
+          "attributes": {
+            "createdAt": "2013-12-18T13:48:27.926Z",
+            "updatedAt": "2022-07-10T20:11:52.063Z",
+            "slug": "one-piece",
+            "synopsis": "Gol D. Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King.\n\nEnter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.\n\n(Source: MAL Rewrite)",
+            "description": "Gol D. Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King.\n\nEnter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.\n\n(Source: MAL Rewrite)",
+            "coverImageTopOffset": 50,
+            "titles": {
+              "en": "One Piece",
+              "en_jp": "One Piece",
+              "en_us": "One Piece",
+              "ja_jp": "ONE PIECE"
+            },
+            "canonicalTitle": "One Piece",
+            "abbreviatedTitles": [],
+            "averageRating": "84.69",
+            "ratingFrequencies": {
+              "2": "4757",
+              "3": "93",
+              "4": "262",
+              "5": "46",
+              "6": "224",
+              "7": "51",
+              "8": "4208",
+              "9": "81",
+              "10": "464",
+              "11": "112",
+              "12": "675",
+              "13": "144",
+              "14": "9315",
+              "15": "217",
+              "16": "2196",
+              "17": "454",
+              "18": "3006",
+              "19": "631",
+              "20": "50479"
+            },
+            "userCount": 81577,
+            "favoritesCount": 2409,
+            "startDate": "1997-07-22",
+            "endDate": null,
+            "nextRelease": null,
+            "popularityRank": 4,
+            "ratingRank": 2,
+            "ageRating": "G",
+            "ageRatingGuide": null,
+            "subtype": "manga",
+            "status": "current",
+            "tba": null,
+            "posterImage": {
+              "tiny": "https://media.kitsu.io/manga/38/poster_image/tiny-b75dc319cf35e5813e335a2b724e4d91.jpeg",
+              "large": "https://media.kitsu.io/manga/38/poster_image/large-8f7e4ada483a6451b3f5a554b99b6b0e.jpeg",
+              "small": "https://media.kitsu.io/manga/38/poster_image/small-1c4b9571448c18e2bac8f85f1a2d4b0d.jpeg",
+              "medium": "https://media.kitsu.io/manga/38/poster_image/medium-48141172366699b5737b73d65ca232c8.jpeg",
+              "original": "https://media.kitsu.io/manga/poster_images/38/original.jpg",
+              "meta": {
+                "dimensions": {
+                  "tiny": {
+                    "width": 110,
+                    "height": 156
+                  },
+                  "large": {
+                    "width": 550,
+                    "height": 780
+                  },
+                  "small": {
+                    "width": 284,
+                    "height": 402
+                  },
+                  "medium": {
+                    "width": 390,
+                    "height": 554
+                  }
+                }
+              }
+            },
+            "coverImage": {
+              "tiny": "https://media.kitsu.io/manga/38/cover_image/tiny-2e5d46cf8f48020d60a64a475a8d86b9.gif",
+              "large": "https://media.kitsu.io/manga/38/cover_image/large-5fb010f6facabbc9ef6416915b180e0e.gif",
+              "small": "https://media.kitsu.io/manga/38/cover_image/small-9a8190db9ebc5a4a82898b4bb14ec253.gif",
+              "tiny_webp": "https://media.kitsu.io/manga/38/cover_image/tiny_webp-e81e35942fd8d34444443572ea92154e.webp",
+              "large_webp": "https://media.kitsu.io/manga/38/cover_image/large_webp-64b50f362a658b6a55b3640fd5a2ae29.webp",
+              "small_webp": "https://media.kitsu.io/manga/38/cover_image/small_webp-652298367671eaa8a687a2013b4e8c15.webp",
+              "original": "https://media.kitsu.io/manga/cover_images/38/original.jpg",
+              "meta": {
+                "dimensions": {
+                  "tiny": {
+                    "width": 840,
+                    "height": 200
+                  },
+                  "large": {
+                    "width": 3360,
+                    "height": 800
+                  },
+                  "small": {
+                    "width": 1680,
+                    "height": 400
+                  },
+                  "tiny_webp": {
+                    "width": 840,
+                    "height": 200
+                  },
+                  "large_webp": {
+                    "width": 3360,
+                    "height": 800
+                  },
+                  "small_webp": {
+                    "width": 1680,
+                    "height": 400
+                  }
+                }
+              }
+            },
+            "chapterCount": null,
+            "volumeCount": null,
+            "serialization": "Shounen Jump (Weekly)",
+            "mangaType": "manga"
+          },
+          "relationships": {
+            "genres": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/genres",
+                "related": "https://kitsu.io/api/edge/manga/38/genres"
+              }
+            },
+            "categories": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/categories",
+                "related": "https://kitsu.io/api/edge/manga/38/categories"
+              }
+            },
+            "castings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/castings",
+                "related": "https://kitsu.io/api/edge/manga/38/castings"
+              }
+            },
+            "installments": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/installments",
+                "related": "https://kitsu.io/api/edge/manga/38/installments"
+              }
+            },
+            "mappings": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/mappings",
+                "related": "https://kitsu.io/api/edge/manga/38/mappings"
+              }
+            },
+            "reviews": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/reviews",
+                "related": "https://kitsu.io/api/edge/manga/38/reviews"
+              }
+            },
+            "mediaRelationships": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/media-relationships",
+                "related": "https://kitsu.io/api/edge/manga/38/media-relationships"
+              }
+            },
+            "characters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/characters",
+                "related": "https://kitsu.io/api/edge/manga/38/characters"
+              }
+            },
+            "staff": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/staff",
+                "related": "https://kitsu.io/api/edge/manga/38/staff"
+              }
+            },
+            "productions": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/productions",
+                "related": "https://kitsu.io/api/edge/manga/38/productions"
+              }
+            },
+            "quotes": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/quotes",
+                "related": "https://kitsu.io/api/edge/manga/38/quotes"
+              }
+            },
+            "chapters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/chapters",
+                "related": "https://kitsu.io/api/edge/manga/38/chapters"
+              }
+            },
+            "mangaCharacters": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/manga-characters",
+                "related": "https://kitsu.io/api/edge/manga/38/manga-characters"
+              }
+            },
+            "mangaStaff": {
+              "links": {
+                "self": "https://kitsu.io/api/edge/manga/38/relationships/manga-staff",
+                "related": "https://kitsu.io/api/edge/manga/38/manga-staff"
+              }
+            }
+          },
+          "rank": "1"
+        }
+      ],
+      "id": 6
     }
   ]
 }
