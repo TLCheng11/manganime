@@ -9,7 +9,6 @@ import MenuBar from "./MenuBar";
 import Details from "./Details";
 import TopAnime from "./TopAnime";
 import FavoritedPage from "./FavoritedPage";
-import { DATABASE } from "../FetchUrl";
 
 function App() {
   const [manganime, setManganime] = useState([]);
@@ -44,8 +43,8 @@ function App() {
     currentUser.favorited.forEach((item) => favoritedList.add(item.id));
   }
 
-  console.log("mange", manga);
-  console.log("anime", anime);
+  // console.log("mange", manga);
+  // console.log("anime", anime);
   // console.log(usersList)
   // console.log(music)
 
@@ -70,7 +69,7 @@ function App() {
 
   function searchManganime(search) {
     const modifiedQuery = search.toLowerCase().split(" ").join("%20");
-    console.log(modifiedQuery);
+    // console.log(modifiedQuery);
     fetch(
       `https://kitsu.io/api/edge/${searchType}?filter[text]=${modifiedQuery}&page[limit]=20&page[offset]=0`,
       {

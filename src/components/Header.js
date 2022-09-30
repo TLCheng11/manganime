@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { DATABASE } from "../FetchUrl";
 import "../stylesheets/Header.css";
 
 function Header({ users, usersList, currentUser, setCurrentUser, music }) {
@@ -44,7 +43,7 @@ function Header({ users, usersList, currentUser, setCurrentUser, music }) {
         usersList[formInput.username.toLowerCase()] ===
         stringToHashConversion(formInput.password).toString()
       ) {
-        console.log("user logged in");
+        // console.log("user logged in");
         const id = users.find(
           (user) => user.username === formInput.username.toLowerCase()
         ).id;
@@ -77,12 +76,12 @@ function Header({ users, usersList, currentUser, setCurrentUser, music }) {
       if (name.match(/^[\w]*$/g)) {
         if (name.match(/^[A-Za-z]/g)) {
           if (name.match(/^.{3,18}$/g)) {
-            console.log("username ok");
+            // console.log("username ok");
 
             //check if password meet all requirement
             if (formInput.password.match(/^[\w\d~!@#$%^&*-=+?]+$/g)) {
               if (formInput.password.match(/^.{6,18}$/g)) {
-                console.log("password ok");
+                // console.log("password ok");
                 const password = stringToHashConversion(
                   formInput.password
                 ).toString();
@@ -107,7 +106,7 @@ function Header({ users, usersList, currentUser, setCurrentUser, music }) {
                       username: "",
                       password: "",
                     });
-                    console.log(data);
+                    // console.log(data);
                   })
                   .catch(console.error);
               } else {

@@ -90,7 +90,7 @@ function Intro({ manga, anime, setMusic }) {
   }
 
   function skipIntro() {
-    console.log(timerIds);
+    // console.log(timerIds);
     videobgRef.current.style.pointerEvents = "none";
     timerIds.current.forEach((id) => {
       clearInterval(id);
