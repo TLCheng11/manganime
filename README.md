@@ -6,6 +6,8 @@
 
 `Run "npm install" followed by "npm start".`
 
+open [localhost:3011](http://localhost:3011/) in your browser
+
 # Introduction
 
 - Welcome to our Phase 2 project, an amazing manga and anime website full of surprises! At its core, Mangaime is a website
