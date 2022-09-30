@@ -51,11 +51,11 @@ function App() {
 
   //to fetch all data once
   useEffect(() => {
-    fetch(`${DATABASE}/manga`)
+    fetch(`/manga`)
       .then((res) => res.json())
       .then(setManga);
 
-    fetch(`${DATABASE}/anime`)
+    fetch(`/anime`)
       .then((res) => res.json())
       .then(setAnime);
 
@@ -63,7 +63,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetch(`${DATABASE}/users`)
+    fetch(`/users`)
       .then((res) => res.json())
       .then(setUsers);
   }, [currentUser]);

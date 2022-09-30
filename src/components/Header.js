@@ -48,7 +48,7 @@ function Header({ users, usersList, currentUser, setCurrentUser, music }) {
         const id = users.find(
           (user) => user.username === formInput.username.toLowerCase()
         ).id;
-        fetch(`${DATABASE}/users/${id}`)
+        fetch(`/users/${id}`)
           .then((res) => res.json())
           .then((data) => {
             setCurrentUser(data);
@@ -87,7 +87,7 @@ function Header({ users, usersList, currentUser, setCurrentUser, music }) {
                   formInput.password
                 ).toString();
                 // console.log(password)
-                fetch(`${DATABASE}/users`, {
+                fetch(`/users`, {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",

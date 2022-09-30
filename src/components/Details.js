@@ -16,7 +16,7 @@ function Details({
   const [favorited, setFavorited] = useState(favoritedList.has(id));
 
   if (selectedItem.id !== param.id) {
-    fetch(`${DATABASE}/anime?id=${param.id}`)
+    fetch(`/anime?id=${param.id}`)
       .then((res) => res.json())
       .then((data) => setSelectedItem(data[0]));
     return <p>Loading....</p>;
@@ -26,7 +26,7 @@ function Details({
     const updatedFavorite = {
       favorited: [...currentUser.favorited, selectedItem],
     };
-    fetch(`${DATABASE}/users/${currentUser.id}`, {
+    fetch(`/users/${currentUser.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -46,7 +46,7 @@ function Details({
     const updatedFavorite = {
       favorited: currentUser.favorited.filter((item) => item.id !== id),
     };
-    fetch(`${DATABASE}/users/${currentUser.id}`, {
+    fetch(`/users/${currentUser.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -67,7 +67,7 @@ function Details({
 
   // function addDataToJson(e) {
   //   e.preventDefault()
-  //   fetch(`${DATABASE}/${type}`, {
+  //   fetch(`/${type}`, {
   //     method: "POST",
   //     headers: {
   //       "Content-type": "application/json",
