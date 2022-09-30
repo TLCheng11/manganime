@@ -54,7 +54,7 @@ function App() {
     fetch(`${DATABASE}/manga`, {
       headers: {
         "Access-Control-Allow-Headers": "*",
-        "Access-Control-Allow-Methods": "POST",
+        "Access-Control-Allow-Methods": "GET",
         "Access-Control-Allow-Origin": "*",
       },
     })
@@ -64,7 +64,7 @@ function App() {
     fetch(`${DATABASE}/anime`, {
       headers: {
         "Access-Control-Allow-Headers": "*",
-        "Access-Control-Allow-Methods": "POST",
+        "Access-Control-Allow-Methods": "GET",
         "Access-Control-Allow-Origin": "*",
       },
     })
@@ -78,7 +78,7 @@ function App() {
     fetch(`${DATABASE}/users`, {
       headers: {
         "Access-Control-Allow-Headers": "*",
-        "Access-Control-Allow-Methods": "POST",
+        "Access-Control-Allow-Methods": "GET",
         "Access-Control-Allow-Origin": "*",
       },
     })
