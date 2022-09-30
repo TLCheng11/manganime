@@ -51,11 +51,23 @@ function App() {
 
   //to fetch all data once
   useEffect(() => {
-    fetch(`${DATABASE}/manga`)
+    fetch(`${DATABASE}/manga`, {
+      headers: {
+        "Access-Control-Allow-Headers": "*",
+        "Access-Control-Allow-Methods": "POST",
+        "Access-Control-Allow-Origin": "*",
+      },
+    })
       .then((res) => res.json())
       .then(setManga);
 
-    fetch(`${DATABASE}/anime`)
+    fetch(`${DATABASE}/anime`, {
+      headers: {
+        "Access-Control-Allow-Headers": "*",
+        "Access-Control-Allow-Methods": "POST",
+        "Access-Control-Allow-Origin": "*",
+      },
+    })
       .then((res) => res.json())
       .then(setAnime);
 
@@ -63,7 +75,13 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetch(`${DATABASE}/users`)
+    fetch(`${DATABASE}/users`, {
+      headers: {
+        "Access-Control-Allow-Headers": "*",
+        "Access-Control-Allow-Methods": "POST",
+        "Access-Control-Allow-Origin": "*",
+      },
+    })
       .then((res) => res.json())
       .then(setUsers);
   }, [currentUser]);
