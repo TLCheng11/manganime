@@ -1,213 +1,214 @@
 #search-bar-container {
-    position: relative;
-    top: -20px;
+  position: relative;
+  top: -20px;
 }
 
 .tb {
-    display: table;
-    width: 100%;
-  }
-  
-  .td {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  
-  #search-form input, 
-  #search-form button {
-    color: #fff;
-    font-family: Nunito;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    background-color: transparent;
-  }
-  
-  #search-form {
-    position: relative;
-    left: -12.5%;
-    width: 120%;
-    padding: 35px;
-    /* margin: -83px auto 0 auto; */
-    background-color: #ff7575;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #ffffffeb;
-    transform: scale(0.3);
-  }
-  
-  #search-form form {
-    height: 96px;
-  }
-  
-  #search-form input[type="text"] {
-    width: 100%;
-    height: 96px;
-    font-size: 60px;
-    line-height: 1;
-  }
-  
-  #search-form input[type="text"]::placeholder {
-    color: #e16868;
-  }
-  
-  #s-cover {
-    width: 1px;
-    padding-left: 35px;
-  }
-  
-  #search-form button {
-    position: relative;
-    display: block;
-    width: 84px;
-    height: 96px;
-    cursor: pointer;
-  }
-  
-  #s-circle {
-    position: relative;
-    top: -8px;
-    left: 0;
-    width: 43px;
-    height: 43px;
-    margin-top: 0;
-    border-width: 15px;
-    border: 15px solid #fff;
-    background-color: transparent;
-    border-radius: 50%;
-    transition: 0.5s ease all;
-  }
-  
-  #search-form button span {
-    position: absolute;
-    top: 68px;
-    left: 43px;
-    display: block;
-    width: 45px;
-    height: 15px;
-    background-color: transparent;
-    border-radius: 10px;
-    transform: rotateZ(52deg);
-    transition: 0.5s ease all;
-  }
-  
-  #search-form button span:before,
-  #search-form button span:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 45px;
-    height: 15px;
-    background-color: #fff;
-    border-radius: 10px;
-    transform: rotateZ(0);
-    transition: 0.5s ease all;
-  }
-  
-  #s-cover:hover #s-circle {
-    top: -1px;
-    width: 67px;
-    height: 15px;
-    border-width: 0;
-    background-color: #fff;
-    border-radius: 20px;
-  }
-  
-  #s-cover:hover span {
-    top: 50%;
-    left: 56px;
-    width: 25px;
-    margin-top: -9px;
-    transform: rotateZ(0);
-  }
-  
-  #s-cover:hover button span:before {
-    bottom: 11px;
-    transform: rotateZ(52deg);
-  }
-  
-  #s-cover:hover button span:after {
-    bottom: -11px;
-    transform: rotateZ(-52deg);
-  }
-  #s-cover:hover button span:before,
-  #s-cover:hover button span:after {
-    right: -6px;
-    width: 40px;
-    background-color: #fff;
-  }
+  display: table;
+  width: 100%;
+}
+
+.td {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#search-form input,
+#search-form button {
+  color: #fff;
+  font-family: Nunito;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+#search-form {
+  position: relative;
+  left: -12.5%;
+  width: 120%;
+  padding: 35px;
+  /* margin: -83px auto 0 auto; */
+  background-color: #ff7575;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #ffffffeb;
+  transform: scale(0.3);
+}
+
+#search-form form {
+  height: 96px;
+}
+
+#search-form input[type="text"] {
+  width: 100%;
+  height: 96px;
+  font-size: 60px;
+  line-height: 1;
+}
+
+#search-form input[type="text"]::placeholder {
+  color: #e16868;
+}
+
+#s-cover {
+  width: 1px;
+  padding-left: 35px;
+}
+
+#search-form button {
+  position: relative;
+  display: block;
+  width: 84px;
+  height: 96px;
+  cursor: pointer;
+}
+
+#s-circle {
+  position: relative;
+  top: -8px;
+  left: 0;
+  width: 43px;
+  height: 43px;
+  margin-top: 0;
+  border-width: 15px;
+  border: 15px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.5s ease all;
+}
+
+#search-form button span {
+  position: absolute;
+  top: 68px;
+  left: 43px;
+  display: block;
+  width: 45px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 10px;
+  transform: rotateZ(52deg);
+  transition: 0.5s ease all;
+}
+
+#search-form button span:before,
+#search-form button span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  transform: rotateZ(0);
+  transition: 0.5s ease all;
+}
+
+#s-cover:hover #s-circle {
+  top: -1px;
+  width: 67px;
+  height: 15px;
+  border-width: 0;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+#s-cover:hover span {
+  top: 50%;
+  left: 56px;
+  width: 25px;
+  margin-top: -9px;
+  transform: rotateZ(0);
+}
+
+#s-cover:hover button span:before {
+  bottom: 11px;
+  transform: rotateZ(52deg);
+}
+
+#s-cover:hover button span:after {
+  bottom: -11px;
+  transform: rotateZ(-52deg);
+}
+#s-cover:hover button span:before,
+#s-cover:hover button span:after {
+  right: -6px;
+  width: 40px;
+  background-color: #fff;
+}
 
 /* TOGGLE STYLING */
 .toggle-radio {
-    position: relative;
-    top: -20px;
+  position: relative;
+  top: -20px;
 }
 
 .toggle {
-    width: 20%;
-    left: 40%;
-    position: relative;
-    margin: 0 0 1.5rem;
-    box-sizing: border-box;
-    font-size: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-  }
-  .toggle input {
-    width: 0;
-    height: 0;
-    position: absolute;
-    left: -9999px;
-  }
+  width: 20%;
+  left: 40%;
+  position: relative;
+  margin: 0 0 1.5rem;
+  box-sizing: border-box;
+  font-size: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.toggle input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -9999px;
+}
+.toggle input + label {
+  width: 50%;
+  margin: 0;
+  padding: 0.75rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border: solid 1px #ddd;
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  transition: border-color 0.15s ease-out, color 0.25s ease-out,
+    background-color 0.15s ease-out, box-shadow 0.15s ease-out;
+  /* ADD THESE PROPERTIES TO SWITCH FROM AUTO WIDTH TO FULL WIDTH */
+  /*flex: 0 0 50%; display: flex; justify-content: center; align-items: center;*/
+  /* ----- */
+}
+.toggle input + label:first-of-type {
+  border-radius: 6px 0 0 6px;
+  border-right: none;
+}
+.toggle input + label:last-of-type {
+  border-radius: 0 6px 6px 0;
+  border-left: none;
+}
+.toggle input:hover + label {
+  border-color: #213140;
+}
+.toggle input:checked + label {
+  background-color: #4b9dea;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(102, 179, 251, 0.5);
+  border-color: #4b9dea;
+  z-index: 1;
+}
+.toggle input:focus + label {
+  outline: dotted 1px #ccc;
+  outline-offset: 0.45rem;
+}
+@media (max-width: 800px) {
   .toggle input + label {
-    width: 50%;
-    margin: 0;
-    padding: 0.75rem 2rem;
-    box-sizing: border-box;
-    position: relative;
-    display: inline-block;
-    border: solid 1px #DDD;
-    background-color: #FFF;
-    font-size: 1rem;
-    line-height: 140%;
-    font-weight: 600;
-    text-align: center;
-    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
-    transition: border-color 0.15s ease-out, color 0.25s ease-out, background-color 0.15s ease-out, box-shadow 0.15s ease-out;
-    /* ADD THESE PROPERTIES TO SWITCH FROM AUTO WIDTH TO FULL WIDTH */
-    /*flex: 0 0 50%; display: flex; justify-content: center; align-items: center;*/
-    /* ----- */
+    padding: 0.75rem 0.25rem;
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .toggle input + label:first-of-type {
-    border-radius: 6px 0 0 6px;
-    border-right: none;
-  }
-  .toggle input + label:last-of-type {
-    border-radius: 0 6px 6px 0;
-    border-left: none;
-  }
-  .toggle input:hover + label {
-    border-color: #213140;
-  }
-  .toggle input:checked + label {
-    background-color: #4B9DEA;
-    color: #FFF;
-    box-shadow: 0 0 10px rgba(102, 179, 251, 0.5);
-    border-color: #4B9DEA;
-    z-index: 1;
-  }
-  .toggle input:focus + label {
-    outline: dotted 1px #CCC;
-    outline-offset: 0.45rem;
-  }
-  @media (max-width: 800px) {
-    .toggle input + label {
-      padding: 0.75rem 0.25rem;
-      flex: 0 0 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+}

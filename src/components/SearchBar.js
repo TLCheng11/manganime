@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-function SearchBar({searchManganime, searchType, setSearchType, setReset}) {
-  const [search, setSearch] = useState("")
+function SearchBar({ searchManganime, searchType, setSearchType, setReset }) {
+  const [search, setSearch] = useState("");
 
   function handleFormSubmit(e) {
-    e.preventDefault()
-    setReset(true)
-    searchManganime(search)
+    e.preventDefault();
+    setReset(true);
+    searchManganime(search);
   }
 
   return (
@@ -15,10 +15,10 @@ function SearchBar({searchManganime, searchType, setSearchType, setReset}) {
         <form onSubmit={handleFormSubmit}>
           <div className="tb">
             <div className="td">
-              <input 
-                id="search-bar" 
-                type="text" 
-                placeholder="Which manga/anime you looking for?..." 
+              <input
+                id="search-bar"
+                type="text"
+                placeholder="Which manga/anime you looking for?..."
                 required
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
@@ -36,9 +36,23 @@ function SearchBar({searchManganime, searchType, setSearchType, setReset}) {
       </div>
       <div className="toggle-radio">
         <form className="toggle">
-          <input id="choice-manga" name="type" type="radio" value="manga" onChange={(e) => setSearchType(e.target.value)} checked={searchType === "manga"}></input>
+          <input
+            id="choice-manga"
+            name="type"
+            type="radio"
+            value="manga"
+            onChange={(e) => setSearchType(e.target.value)}
+            checked={searchType === "manga"}
+          ></input>
           <label htmlFor="choice-manga">Manga</label>
-          <input id="choice-anime" name="type" type="radio" value="anime" onChange={(e) => setSearchType(e.target.value)} checked={searchType === "anime"}></input>
+          <input
+            id="choice-anime"
+            name="type"
+            type="radio"
+            value="anime"
+            onChange={(e) => setSearchType(e.target.value)}
+            checked={searchType === "anime"}
+          ></input>
           <label htmlFor="choice-anime">Anime</label>
         </form>
       </div>

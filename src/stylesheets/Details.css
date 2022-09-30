@@ -10,18 +10,24 @@
   border: none;
   background-size: 300% 100%;
   border-radius: 50px;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
 
 .back-button:hover {
   background-position: 100% 0;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .add-button {
@@ -36,18 +42,24 @@
   border: none;
   background-size: 300% 100%;
   border-radius: 50px;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    #009245,
+    #fcee21,
+    #00a8c5,
+    #d9e021
+  );
   box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
 }
 
 .add-button:hover {
   background-position: 100% 0;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .delete-button {
@@ -62,18 +74,24 @@
   border: none;
   background-size: 300% 100%;
   border-radius: 50px;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B);
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    #ed6ea0,
+    #ec8c69,
+    #f7186a,
+    #fbb03b
+  );
   box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 }
 
 .delete-button:hover {
   background-position: 100% 0;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 #detail-outer {
@@ -104,7 +122,13 @@
 #details {
   width: 50%;
   height: 100%;
-  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #4481eb,
+    #04befe,
+    #3f86ed
+  );
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
   overflow: auto;
   border-style: solid;
@@ -113,12 +137,12 @@
 
 #details span {
   font-weight: bold;
-  color: #F88379;
+  color: #f88379;
 }
 
 #details a {
   text-decoration: none;
-  color: #F88379;
+  color: #f88379;
   font-size: 25px;
 }
 

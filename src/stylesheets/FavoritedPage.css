@@ -1,102 +1,112 @@
 /*-------------favorite manga and anime h1-------------*/
 .favorite-h1 {
-    font-size: 60px;
-    letter-spacing: 7px;
-    transition: color 350ms;
+  font-size: 60px;
+  letter-spacing: 7px;
+  transition: color 350ms;
 }
 
-.favorite-h1:hover{
-    color: #ed684a;
+.favorite-h1:hover {
+  color: #ed684a;
 }
 
 /*-------------list of manga and anime (img and title)-------------*/
 .favorited-manga {
-    height: auto;
-    width: auto;
-    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
-    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
-    margin-bottom: 0px;
+  height: auto;
+  width: auto;
+  background-image: linear-gradient(
+    to right,
+    #ed6ea0,
+    #ec8c69,
+    #f7186a,
+    #fbb03b
+  );
+  box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+  margin-bottom: 0px;
 }
 
-.favorited-manga:first-child{
-    height: 300px;
+.favorited-manga:first-child {
+  height: 300px;
 }
 
-#favorite-page ul{
-    list-style-type: none;
-    display: flex;
-    overflow: auto;
+#favorite-page ul {
+  list-style-type: none;
+  display: flex;
+  overflow: auto;
 }
 
-#favorite-page img{
-    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
-    margin-bottom: 5px;
+#favorite-page img {
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 5px;
 }
 
 .favorited-container a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 
 .favorited-container a div {
-    overflow-wrap: break-word;
-    inline-size: 110px;
+  overflow-wrap: break-word;
+  inline-size: 110px;
 }
 
-
-.favorited-container p{
-    font-size: 40px;
-    line-height: 300px;
-    text-align: center;
+.favorited-container p {
+  font-size: 40px;
+  line-height: 300px;
+  text-align: center;
 }
 
-
-.favorited-anime{
-    height: auto;
-    width: auto;
-    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
-    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+.favorited-anime {
+  height: auto;
+  width: auto;
+  background-image: linear-gradient(
+    to right,
+    #ed6ea0,
+    #ec8c69,
+    #f7186a,
+    #fbb03b
+  );
+  box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 }
 
-.favorited-anime:first-child{
-    height: 300px;
+.favorited-anime:first-child {
+  height: 300px;
 }
 
 /*-------------hover effect-------------*/
 
-.favorite-manga-container{
-    padding: 30px 0;
-    margin: 20px;
-    transition: transform 250ms;       
+.favorite-manga-container {
+  padding: 30px 0;
+  margin: 20px;
+  transition: transform 250ms;
 }
 
-.favorite-manga-container:hover{
-    transform: scale(1.2);
+.favorite-manga-container:hover {
+  transform: scale(1.2);
 }
 
-.favorite-anime-container{
-    padding: 30px 0;
-    margin: 20px;
-    transition: transform 250ms;
+.favorite-anime-container {
+  padding: 30px 0;
+  margin: 20px;
+  transition: transform 250ms;
 }
 
-.favorite-anime-container:hover{
-    transform: scale(1.2);
+.favorite-anime-container:hover {
+  transform: scale(1.2);
 }
 
 /*-------------prompt login-------------*/
 .prompt-login {
-    background-image: url('https://c.tenor.com/hbGUzkHNBXgAAAAC/anime-girl.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 600px;
-    height: 700px;
-    border-style: solid;
-    display: inline-block;
+  background-image: url("https://c.tenor.com/hbGUzkHNBXgAAAAC/anime-girl.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px;
+  height: 700px;
+  border-style: solid;
+  display: inline-block;
 }
 
 .prompt-login p {
-    font-size: 50px;
-    font-weight: bold;
+  font-size: 50px;
+  font-weight: bold;
 }

@@ -58,7 +58,7 @@
         "posterImage": {
           "tiny": "https://media.kitsu.io/manga/38/poster_image/tiny-b75dc319cf35e5813e335a2b724e4d91.jpeg",
           "large": "https://media.kitsu.io/manga/38/poster_image/large-8f7e4ada483a6451b3f5a554b99b6b0e.jpeg",
-          "small": "https://media.kitsu.io/manga/38/poster_image/small-1c4b9571448c18e2bac8f85f1a2d4b0d.jpeg",
+          "small": "https://upload.wikimedia.org/wikipedia/en/9/90/One_Piece%2C_Volume_61_Cover_%28Japanese%29.jpg",
           "medium": "https://media.kitsu.io/manga/38/poster_image/medium-48141172366699b5737b73d65ca232c8.jpeg",
           "original": "https://media.kitsu.io/manga/poster_images/38/original.jpg",
           "meta": {
@@ -270,7 +270,7 @@
         "posterImage": {
           "tiny": "https://media.kitsu.io/manga/57/poster_image/tiny-b1b47067d60206ae3df04a4adff1af5f.jpeg",
           "large": "https://media.kitsu.io/manga/57/poster_image/large-d3a0a398a701da793db9f2240150a151.jpeg",
-          "small": "https://media.kitsu.io/manga/57/poster_image/small-f6f1ddb5b65d3b625008db7c3dc0fa23.jpeg",
+          "small": "https://upload.wikimedia.org/wikipedia/en/6/6f/Death_Note_Vol_1.jpg",
           "medium": "https://media.kitsu.io/manga/57/poster_image/medium-671001498fdebc687923198b54badd05.jpeg",
           "original": "https://media.kitsu.io/manga/poster_images/57/original.jpg",
           "meta": {
@@ -444,10 +444,7 @@
           "ja_jp": "ワンパンマン"
         },
         "canonicalTitle": "One Punch-Man",
-        "abbreviatedTitles": [
-          "Onepunchman",
-          "Onepanman"
-        ],
+        "abbreviatedTitles": ["Onepunchman", "Onepanman"],
         "averageRating": "84.46",
         "ratingFrequencies": {
           "2": "3277",
@@ -644,9 +641,7 @@
           "ja_jp": "HUNTER×HUNTER"
         },
         "canonicalTitle": "Hunter x Hunter",
-        "abbreviatedTitles": [
-          "HxH"
-        ],
+        "abbreviatedTitles": ["HxH"],
         "averageRating": "84.39",
         "ratingFrequencies": {
           "2": "1820",
@@ -858,9 +853,7 @@
           "ja_jp": "ベルセルク"
         },
         "canonicalTitle": "Berserk",
-        "abbreviatedTitles": [
-          "Berserk: The Prototype"
-        ],
+        "abbreviatedTitles": ["Berserk: The Prototype"],
         "averageRating": "84.06",
         "ratingFrequencies": {
           "2": "1462",
@@ -1725,7 +1718,7 @@
         "posterImage": {
           "tiny": "https://media.kitsu.io/manga/37/poster_image/tiny-13a291a667f7a35d22509c4a24512890.jpeg",
           "large": "https://media.kitsu.io/manga/37/poster_image/large-a98449926ccebec283059c8b7bd811cd.jpeg",
-          "small": "https://media.kitsu.io/manga/37/poster_image/small-9ca86e7ca6d4ba2a26bbb455d74c9d55.jpeg",
+          "small": "https://upload.wikimedia.org/wikipedia/en/5/53/Bleach_cover_01.jpg",
           "medium": "https://media.kitsu.io/manga/37/poster_image/medium-dfdf63faa9bca24280e0edd027262696.jpeg",
           "original": "https://media.kitsu.io/manga/37/poster_image/df250bcde1c30f338c393180d6145ffa.jpg",
           "meta": {
@@ -2079,9 +2072,7 @@
           "ja_jp": "呪術廻戦"
         },
         "canonicalTitle": "Jujutsu Kaisen",
-        "abbreviatedTitles": [
-          "Sorcery Fight"
-        ],
+        "abbreviatedTitles": ["Sorcery Fight"],
         "averageRating": "84.48",
         "ratingFrequencies": {
           "2": "1416",
@@ -2492,9 +2483,7 @@
           "ja_jp": "ドラゴンボール超〈スーパー〉"
         },
         "canonicalTitle": "Dragon Ball Super",
-        "abbreviatedTitles": [
-          "Dragon Ball Chou"
-        ],
+        "abbreviatedTitles": ["Dragon Ball Chou"],
         "averageRating": "74.8",
         "ratingFrequencies": {
           "2": "24",
@@ -2708,7 +2697,7 @@
         "posterImage": {
           "tiny": "https://media.kitsu.io/manga/133/poster_image/tiny-6a1f7d62e7a3d130051fbeae562d283a.jpeg",
           "large": "https://media.kitsu.io/manga/133/poster_image/large-45f67b61cf11afae943225e8ac9eddda.jpeg",
-          "small": "https://media.kitsu.io/manga/133/poster_image/small-3cdef1bd46886ea54ce5430123d0c684.jpeg",
+          "small": "https://upload.wikimedia.org/wikipedia/en/a/a1/Slam_Dunk_%28Jump_Comics%29.jpg",
           "medium": "https://media.kitsu.io/manga/133/poster_image/medium-b733eec793ba7c6cfdfc4a40e13b36d3.jpeg",
           "original": "https://media.kitsu.io/manga/poster_images/133/original.jpg",
           "meta": {
@@ -4280,9 +4269,7 @@
           "ja_jp": "GTO"
         },
         "canonicalTitle": "GTO",
-        "abbreviatedTitles": [
-          "GTO: Tomoko's Big Adventures"
-        ],
+        "abbreviatedTitles": ["GTO: Tomoko's Big Adventures"],
         "averageRating": "82.56",
         "ratingFrequencies": {
           "2": "200",
@@ -4690,11 +4677,7 @@
           "ja_jp": "ハイキュー!!"
         },
         "canonicalTitle": "Haikyuu!!",
-        "abbreviatedTitles": [
-          "High Kyuu!!",
-          "HQ!!",
-          "Nisekyuu!!"
-        ],
+        "abbreviatedTitles": ["High Kyuu!!", "HQ!!", "Nisekyuu!!"],
         "averageRating": "84.45",
         "ratingFrequencies": {
           "2": "1726",
@@ -5267,10 +5250,7 @@
           "ja_jp": "86―エイティシックス―"
         },
         "canonicalTitle": "86",
-        "abbreviatedTitles": [
-          "86",
-          "Eighty Six"
-        ],
+        "abbreviatedTitles": ["86", "Eighty Six"],
         "averageRating": "82.21",
         "ratingFrequencies": {
           "2": "4",
@@ -6069,10 +6049,7 @@
           "ja_jp": "チェンソーマン"
         },
         "canonicalTitle": "Chainsaw Man",
-        "abbreviatedTitles": [
-          "Chainsaw-man",
-          "Chainsawman"
-        ],
+        "abbreviatedTitles": ["Chainsaw-man", "Chainsawman"],
         "averageRating": "84.26",
         "ratingFrequencies": {
           "2": "379",
@@ -7047,9 +7024,7 @@
           "ja_jp": "東京喰種トーキョーグール"
         },
         "canonicalTitle": "Tokyo Ghoul",
-        "abbreviatedTitles": [
-          "Toukyou Kushu"
-        ],
+        "abbreviatedTitles": ["Toukyou Kushu"],
         "averageRating": "84.45",
         "ratingFrequencies": {
           "2": "4365",
@@ -7246,9 +7221,7 @@
           "ja_jp": "オーバーロード"
         },
         "canonicalTitle": "Overlord",
-        "abbreviatedTitles": [
-          "Over Lord"
-        ],
+        "abbreviatedTitles": ["Over Lord"],
         "averageRating": "81.91",
         "ratingFrequencies": {
           "2": "25",
@@ -7444,9 +7417,7 @@
           "ja_jp": "BANANA FISH"
         },
         "canonicalTitle": "Banana Fish",
-        "abbreviatedTitles": [
-          "BANANA FISH"
-        ],
+        "abbreviatedTitles": ["BANANA FISH"],
         "averageRating": "82.5",
         "ratingFrequencies": {
           "2": "107",
@@ -8062,9 +8033,7 @@
           "ja_jp": "この素晴らしい世界に祝福を！"
         },
         "canonicalTitle": "Kono Subarashii Sekai ni Shukufuku wo!",
-        "abbreviatedTitles": [
-          "A blessing to this wonderful world!"
-        ],
+        "abbreviatedTitles": ["A blessing to this wonderful world!"],
         "averageRating": "82.51",
         "ratingFrequencies": {
           "2": "85",
@@ -8260,9 +8229,7 @@
           "ja_jp": "君の膵臓をたべたい"
         },
         "canonicalTitle": "Kimi no Suizou wo Tabetai",
-        "abbreviatedTitles": [
-          "KimiSui"
-        ],
+        "abbreviatedTitles": ["KimiSui"],
         "averageRating": "81.53",
         "ratingFrequencies": {
           "2": "26",
@@ -8632,10 +8599,7 @@
           "ja_jp": "モブサイコ100"
         },
         "canonicalTitle": "Mob Psycho 100",
-        "abbreviatedTitles": [
-          "Mob Psycho One Hundred",
-          "Mob Psycho Hyaku"
-        ],
+        "abbreviatedTitles": ["Mob Psycho One Hundred", "Mob Psycho Hyaku"],
         "averageRating": "82.84",
         "ratingFrequencies": {
           "2": "436",
@@ -8831,9 +8795,7 @@
           "ja_jp": "ゴールデンカムイ"
         },
         "canonicalTitle": "Golden Kamuy",
-        "abbreviatedTitles": [
-          "Golden Kamui"
-        ],
+        "abbreviatedTitles": ["Golden Kamui"],
         "averageRating": "82.57",
         "ratingFrequencies": {
           "2": "23",
@@ -9031,9 +8993,7 @@
           "zh_cn": "吉缘"
         },
         "canonicalTitle": "Given",
-        "abbreviatedTitles": [
-          "ぎう゛ん"
-        ],
+        "abbreviatedTitles": ["ぎう゛ん"],
         "averageRating": "82.65",
         "ratingFrequencies": {
           "2": "360",
@@ -9405,9 +9365,7 @@
           "ja_jp": "鬼滅の刃"
         },
         "canonicalTitle": "Kimetsu no Yaiba",
-        "abbreviatedTitles": [
-          "Blade of Demon Destruction"
-        ],
+        "abbreviatedTitles": ["Blade of Demon Destruction"],
         "averageRating": "84.58",
         "ratingFrequencies": {
           "2": "2794",
@@ -9604,10 +9562,7 @@
           "ja_jp": "ヴァニタスの手記〈カルテ〉"
         },
         "canonicalTitle": "Vanitas no Carte",
-        "abbreviatedTitles": [
-          "Vanitas no Shuki",
-          "Memoir of Vanitas"
-        ],
+        "abbreviatedTitles": ["Vanitas no Shuki", "Memoir of Vanitas"],
         "averageRating": "82.54",
         "ratingFrequencies": {
           "2": "16",
@@ -10643,9 +10598,7 @@
           "ja_jp": "STEINS;GATE"
         },
         "canonicalTitle": "Steins;Gate",
-        "abbreviatedTitles": [
-          "シュタゲ"
-        ],
+        "abbreviatedTitles": ["シュタゲ"],
         "averageRating": "82.14",
         "ratingFrequencies": {
           "2": "6220",
@@ -10856,9 +10809,7 @@
           "ja_jp": "進撃の巨人"
         },
         "canonicalTitle": "Attack on Titan",
-        "abbreviatedTitles": [
-          "AoT"
-        ],
+        "abbreviatedTitles": ["AoT"],
         "averageRating": "84.88",
         "ratingFrequencies": {
           "2": "10876",
@@ -11283,10 +11234,7 @@
           "ja_jp": "フルーツバスケット"
         },
         "canonicalTitle": "Fruits Basket (2019)",
-        "abbreviatedTitles": [
-          "Furuba",
-          "Fruits Basket (Zenpen)"
-        ],
+        "abbreviatedTitles": ["Furuba", "Fruits Basket (Zenpen)"],
         "averageRating": "82.04",
         "ratingFrequencies": {
           "2": "802",
@@ -12564,10 +12512,7 @@
           "ja_jp": "モブサイコ100"
         },
         "canonicalTitle": "Mob Psycho 100",
-        "abbreviatedTitles": [
-          "Mob Psycho Hyaku",
-          "Mob Psycho One Hundred"
-        ],
+        "abbreviatedTitles": ["Mob Psycho Hyaku", "Mob Psycho One Hundred"],
         "averageRating": "82.13",
         "ratingFrequencies": {
           "2": "3766",
@@ -12968,10 +12913,7 @@
           "ja_jp": "ハイキュー!!"
         },
         "canonicalTitle": "Haikyuu!!",
-        "abbreviatedTitles": [
-          "High Kyuu!!",
-          "HQ!!"
-        ],
+        "abbreviatedTitles": ["High Kyuu!!", "HQ!!"],
         "averageRating": "82.88",
         "ratingFrequencies": {
           "2": "7209",
@@ -13181,9 +13123,7 @@
           "ja_jp": "カウボーイビバップ"
         },
         "canonicalTitle": "Cowboy Bebop",
-        "abbreviatedTitles": [
-          "COWBOY BEBOP"
-        ],
+        "abbreviatedTitles": ["COWBOY BEBOP"],
         "averageRating": "82.06",
         "ratingFrequencies": {
           "2": "4418",
@@ -14024,10 +13964,7 @@
           "ja_jp": "はじめの一歩 THE FIGHTING!"
         },
         "canonicalTitle": "Hajime no Ippo",
-        "abbreviatedTitles": [
-          "The First Step",
-          "Hajime no Ippo: The Fighting"
-        ],
+        "abbreviatedTitles": ["The First Step", "Hajime no Ippo: The Fighting"],
         "averageRating": "81.99",
         "ratingFrequencies": {
           "2": "986",
@@ -14237,9 +14174,7 @@
           "ja_jp": "オッドタクシー"
         },
         "canonicalTitle": "Odd Taxi",
-        "abbreviatedTitles": [
-          "Oddtaxi"
-        ],
+        "abbreviatedTitles": ["Oddtaxi"],
         "averageRating": "81.93",
         "ratingFrequencies": {
           "2": "173",
@@ -14658,9 +14593,7 @@
           "ja_jp": "86―エイティシックス―"
         },
         "canonicalTitle": "86",
-        "abbreviatedTitles": [
-          "Eighty Six"
-        ],
+        "abbreviatedTitles": ["Eighty Six"],
         "averageRating": "81.54",
         "ratingFrequencies": {
           "2": "57",
@@ -14871,9 +14804,7 @@
           "ja_jp": "グレート・ティーチャー・オニヅカ"
         },
         "canonicalTitle": "Great Teacher Onizuka",
-        "abbreviatedTitles": [
-          "GTO"
-        ],
+        "abbreviatedTitles": ["GTO"],
         "averageRating": "81.98",
         "ratingFrequencies": {
           "2": "1271",
@@ -15082,9 +15013,7 @@
           "ja_jp": "呪術廻戦"
         },
         "canonicalTitle": "Jujutsu Kaisen",
-        "abbreviatedTitles": [
-          "Sorcery Fight"
-        ],
+        "abbreviatedTitles": ["Sorcery Fight"],
         "averageRating": "86.11",
         "ratingFrequencies": {
           "2": "3369",
@@ -15715,9 +15644,7 @@
           "ja_jp": "ONE PIECE"
         },
         "canonicalTitle": "One Piece",
-        "abbreviatedTitles": [
-          "ワンピース"
-        ],
+        "abbreviatedTitles": ["ワンピース"],
         "averageRating": "83.18",
         "ratingFrequencies": {
           "2": "7953",
@@ -16145,9 +16072,7 @@
           "ja_jp": "ピンポン THE ANIMATION"
         },
         "canonicalTitle": "Ping Pong The Animation",
-        "abbreviatedTitles": [
-          "PPTA"
-        ],
+        "abbreviatedTitles": ["PPTA"],
         "averageRating": "81.72",
         "ratingFrequencies": {
           "2": "637",
@@ -16568,9 +16493,7 @@
           "ja_jp": "デスノート"
         },
         "canonicalTitle": "Death Note",
-        "abbreviatedTitles": [
-          "DN"
-        ],
+        "abbreviatedTitles": ["DN"],
         "averageRating": "83.58",
         "ratingFrequencies": {
           "2": "9815",
@@ -17851,9 +17774,7 @@
           "ja_jp": "バクマン。"
         },
         "canonicalTitle": "Bakuman. 3rd Season",
-        "abbreviatedTitles": [
-          "Bakuman Season 3"
-        ],
+        "abbreviatedTitles": ["Bakuman Season 3"],
         "averageRating": "81.82",
         "ratingFrequencies": {
           "2": "611",
@@ -18463,9 +18384,7 @@
           "ja_jp": "暗殺教室"
         },
         "canonicalTitle": "Ansatsu Kyoushitsu",
-        "abbreviatedTitles": [
-          "Ansatsu Kyoushitsu"
-        ],
+        "abbreviatedTitles": ["Ansatsu Kyoushitsu"],
         "averageRating": "83.1",
         "ratingFrequencies": {
           "2": "4190",
@@ -18675,11 +18594,7 @@
           "ja_jp": "ワンパンマン"
         },
         "canonicalTitle": "One Punch Man",
-        "abbreviatedTitles": [
-          "One Punch-Man",
-          "OPM",
-          "One-Punch Man"
-        ],
+        "abbreviatedTitles": ["One Punch-Man", "OPM", "One-Punch Man"],
         "averageRating": "83.44",
         "ratingFrequencies": {
           "2": "13409",
@@ -18890,10 +18805,7 @@
           "ja_jp": "宇宙兄弟"
         },
         "canonicalTitle": "Uchuu Kyoudai",
-        "abbreviatedTitles": [
-          "Uchu Kyodai",
-          "Uchuu Kyodai"
-        ],
+        "abbreviatedTitles": ["Uchu Kyodai", "Uchuu Kyodai"],
         "averageRating": "80.52",
         "ratingFrequencies": {
           "2": "263",
@@ -19103,9 +19015,7 @@
           "ja_jp": "サムライチャンプルー"
         },
         "canonicalTitle": "Samurai Champloo",
-        "abbreviatedTitles": [
-          "SAMURAI CHAMPLOO"
-        ],
+        "abbreviatedTitles": ["SAMURAI CHAMPLOO"],
         "averageRating": "82.03",
         "ratingFrequencies": {
           "2": "1683",
@@ -19525,9 +19435,7 @@
           "ja_jp": "からかい上手の高木さん"
         },
         "canonicalTitle": "Karakai Jouzu no Takagi-san",
-        "abbreviatedTitles": [
-          "Skilled Teaser Takagi-san"
-        ],
+        "abbreviatedTitles": ["Skilled Teaser Takagi-san"],
         "averageRating": "77.41",
         "ratingFrequencies": {
           "2": "76",
@@ -19738,9 +19646,7 @@
           "ja_jp": "RAINBOW 二舎六房の七人"
         },
         "canonicalTitle": "Rainbow: Nisha Rokubou no Shichinin",
-        "abbreviatedTitles": [
-          "Rainbow: Nisha Rokubou no Shichinin"
-        ],
+        "abbreviatedTitles": ["Rainbow: Nisha Rokubou no Shichinin"],
         "averageRating": "81.0",
         "ratingFrequencies": {
           "2": "277",
@@ -19951,9 +19857,7 @@
           "ja_jp": "ちはやふる"
         },
         "canonicalTitle": "Chihayafuru",
-        "abbreviatedTitles": [
-          "Chihayafull"
-        ],
+        "abbreviatedTitles": ["Chihayafull"],
         "averageRating": "81.17",
         "ratingFrequencies": {
           "2": "271",
@@ -20164,9 +20068,7 @@
           "ja_jp": "この素晴らしい世界に祝福を！"
         },
         "canonicalTitle": "Kono Subarashii Sekai ni Shukufuku wo!",
-        "abbreviatedTitles": [
-          "Give Blessings to This Wonderful World!"
-        ],
+        "abbreviatedTitles": ["Give Blessings to This Wonderful World!"],
         "averageRating": "81.97",
         "ratingFrequencies": {
           "2": "1107",
@@ -20377,9 +20279,7 @@
           "ja_jp": "日常"
         },
         "canonicalTitle": "Nichijou",
-        "abbreviatedTitles": [
-          "Everyday"
-        ],
+        "abbreviatedTitles": ["Everyday"],
         "averageRating": "81.98",
         "ratingFrequencies": {
           "2": "972",
@@ -20792,9 +20692,7 @@
               "ja_jp": "ONE PIECE"
             },
             "canonicalTitle": "One Piece",
-            "abbreviatedTitles": [
-              "ワンピース"
-            ],
+            "abbreviatedTitles": ["ワンピース"],
             "averageRating": "83.18",
             "ratingFrequencies": {
               "2": "7964",
@@ -21010,10 +20908,7 @@
               "ja_jp": "ハイキュー!!"
             },
             "canonicalTitle": "Haikyuu!!",
-            "abbreviatedTitles": [
-              "High Kyuu!!",
-              "HQ!!"
-            ],
+            "abbreviatedTitles": ["High Kyuu!!", "HQ!!"],
             "averageRating": "82.88",
             "ratingFrequencies": {
               "2": "7209",
@@ -21222,9 +21117,7 @@
               "ja_jp": "呪術廻戦"
             },
             "canonicalTitle": "Jujutsu Kaisen",
-            "abbreviatedTitles": [
-              "Sorcery Fight"
-            ],
+            "abbreviatedTitles": ["Sorcery Fight"],
             "averageRating": "86.11",
             "ratingFrequencies": {
               "2": "3369",
@@ -21644,11 +21537,7 @@
               "ja_jp": "ワンパンマン"
             },
             "canonicalTitle": "One Punch Man",
-            "abbreviatedTitles": [
-              "One Punch-Man",
-              "OPM",
-              "One-Punch Man"
-            ],
+            "abbreviatedTitles": ["One Punch-Man", "OPM", "One-Punch Man"],
             "averageRating": "83.44",
             "ratingFrequencies": {
               "2": "13409",
@@ -21859,9 +21748,7 @@
               "ja_jp": "暗殺教室"
             },
             "canonicalTitle": "Ansatsu Kyoushitsu",
-            "abbreviatedTitles": [
-              "Ansatsu Kyoushitsu"
-            ],
+            "abbreviatedTitles": ["Ansatsu Kyoushitsu"],
             "averageRating": "83.1",
             "ratingFrequencies": {
               "2": "4190",
@@ -22071,9 +21958,7 @@
               "ja_jp": "からかい上手の高木さん"
             },
             "canonicalTitle": "Karakai Jouzu no Takagi-san",
-            "abbreviatedTitles": [
-              "Skilled Teaser Takagi-san"
-            ],
+            "abbreviatedTitles": ["Skilled Teaser Takagi-san"],
             "averageRating": "77.41",
             "ratingFrequencies": {
               "2": "76",
@@ -22498,9 +22383,7 @@
               "ja_jp": "進撃の巨人"
             },
             "canonicalTitle": "Attack on Titan",
-            "abbreviatedTitles": [
-              "AoT"
-            ],
+            "abbreviatedTitles": ["AoT"],
             "averageRating": "84.88",
             "ratingFrequencies": {
               "2": "10876",
@@ -22923,9 +22806,7 @@
               "ja_jp": "STEINS;GATE"
             },
             "canonicalTitle": "Steins;Gate",
-            "abbreviatedTitles": [
-              "シュタゲ"
-            ],
+            "abbreviatedTitles": ["シュタゲ"],
             "averageRating": "82.14",
             "ratingFrequencies": {
               "2": "6220",
@@ -23737,9 +23618,7 @@
               "ja_jp": "STEINS;GATE"
             },
             "canonicalTitle": "Steins;Gate",
-            "abbreviatedTitles": [
-              "シュタゲ"
-            ],
+            "abbreviatedTitles": ["シュタゲ"],
             "averageRating": "82.14",
             "ratingFrequencies": {
               "2": "6220",
@@ -25010,9 +24889,7 @@
               "ja_jp": "からかい上手の高木さん"
             },
             "canonicalTitle": "Karakai Jouzu no Takagi-san",
-            "abbreviatedTitles": [
-              "Skilled Teaser Takagi-san"
-            ],
+            "abbreviatedTitles": ["Skilled Teaser Takagi-san"],
             "averageRating": "77.41",
             "ratingFrequencies": {
               "2": "76",
