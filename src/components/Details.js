@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
-import { DATABASE } from "../FetchUrl";
 import "../stylesheets/Details.css";
 
 function Details({
