@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "../stylesheets/Container.css";
 import Pages from "./Pages";
 import Thumbnail from "./Thumbnail";

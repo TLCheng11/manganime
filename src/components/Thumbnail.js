@@ -2,7 +2,7 @@ import "../stylesheets/Thumbnail.css";
 import { NavLink } from "react-router-dom";
 
 function Thumbnail({ item, setSelectedItem }) {
-  const { id, attributes } = item;
+  const { attributes } = item;
 
   // const itemTitle = attributes.titles.en_us ? attributes.titles.en_us : (attributes.titles.en ? attributes.titles.en : attributes.titles.en_jp)
 
