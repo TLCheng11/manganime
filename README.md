@@ -1,5 +1,12 @@
 # Manganime
 
+- An anime and manga web application with React, allowing users to search and save their favorite content, allowing them to hold their own unique collection of anime and manga.
+- Deployed website: [Manganime](http://54.210.20.214:3011/)
+
+## Creators
+- [Tony Cheng](https://github.com/TLCheng11)
+- [Alan Xu](https://github.com/alanxu186)
+
 # Setup
 
 `Run "json-server --watch -p 3010 db.json"`
@@ -30,5 +37,3 @@ open [localhost:3011](http://localhost:3011/) in your browser
 
 - The favorites feature updates every time a manga/anime is added or deleted from this list. If the list is empty, it will
   display a text that users can click to redirect them to the selection page.
-
-# Created by Tony Cheng & Alan Xu
